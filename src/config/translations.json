@@ -1,0 +1,941 @@
+{
+  "tr": {
+    "nav": {
+      "home": "Ana Sayfa",
+      "about": "Hakkımızda",
+      "projects": "Projeler",
+      "team": "Ekip",
+      "contact": "İletişim"
+    },
+    "hero": {
+      "tagline": "Dünyalar İnşa Ediyoruz, Birlikte Eğleniyoruz",
+      "cta": "PROJELERİMİZİ KEŞFET"
+    },
+    "about": {
+      "title": "EĞLENEREK GÜZEL İŞLER ÇIKARTIYORUZ",
+      "whoAreWe": "BİZ KİMİZ?",
+      "mission": "Misyonumuz",
+      "stats": {
+        "yearsExperience": "Yıllık Deneyim",
+        "teamMembers": "Ekip Üyesi",
+        "passion": "Tutku"
+      },
+      "content": {
+        "paragraph1": "BOLF Games, yaklaşık 2 yıldır sektörde faaliyet gösteren, tutkulu ve gönüllü insanlardan oluşan bir ekiptir.",
+        "paragraph2": "Temel misyonumuz: \"Eğlenerek güzel işler çıkartmak ve oyunlar üretmek.\"",
+        "paragraph3": "Her birimiz farklı yeteneklere ve bakış açılarına sahip olsak da, ortak amacımız eğlenceli ve kaliteli oyunlar geliştirmek, birbirimizden öğrenmek ve birlikte büyümek."
+      }
+    },
+    "projects": {
+      "title": "ORTAK PROJELERİMİZ",
+      "subtitle": "Ekip olarak geliştirdiğimiz oyunlar",
+      "viewDetails": "Detayları Gör",
+      "platforms": {
+        "PC": "PC",
+        "Mobile": "Mobil",
+        "Web": "Web",
+        "Console": "Konsol"
+      },
+      "mediaBadge": "Medya",
+      "tags": "Etiket"
+    },
+    "team": {
+      "title": "EKİBİMİZ",
+      "subtitle": "Tutkulu ve yetenekli ekip üyelerimiz",
+      "backToHome": "Ana Sayfaya Dön",
+      "notFound": "Üye Bulunamadı",
+      "portfolio": "Bireysel Portföy",
+      "portfolioPlaceholder": "Detaylı portföy içeriği yakında eklenecek...",
+      "roleTypes": {
+        "developer": "GELİŞTİRİCİ",
+        "3d-artist": "3D SANATÇI",
+        "2d-artist": "2D SANATÇI",
+        "designer": "TASARIMCI",
+        "level-designer": "SEVİYE TASARIMCISI"
+      }
+    },
+    "footer": {
+      "contact": "İletişim",
+      "socialMedia": "Sosyal Medya",
+      "email": "E-posta",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "send": "Gönder",
+      "copyright": "BOLF Games. Tüm hakları saklıdır."
+    },
+    "keyboard": {
+      "placeholder": "Klavye ile yazın..."
+    },
+    "data": {
+      "projects": [
+        {
+          "id": 1,
+          "name": "Proje Alpha",
+          "description": "Yenilikçi oynanış mekanikleriyle heyecan verici bir aksiyon-macera oyunu.",
+          "tags": ["Aksiyon", "Macera", "Indie"]
+        },
+        {
+          "id": 2,
+          "name": "Proje Beta",
+          "description": "Zihninizi zorlayan stratejik bir bulmaca oyunu.",
+          "tags": ["Bulmaca", "Strateji", "Casual"]
+        },
+        {
+          "id": 3,
+          "name": "Proje Gamma",
+          "description": "Kendinizi güzel bir fantastik dünyaya bırakın.",
+          "tags": ["RPG", "Fantastik", "Hikaye Odaklı"]
+        },
+        {
+          "id": 4,
+          "name": "BOLF Media - Oyun Haberleri",
+          "description": "Oyun dünyasından en güncel haberler, incelemeler ve içerikler. Instagram ve Youtube'da yayınlanan BOLF Media içerikleri.",
+          "tags": ["Medya", "Haberler", "İçerik"]
+        },
+        {
+          "id": 5,
+          "name": "BOLF Media - YouTube Serisi",
+          "description": "Youtube'da yayınlanan oyun haberleri ve içerik serileri.",
+          "tags": ["Medya", "YouTube", "Video"]
+        }
+      ],
+      "team": [
+        {
+          "id": 1,
+          "name": "Furkan Gündüz",
+          "role": "Unity Oyun Geliştirici",
+          "bio": ""
+        },
+        {
+          "id": 2,
+          "name": "Erdem Temür",
+          "role": "3D Sanatçı",
+          "bio": ""
+        },
+        {
+          "id": 3,
+          "name": "Ahmet Emir Özdemir",
+          "role": "Oyun Tasarımcısı",
+          "bio": ""
+        },
+        {
+          "id": 4,
+          "name": "Emir Sayın",
+          "role": "Seviye Tasarımcısı",
+          "bio": ""
+        },
+        {
+          "id": 5,
+          "name": "Ata Cem Kılınç",
+          "role": "2D Tasarımcı",
+          "bio": ""
+        }
+      ]
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "team": "Team",
+      "contact": "Contact"
+    },
+    "hero": {
+      "tagline": "Building Worlds, Having Fun Together",
+      "cta": "EXPLORE OUR PROJECTS"
+    },
+    "about": {
+      "title": "CREATING GREAT WORK WHILE HAVING FUN",
+      "whoAreWe": "WHO ARE WE?",
+      "mission": "Our Mission",
+      "stats": {
+        "yearsExperience": "Years of Experience",
+        "teamMembers": "Team Members",
+        "passion": "Passion"
+      },
+      "content": {
+        "paragraph1": "BOLF Games is a team of passionate and volunteer people who have been active in the industry for approximately 2 years.",
+        "paragraph2": "Our core mission: \"Creating great work while having fun and producing games.\"",
+        "paragraph3": "Although each of us has different talents and perspectives, our common goal is to develop fun and quality games, learn from each other, and grow together."
+      }
+    },
+    "projects": {
+      "title": "OUR COLLABORATIVE PROJECTS",
+      "subtitle": "Games we develop as a team",
+      "viewDetails": "View Details",
+      "platforms": {
+        "PC": "PC",
+        "Mobile": "Mobile",
+        "Web": "Web",
+        "Console": "Console"
+      },
+      "mediaBadge": "Media",
+      "tags": "Tag"
+    },
+    "team": {
+      "title": "OUR TEAM",
+      "subtitle": "Passionate and talented team members",
+      "backToHome": "Back to Home",
+      "notFound": "Member Not Found",
+      "portfolio": "Individual Portfolio",
+      "portfolioPlaceholder": "Detailed portfolio content will be added soon...",
+      "roleTypes": {
+        "developer": "DEVELOPER",
+        "3d-artist": "3D ARTIST",
+        "2d-artist": "2D ARTIST",
+        "designer": "DESIGNER",
+        "level-designer": "LEVEL DESIGNER"
+      }
+    },
+    "footer": {
+      "contact": "Contact",
+      "socialMedia": "Social Media",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send",
+      "copyright": "BOLF Games. All rights reserved."
+    },
+    "keyboard": {
+      "placeholder": "Type with keyboard..."
+    },
+    "data": {
+      "projects": [
+        {
+          "id": 1,
+          "name": "Project Alpha",
+          "description": "An exciting action-adventure game with innovative gameplay mechanics.",
+          "tags": ["Action", "Adventure", "Indie"]
+        },
+        {
+          "id": 2,
+          "name": "Project Beta",
+          "description": "A strategic puzzle game that challenges your mind.",
+          "tags": ["Puzzle", "Strategy", "Casual"]
+        },
+        {
+          "id": 3,
+          "name": "Project Gamma",
+          "description": "Immerse yourself in a beautiful fantasy world.",
+          "tags": ["RPG", "Fantasy", "Story-Driven"]
+        },
+        {
+          "id": 4,
+          "name": "BOLF Media - Game News",
+          "description": "The latest news, reviews and content from the gaming world. BOLF Media content published on Instagram and Youtube.",
+          "tags": ["Media", "News", "Content"]
+        },
+        {
+          "id": 5,
+          "name": "BOLF Media - YouTube Series",
+          "description": "Game news and content series published on Youtube.",
+          "tags": ["Media", "YouTube", "Video"]
+        }
+      ],
+      "team": [
+        {
+          "id": 1,
+          "name": "Furkan Gündüz",
+          "role": "Unity Game Developer",
+          "bio": ""
+        },
+        {
+          "id": 2,
+          "name": "Erdem Temür",
+          "role": "3D Artist",
+          "bio": ""
+        },
+        {
+          "id": 3,
+          "name": "Ahmet Emir Özdemir",
+          "role": "Game Designer",
+          "bio": ""
+        },
+        {
+          "id": 4,
+          "name": "Emir Sayın",
+          "role": "Level Designer",
+          "bio": ""
+        },
+        {
+          "id": 5,
+          "name": "Ata Cem Kılınç",
+          "role": "2D Designer",
+          "bio": ""
+        }
+      ]
+    }
+  },
+  "de": {
+    "nav": {
+      "home": "Startseite",
+      "about": "Über uns",
+      "projects": "Projekte",
+      "team": "Team",
+      "contact": "Kontakt"
+    },
+    "hero": {
+      "tagline": "Welten bauen, zusammen Spaß haben",
+      "cta": "UNSERE PROJEKTE ERKUNDEN"
+    },
+    "about": {
+      "title": "GROSSARTIGE ARBEIT LEISTEN UND DABEI SPAß HABEN",
+      "whoAreWe": "WER SIND WIR?",
+      "mission": "Unsere Mission",
+      "stats": {
+        "yearsExperience": "Jahre Erfahrung",
+        "teamMembers": "Teammitglieder",
+        "passion": "Leidenschaft"
+      },
+      "content": {
+        "paragraph1": "BOLF Games ist ein Team aus leidenschaftlichen und freiwilligen Menschen, die seit etwa 2 Jahren in der Branche aktiv sind.",
+        "paragraph2": "Unsere Kernmission: \"Großartige Arbeit leisten, während wir Spaß haben und Spiele produzieren.\"",
+        "paragraph3": "Obwohl jeder von uns unterschiedliche Talente und Perspektiven hat, ist unser gemeinsames Ziel, unterhaltsame und qualitativ hochwertige Spiele zu entwickeln, voneinander zu lernen und gemeinsam zu wachsen."
+      }
+    },
+    "projects": {
+      "title": "UNSERE GEMEINSAMEN PROJEKTE",
+      "subtitle": "Spiele, die wir als Team entwickeln",
+      "viewDetails": "Details anzeigen",
+      "platforms": {
+        "PC": "PC",
+        "Mobile": "Mobil",
+        "Web": "Web",
+        "Console": "Konsole"
+      },
+      "mediaBadge": "Medien",
+      "tags": "Tag"
+    },
+    "team": {
+      "title": "UNSER TEAM",
+      "subtitle": "Leidenschaftliche und talentierte Teammitglieder",
+      "backToHome": "Zur Startseite",
+      "notFound": "Mitglied nicht gefunden",
+      "portfolio": "Individuelles Portfolio",
+      "portfolioPlaceholder": "Detaillierte Portfolio-Inhalte werden in Kürze hinzugefügt...",
+      "roleTypes": {
+        "developer": "ENTWICKLER",
+        "3d-artist": "3D KÜNSTLER",
+        "2d-artist": "2D KÜNSTLER",
+        "designer": "DESIGNER",
+        "level-designer": "LEVEL DESIGNER"
+      }
+    },
+    "footer": {
+      "contact": "Kontakt",
+      "socialMedia": "Soziale Medien",
+      "email": "E-Mail",
+      "subject": "Betreff",
+      "message": "Ihre Nachricht",
+      "send": "Senden",
+      "copyright": "BOLF Games. Alle Rechte vorbehalten."
+    },
+    "keyboard": {
+      "placeholder": "Mit Tastatur tippen..."
+    },
+    "data": {
+      "projects": [
+        {
+          "id": 1,
+          "name": "Projekt Alpha",
+          "description": "Ein aufregendes Action-Adventure-Spiel mit innovativen Gameplay-Mechaniken.",
+          "tags": ["Action", "Adventure", "Indie"]
+        },
+        {
+          "id": 2,
+          "name": "Projekt Beta",
+          "description": "Ein strategisches Puzzlespiel, das Ihren Verstand herausfordert.",
+          "tags": ["Puzzle", "Strategie", "Casual"]
+        },
+        {
+          "id": 3,
+          "name": "Projekt Gamma",
+          "description": "Tauchen Sie ein in eine wunderschöne Fantasiewelt.",
+          "tags": ["RPG", "Fantasy", "Story-Driven"]
+        },
+        {
+          "id": 4,
+          "name": "BOLF Media - Spielemeldungen",
+          "description": "Die neuesten Nachrichten, Reviews und Inhalte aus der Spielewelt. BOLF Media-Inhalte auf Instagram und Youtube veröffentlicht.",
+          "tags": ["Media", "Nachrichten", "Inhalt"]
+        },
+        {
+          "id": 5,
+          "name": "BOLF Media - YouTube-Serie",
+          "description": "Spielemeldungen und Inhaltsserien, die auf Youtube veröffentlicht werden.",
+          "tags": ["Media", "YouTube", "Video"]
+        }
+      ],
+      "team": [
+        {
+          "id": 1,
+          "name": "Furkan Gündüz",
+          "role": "Unity Spieleentwickler",
+          "bio": ""
+        },
+        {
+          "id": 2,
+          "name": "Erdem Temür",
+          "role": "3D-Künstler",
+          "bio": ""
+        },
+        {
+          "id": 3,
+          "name": "Ahmet Emir Özdemir",
+          "role": "Spieldesigner",
+          "bio": ""
+        },
+        {
+          "id": 4,
+          "name": "Emir Sayın",
+          "role": "Level-Designer",
+          "bio": ""
+        },
+        {
+          "id": 5,
+          "name": "Ata Cem Kılınç",
+          "role": "2D-Designer",
+          "bio": ""
+        }
+      ]
+    }
+  },
+  "fr": {
+    "nav": {
+      "home": "Accueil",
+      "about": "À propos",
+      "projects": "Projets",
+      "team": "Équipe",
+      "contact": "Contact"
+    },
+    "hero": {
+      "tagline": "Construire des mondes, s'amuser ensemble",
+      "cta": "EXPLORER NOS PROJETS"
+    },
+    "about": {
+      "title": "CRÉER DE GRANDS TRAVAUX EN S'AMUSANT",
+      "whoAreWe": "QUI SOMMES-NOUS?",
+      "mission": "Notre Mission",
+      "stats": {
+        "yearsExperience": "Années d'expérience",
+        "teamMembers": "Membres de l'équipe",
+        "passion": "Passion"
+      },
+      "content": {
+        "paragraph1": "BOLF Games est une équipe de personnes passionnées et bénévoles qui sont actives dans l'industrie depuis environ 2 ans.",
+        "paragraph2": "Notre mission principale : \"Créer de grands travaux en s'amusant et produire des jeux.\"",
+        "paragraph3": "Bien que chacun de nous ait des talents et des perspectives différents, notre objectif commun est de développer des jeux amusants et de qualité, d'apprendre les uns des autres et de grandir ensemble."
+      }
+    },
+    "projects": {
+      "title": "NOS PROJETS COLLABORATIFS",
+      "subtitle": "Jeux que nous développons en équipe",
+      "viewDetails": "Voir les détails",
+      "platforms": {
+        "PC": "PC",
+        "Mobile": "Mobile",
+        "Web": "Web",
+        "Console": "Console"
+      },
+      "mediaBadge": "Médias",
+      "tags": "Tag"
+    },
+    "team": {
+      "title": "NOTRE ÉQUIPE",
+      "subtitle": "Membres de l'équipe passionnés et talentueux",
+      "backToHome": "Retour à l'accueil",
+      "notFound": "Membre non trouvé",
+      "portfolio": "Portfolio Individuel",
+      "portfolioPlaceholder": "Le contenu détaillé du portfolio sera ajouté prochainement...",
+      "roleTypes": {
+        "developer": "DÉVELOPPEUR",
+        "3d-artist": "ARTISTE 3D",
+        "2d-artist": "ARTISTE 2D",
+        "designer": "DESIGNER",
+        "level-designer": "CONCEPTEUR DE NIVEAUX"
+      }
+    },
+    "footer": {
+      "contact": "Contact",
+      "socialMedia": "Réseaux sociaux",
+      "email": "E-mail",
+      "subject": "Sujet",
+      "message": "Votre message",
+      "send": "Envoyer",
+      "copyright": "BOLF Games. Tous droits réservés."
+    },
+    "keyboard": {
+      "placeholder": "Tapez au clavier..."
+    },
+    "data": {
+      "projects": [
+        {
+          "id": 1,
+          "name": "Projet Alpha",
+          "description": "Un jeu d'action-aventure passionnant avec des mécaniques de jeu innovantes.",
+          "tags": ["Action", "Aventure", "Indie"]
+        },
+        {
+          "id": 2,
+          "name": "Projet Beta",
+          "description": "Un jeu de puzzle stratégique qui défie votre esprit.",
+          "tags": ["Puzzle", "Stratégie", "Casual"]
+        },
+        {
+          "id": 3,
+          "name": "Projet Gamma",
+          "description": "Immergez-vous dans un magnifique monde fantastique.",
+          "tags": ["RPG", "Fantasy", "Story-Driven"]
+        },
+        {
+          "id": 4,
+          "name": "BOLF Media - Nouvelles de Jeux",
+          "description": "Les dernières nouvelles, critiques et contenus du monde du jeu. Contenus BOLF Media publiés sur Instagram et Youtube.",
+          "tags": ["Médias", "Actualités", "Contenu"]
+        },
+        {
+          "id": 5,
+          "name": "BOLF Media - Série YouTube",
+          "description": "Nouvelles de jeux et séries de contenu publiées sur Youtube.",
+          "tags": ["Médias", "YouTube", "Vidéo"]
+        }
+      ],
+      "team": [
+        {
+          "id": 1,
+          "name": "Furkan Gündüz",
+          "role": "Développeur de Jeux Unity",
+          "bio": ""
+        },
+        {
+          "id": 2,
+          "name": "Erdem Temür",
+          "role": "Artiste 3D",
+          "bio": ""
+        },
+        {
+          "id": 3,
+          "name": "Ahmet Emir Özdemir",
+          "role": "Concepteur de Jeux",
+          "bio": ""
+        },
+        {
+          "id": 4,
+          "name": "Emir Sayın",
+          "role": "Concepteur de Niveaux",
+          "bio": ""
+        },
+        {
+          "id": 5,
+          "name": "Ata Cem Kılınç",
+          "role": "Designer 2D",
+          "bio": ""
+        }
+      ]
+    }
+  },
+  "es": {
+    "nav": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "projects": "Proyectos",
+      "team": "Equipo",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "tagline": "Construyendo mundos, divirtiéndonos juntos",
+      "cta": "EXPLORAR NUESTROS PROYECTOS"
+    },
+    "about": {
+      "title": "CREANDO GRAN TRABAJO MIENTRAS NOS DIVERTIMOS",
+      "whoAreWe": "¿QUIÉNES SOMOS?",
+      "mission": "Nuestra Misión",
+      "stats": {
+        "yearsExperience": "Años de Experiencia",
+        "teamMembers": "Miembros del Equipo",
+        "passion": "Pasión"
+      },
+      "content": {
+        "paragraph1": "BOLF Games es un equipo de personas apasionadas y voluntarias que llevan aproximadamente 2 años activas en la industria.",
+        "paragraph2": "Nuestra misión principal: \"Crear gran trabajo mientras nos divertimos y producimos juegos.\"",
+        "paragraph3": "Aunque cada uno de nosotros tiene diferentes talentos y perspectivas, nuestro objetivo común es desarrollar juegos divertidos y de calidad, aprender unos de otros y crecer juntos."
+      }
+    },
+    "projects": {
+      "title": "NUESTROS PROYECTOS EN COLABORACIÓN",
+      "subtitle": "Juegos que desarrollamos como equipo",
+      "viewDetails": "Ver Detalles",
+      "platforms": {
+        "PC": "PC",
+        "Mobile": "Móvil",
+        "Web": "Web",
+        "Console": "Consola"
+      },
+      "mediaBadge": "Medios",
+      "tags": "Etiqueta"
+    },
+    "team": {
+      "title": "NUESTRO EQUIPO",
+      "subtitle": "Miembros del equipo apasionados y talentosos",
+      "backToHome": "Volver al Inicio",
+      "notFound": "Miembro no encontrado",
+      "portfolio": "Portfolio Individual",
+      "portfolioPlaceholder": "El contenido detallado del portfolio se agregará pronto...",
+      "roleTypes": {
+        "developer": "DESARROLLADOR",
+        "3d-artist": "ARTISTA 3D",
+        "2d-artist": "ARTISTA 2D",
+        "designer": "DISЕÑADOR",
+        "level-designer": "DISЕÑADOR DE NIVELES"
+      }
+    },
+    "footer": {
+      "contact": "Contacto",
+      "socialMedia": "Redes Sociales",
+      "email": "Correo electrónico",
+      "subject": "Asunto",
+      "message": "Tu mensaje",
+      "send": "Enviar",
+      "copyright": "BOLF Games. Todos los derechos reservados."
+    },
+    "keyboard": {
+      "placeholder": "Escribe con el teclado..."
+    },
+    "data": {
+      "projects": [
+        {
+          "id": 1,
+          "name": "Proyecto Alpha",
+          "description": "Un emocionante juego de acción y aventura con mecánicas de juego innovadoras.",
+          "tags": ["Acción", "Aventura", "Indie"]
+        },
+        {
+          "id": 2,
+          "name": "Proyecto Beta",
+          "description": "Un juego de rompecabezas estratégico que desafía tu mente.",
+          "tags": ["Rompecabezas", "Estrategia", "Casual"]
+        },
+        {
+          "id": 3,
+          "name": "Proyecto Gamma",
+          "description": "Sumérgete en un hermoso mundo de fantasía.",
+          "tags": ["RPG", "Fantasía", "Story-Driven"]
+        },
+        {
+          "id": 4,
+          "name": "BOLF Media - Noticias de Juegos",
+          "description": "Las últimas noticias, reseñas y contenidos del mundo de los juegos. Contenidos de BOLF Media publicados en Instagram y Youtube.",
+          "tags": ["Medios", "Noticias", "Contenido"]
+        },
+        {
+          "id": 5,
+          "name": "BOLF Media - Serie de YouTube",
+          "description": "Noticias de juegos y series de contenido publicadas en Youtube.",
+          "tags": ["Medios", "YouTube", "Video"]
+        }
+      ],
+      "team": [
+        {
+          "id": 1,
+          "name": "Furkan Gündüz",
+          "role": "Desarrollador de Juegos Unity",
+          "bio": ""
+        },
+        {
+          "id": 2,
+          "name": "Erdem Temür",
+          "role": "Artista 3D",
+          "bio": ""
+        },
+        {
+          "id": 3,
+          "name": "Ahmet Emir Özdemir",
+          "role": "Diseñador de Juegos",
+          "bio": ""
+        },
+        {
+          "id": 4,
+          "name": "Emir Sayın",
+          "role": "Diseñador de Niveles",
+          "bio": ""
+        },
+        {
+          "id": 5,
+          "name": "Ata Cem Kılınç",
+          "role": "Designer 2D",
+          "bio": ""
+        }
+      ]
+    }
+  },
+  "ja": {
+    "nav": {
+      "home": "ホーム",
+      "about": "私たちについて",
+      "projects": "プロジェクト",
+      "team": "チーム",
+      "contact": "お問い合わせ"
+    },
+    "hero": {
+      "tagline": "世界を構築し、一緒に楽しむ",
+      "cta": "プロジェクトを探索"
+    },
+    "about": {
+      "title": "楽しみながら素晴らしい作品を作る",
+      "whoAreWe": "私たちは誰？",
+      "mission": "私たちの使命",
+      "stats": {
+        "yearsExperience": "年の経験",
+        "teamMembers": "チームメンバー",
+        "passion": "情熱"
+      },
+      "content": {
+        "paragraph1": "BOLF Gamesは、約2年間業界で活動している情熱的でボランティアの人々で構成されたチームです。",
+        "paragraph2": "私たちの核心的な使命：「楽しみながら素晴らしい作品を作り、ゲームを制作する。」",
+        "paragraph3": "私たち一人一人が異なる才能と視点を持っていますが、私たちの共通の目標は、楽しく質の高いゲームを開発し、お互いから学び、一緒に成長することです。"
+      }
+    },
+    "projects": {
+      "title": "私たちの共同プロジェクト",
+      "subtitle": "チームとして開発するゲーム",
+      "viewDetails": "詳細を見る",
+      "platforms": {
+        "PC": "PC",
+        "Mobile": "モバイル",
+        "Web": "Web",
+        "Console": "コンソール"
+      },
+      "mediaBadge": "メディア",
+      "tags": "タグ"
+    },
+    "team": {
+      "title": "私たちのチーム",
+      "subtitle": "情熱的で才能のあるチームメンバー",
+      "backToHome": "ホームに戻る",
+      "notFound": "メンバーが見つかりません",
+      "portfolio": "個人ポートフォリオ",
+      "portfolioPlaceholder": "詳細なポートフォリオコンテンツは間もなく追加されます...",
+      "roleTypes": {
+        "developer": "開発者",
+        "3d-artist": "3Dアーティスト",
+        "2d-artist": "2Dアーティスト",
+        "designer": "デザイナー",
+        "level-designer": "レベルデザイナー"
+      }
+    },
+    "footer": {
+      "contact": "お問い合わせ",
+      "socialMedia": "ソーシャルメディア",
+      "email": "メール",
+      "subject": "件名",
+      "message": "メッセージ",
+      "send": "送信",
+      "copyright": "BOLF Games. 全著作権所有。"
+    },
+    "keyboard": {
+      "placeholder": "キーボードで入力..."
+    },
+    "data": {
+      "projects": [
+        {
+          "id": 1,
+          "name": "プロジェクトアルファ",
+          "description": "革新的なゲームプレイメカニクスを備えた刺激的なアクションアドベンチャーゲーム。",
+          "tags": ["アクション", "アドベンチャー", "インディー"]
+        },
+        {
+          "id": 2,
+          "name": "プロジェクトベータ",
+          "description": "あなたの心に挑戦する戦略的なパズルゲーム。",
+          "tags": ["パズル", "ストラテジー", "カジュアル"]
+        },
+        {
+          "id": 3,
+          "name": "プロジェクトガンマ",
+          "description": "美しいファンタジーの世界に没入してください。",
+          "tags": ["RPG", "ファンタジー", "ストーリー重視"]
+        },
+        {
+          "id": 4,
+          "name": "BOLF Media - ゲームニュース",
+          "description": "ゲーム世界からの最新ニュース、レビュー、コンテンツ。InstagramとYoutubeで公開されているBOLF Mediaコンテンツ。",
+          "tags": ["メディア", "ニュース", "コンテンツ"]
+        },
+        {
+          "id": 5,
+          "name": "BOLF Media - YouTubeシリーズ",
+          "description": "Youtubeで公開されているゲームニュースとコンテンツシリーズ。",
+          "tags": ["メディア", "YouTube", "動画"]
+        }
+      ],
+      "team": [
+        {
+          "id": 1,
+          "name": "Furkan Gündüz",
+          "role": "Unityゲーム開発者",
+          "bio": ""
+        },
+        {
+          "id": 2,
+          "name": "Erdem Temür",
+          "role": "3Dアーティスト",
+          "bio": ""
+        },
+        {
+          "id": 3,
+          "name": "Ahmet Emir Özdemir",
+          "role": "ゲームデザイナー",
+          "bio": ""
+        },
+        {
+          "id": 4,
+          "name": "Emir Sayın",
+          "role": "レベルデザイナー",
+          "bio": ""
+        },
+        {
+          "id": 5,
+          "name": "Ata Cem Kılınç",
+          "role": "2Dデザイナー",
+          "bio": ""
+        }
+      ]
+    }
+  },
+  "zh": {
+    "nav": {
+      "home": "首页",
+      "about": "关于我们",
+      "projects": "项目",
+      "team": "团队",
+      "contact": "联系方式"
+    },
+    "hero": {
+      "tagline": "构建世界，一起玩乐",
+      "cta": "探索我们的项目"
+    },
+    "about": {
+      "title": "在乐趣中创造伟大的作品",
+      "whoAreWe": "我们是谁？",
+      "mission": "我们的使命",
+      "stats": {
+        "yearsExperience": "年经验",
+        "teamMembers": "团队成员",
+        "passion": "热情"
+      },
+      "content": {
+        "paragraph1": "BOLF Games是一个由充满激情和志愿的人们组成的团队，在行业内活跃了大约2年。",
+        "paragraph2": "我们的核心使命：\"在乐趣中创造伟大的作品并制作游戏。\"",
+        "paragraph3": "尽管我们每个人都有不同的才能和观点，但我们共同的目标是开发有趣和高质量的游戏，互相学习，共同成长。"
+      }
+    },
+    "projects": {
+      "title": "我们的合作项目",
+      "subtitle": "我们作为团队开发的游戏",
+      "viewDetails": "查看详情",
+      "platforms": {
+        "PC": "PC",
+        "Mobile": "移动端",
+        "Web": "网页",
+        "Console": "游戏机"
+      },
+      "mediaBadge": "媒体",
+      "tags": "标签"
+    },
+    "team": {
+      "title": "我们的团队",
+      "subtitle": "充满激情和才华的团队成员",
+      "backToHome": "返回首页",
+      "notFound": "未找到成员",
+      "portfolio": "个人作品集",
+      "portfolioPlaceholder": "详细的作品集内容将很快添加...",
+      "roleTypes": {
+        "developer": "开发者",
+        "3d-artist": "3D艺术家",
+        "2d-artist": "2D艺术家",
+        "designer": "设计师",
+        "level-designer": "关卡设计师"
+      }
+    },
+    "footer": {
+      "contact": "联系方式",
+      "socialMedia": "社交媒体",
+      "email": "电子邮件",
+      "subject": "主题",
+      "message": "您的消息",
+      "send": "发送",
+      "copyright": "BOLF Games. 保留所有权利。"
+    },
+    "keyboard": {
+      "placeholder": "用键盘输入..."
+    },
+    "data": {
+      "projects": [
+        {
+          "id": 1,
+          "name": "项目Alpha",
+          "description": "一款具有创新游戏机制的动作冒险游戏。",
+          "tags": ["动作", "冒险", "独立"]
+        },
+        {
+          "id": 2,
+          "name": "项目Beta",
+          "description": "一款挑战您思维的战略益智游戏。",
+          "tags": ["益智", "策略", "休闲"]
+        },
+        {
+          "id": 3,
+          "name": "项目Gamma",
+          "description": "沉浸在美丽的奇幻世界中。",
+          "tags": ["RPG", "奇幻", "剧情驱动"]
+        },
+        {
+          "id": 4,
+          "name": "BOLF Media - 游戏新闻",
+          "description": "来自游戏世界的最新新闻、评论和内容。在Instagram和Youtube上发布的BOLF Media内容。",
+          "tags": ["媒体", "新闻", "内容"]
+        },
+        {
+          "id": 5,
+          "name": "BOLF Media - YouTube系列",
+          "description": "在Youtube上发布的游戏新闻和内容系列。",
+          "tags": ["媒体", "YouTube", "视频"]
+        }
+      ],
+      "team": [
+        {
+          "id": 1,
+          "name": "Furkan Gündüz",
+          "role": "Unity游戏开发者",
+          "bio": ""
+        },
+        {
+          "id": 2,
+          "name": "Erdem Temür",
+          "role": "3D艺术家",
+          "bio": ""
+        },
+        {
+          "id": 3,
+          "name": "Ahmet Emir Özdemir",
+          "role": "游戏设计师",
+          "bio": ""
+        },
+        {
+          "id": 4,
+          "name": "Emir Sayın",
+          "role": "关卡设计师",
+          "bio": ""
+        },
+        {
+          "id": 5,
+          "name": "Ata Cem Kılınç",
+          "role": "2D设计师",
+          "bio": ""
+        }
+      ]
+    }
+  }
+}
+

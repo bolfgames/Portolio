@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bolf-black text-bolf-white font-sans antialiased;
+    overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-bolf-neon-blue via-bolf-white to-bolf-orange bg-clip-text text-transparent;
+  }
+  
+  /* Subtle gradient that's less eye-straining */
+  .gradient-subtle {
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 165, 0, 0.1) 100%);
+  }
+}
+

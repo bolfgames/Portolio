@@ -1,0 +1,94 @@
+{
+  "members": [
+    {
+      "id": 1,
+      "name": "Furkan Gündüz",
+      "role": "Unity Oyun Geliştirici",
+      "roleType": "developer",
+      "bio": "",
+      "avatar": "/assets/team-members/Furkan_1.jpeg",
+      "avatarCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "scale": 1,
+        "rotation": 0
+      },
+      "projects": [],
+      "socialLinks": {}
+    },
+    {
+      "id": 2,
+      "name": "Erdem Temür",
+      "role": "3D Sanatçı",
+      "roleType": "3d-artist",
+      "bio": "",
+      "avatar": "/assets/team-members/Erdem_1.jpg",
+      "avatarCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "scale": 1,
+        "rotation": 0
+      },
+      "projects": [],
+      "socialLinks": {}
+    },
+    {
+      "id": 3,
+      "name": "Ahmet Emir Özdemir",
+      "role": "Oyun Tasarımcısı",
+      "roleType": "designer",
+      "bio": "",
+      "avatar": "/assets/team-members/AhmetEmir_1.jpg",
+      "avatarCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "scale": 1,
+        "rotation": 0
+      },
+      "projects": [],
+      "socialLinks": {}
+    },
+    {
+      "id": 4,
+      "name": "Emir Sayın",
+      "role": "Seviye Tasarımcısı",
+      "roleType": "level-designer",
+      "bio": "",
+      "avatar": "/assets/team-members/Emir_1.jpg",
+      "avatarCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "scale": 1,
+        "rotation": 0
+      },
+      "projects": [],
+      "socialLinks": {}
+    },
+    {
+      "id": 5,
+      "name": "Ata Cem Kılınç",
+      "role": "2D Tasarımcı",
+      "roleType": "2d-artist",
+      "bio": "",
+      "avatar": "/assets/team-members/AtaCem_1.jpg",
+      "avatarCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "scale": 1,
+        "rotation": 0
+      },
+      "projects": [],
+      "socialLinks": {}
+    }
+  ]
+}

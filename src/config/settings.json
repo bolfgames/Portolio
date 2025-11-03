@@ -1,0 +1,53 @@
+{
+  "features": {
+    "keyboardAnimation": {
+      "enabled": true,
+      "description": "BOLF klavye animasyonunu göster/gizle"
+    },
+    "developerMode": {
+      "enabled": true,
+      "description": "Developer mode ve panel özelliklerini etkinleştir"
+    },
+    "tubesCursor": {
+      "enabled": false,
+      "description": "Tubes cursor WebGL/WebGPU efektini göster/gizle"
+    },
+    "editorMode": {
+      "enabled": false,
+      "description": "Editor paneli ve içerik yönetim özelliklerini etkinleştir"
+    }
+  },
+  "languages": {
+    "enabled": ["tr", "en", "de", "fr", "es", "ja", "zh"],
+    "default": "tr",
+    "description": "Aktif dil seçenekleri ve varsayılan dil"
+  },
+  "particles": {
+    "count": 100,
+    "colors": [
+      { "name": "blue", "value": "#00BFFF" },
+      { "name": "orange", "value": "#FFA500" }
+    ],
+    "description": "Hero section arkaplan particle ayarları"
+  },
+  "tubesCursor": {
+    "colors": ["#f967fb", "#53bc28", "#6958d5"],
+    "lights": {
+      "colors": ["#83f36e", "#fe8a2e", "#ff008a", "#60aed5"],
+      "intensity": 200
+    },
+    "description": "Tubes cursor WebGL/WebGPU efekt ayarları"
+  },
+  "cardStyle": {
+    "projectCardStyle": {
+      "selected": "default",
+      "options": ["default", "glow", "interaction", "3d", "nft"],
+      "description": "Ortak Projeler kart stili seçimi"
+    },
+    "teamCardStyle": {
+      "selected": "3d",
+      "options": ["default", "glow", "interaction", "3d", "nft"],
+      "description": "Takım Üyeleri kart stili seçimi"
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project Alpha",
+      "description": "An exciting action-adventure game with innovative gameplay mechanics.",
+      "platforms": ["PC", "Mobile"],
+      "image": "/assets/icons/placeholder-project.jpg",
+      "link": "#",
+      "tags": ["Action", "Adventure", "Indie"],
+      "type": "game"
+    },
+    {
+      "id": 2,
+      "name": "Project Beta",
+      "description": "A strategic puzzle game that challenges your mind.",
+      "platforms": ["PC", "Web"],
+      "image": "/assets/images/projects/project-beta.jpg",
+      "link": "#",
+      "tags": ["Puzzle", "Strategy", "Casual"],
+      "type": "game"
+    },
+    {
+      "id": 3,
+      "name": "Project Gamma",
+      "description": "Immerse yourself in a beautiful fantasy world.",
+      "platforms": ["PC", "Console"],
+      "image": "/assets/images/projects/project-gamma.jpg",
+      "link": "#",
+      "tags": ["RPG", "Fantasy", "Story-Driven"],
+      "type": "game"
+    },
+    {
+      "id": 4,
+      "name": "BOLF Media - Oyun Haberleri",
+      "description": "Oyun dünyasından en güncel haberler, incelemeler ve içerikler. Instagram ve Youtube'da yayınlanan BOLF Media içerikleri.",
+      "platforms": ["Web"],
+      "image": "/assets/icons/placeholder-project.jpg",
+      "video": "",
+      "link": "#",
+      "tags": ["Media", "News", "Content"],
+      "type": "media"
+    },
+    {
+      "id": 5,
+      "name": "BOLF Media - YouTube Serisi",
+      "description": "Youtube'da yayınlanan oyun haberleri ve içerik serileri.",
+      "platforms": ["Web"],
+      "image": "/assets/icons/placeholder-project.jpg",
+      "video": "",
+      "link": "#",
+      "tags": ["Media", "YouTube", "Video"],
+      "type": "media"
+    }
+  ]
+}
+
