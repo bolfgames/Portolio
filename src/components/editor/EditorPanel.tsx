@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, Users, Image as ImageIcon, Plus, Save, Trash2 } from 'lucide-react';
+import { X, Users, Image as ImageIcon, Plus, Trash2 } from 'lucide-react';
 import { settingsService } from '../../services/settingsService';
 import { dataService } from '../../services/dataService';
 import type { TeamMember } from '../../models/types';

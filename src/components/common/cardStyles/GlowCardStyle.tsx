@@ -217,7 +217,7 @@ export function GlowProjectCard({
         {/* CTA Button */}
         <Button
           onClick={(e) => {
-            e.stopPropagation();
+            e?.stopPropagation();
             if (project.link) window.open(project.link, '_blank');
           }}
           variant="secondary"
@@ -241,7 +241,6 @@ export function GlowTeamMemberCard({
   className = '',
 }: TeamMemberCardStyleProps) {
   const cardRef = useRef<HTMLDivElement>(null);
-  const { t } = useI18n();
 
   // Convert roleColor hex to HSL hue for glow effect
   const hexToHue = (hex: string): number => {

@@ -130,7 +130,7 @@ function TeamSection() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
           <AnimatePresence mode="popLayout">
-            {shuffledMembers.map((member, index) => (
+            {shuffledMembers.map((member) => (
               <motion.div
                 key={`${member.id}-${language}-${member.role}`}
                 layout

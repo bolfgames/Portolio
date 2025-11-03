@@ -18,7 +18,6 @@ function LanguageSelector({ isOpen: externalIsOpen, onToggle }: LanguageSelector
   
   // Use external control if provided, otherwise use internal state
   const isOpen = externalIsOpen !== undefined ? externalIsOpen : internalIsOpen;
-  const setIsOpen = externalIsOpen !== undefined && onToggle ? onToggle : setInternalIsOpen;
 
   const currentLang = availableLanguages.find(lang => lang.code === language);
 

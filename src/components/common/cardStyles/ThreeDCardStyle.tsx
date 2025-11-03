@@ -67,6 +67,19 @@ export function ThreeDProjectCard({
   const tiltInstanceRef = useRef<any>(null);
   const { t, language } = useI18n();
   const cardColor = '#00BFFF'; // Neon blue for projects
+  
+  // Convert hex to rgba for box-shadow
+  const getRgbaForShadow = (hex: string, opacity: number) => {
+    if (hex.startsWith('#')) {
+      const r = parseInt(hex.slice(1, 3), 16);
+      const g = parseInt(hex.slice(3, 5), 16);
+      const b = parseInt(hex.slice(5, 7), 16);
+      return `rgba(${r}, ${g}, ${b}, ${opacity})`;
+    }
+    return `rgba(0, 191, 255, ${opacity})`; // fallback to blue
+  };
+  
+  const cardShadowColor = getRgbaForShadow(cardColor, 0.12);
 
   useEffect(() => {
     platformService.setLanguage(language);
@@ -350,10 +363,10 @@ export function ThreeDProjectCard({
           {/* CTA Button */}
           <div style={{ transform: 'translateZ(40px)' }}>
             <Button
-              onClick={(e) => {
-                e.stopPropagation();
-                if (project.link) window.open(project.link, '_blank');
-              }}
+                onClick={(e) => {
+                  e?.stopPropagation();
+                  if (project.link) window.open(project.link, '_blank');
+                }}
               variant="primary"
               size="small"
               className="w-full sm:w-auto min-w-[190px]"
@@ -408,7 +421,6 @@ export function ThreeDTeamMemberCard({
       card.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, []);
-  const { t } = useI18n();
 
   useEffect(() => {
     const card = cardRef.current;

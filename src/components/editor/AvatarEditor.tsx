@@ -41,7 +41,6 @@ function AvatarEditor({ member, onSave, onClose }: AvatarEditorProps) {
 
   const handleMouseMove = (e: React.MouseEvent) => {
     if (isDragging && containerRef.current) {
-      const rect = containerRef.current.getBoundingClientRect();
       const newX = e.clientX - dragStart.x;
       const newY = e.clientY - dragStart.y;
       setPosition({ x: newX, y: newY });
@@ -145,7 +144,7 @@ function AvatarEditor({ member, onSave, onClose }: AvatarEditorProps) {
                 {/* Scale */}
                 <div>
                   <label className="flex items-center space-x-2 text-bolf-white font-medium mb-2">
-                    <ZoomIn className="w-4 h-4" />
+                    <span className="w-4 h-4">🔍</span>
                     <span>Yakınlaştırma ({Math.round(scale * 100)}%)</span>
                   </label>
                   <input

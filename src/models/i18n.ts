@@ -26,6 +26,10 @@ export interface TranslationKeys {
     title: string;
     subtitle: string;
     viewDetails: string;
+    mediaBadge?: string;
+    platforms?: {
+      [key: string]: string;
+    };
   };
   team: {
     title: string;
@@ -44,6 +48,18 @@ export interface TranslationKeys {
   };
   keyboard: {
     placeholder: string;
+  };
+  data?: {
+    projects?: Array<{
+      id: number;
+      description: string;
+      tags?: string[];
+    }>;
+    team?: Array<{
+      id: number;
+      role: string;
+      bio: string;
+    }>;
   };
 }
 

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import type { ProjectCardStyleProps, TeamMemberCardStyleProps } from './types';
 import { platformService } from '../../../services/platformService';
 import Button from '../Button';
@@ -18,7 +18,6 @@ export function InteractionProjectCard({
 }: ProjectCardStyleProps) {
   const cardRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  const [isHovered, setIsHovered] = useState(false);
   const { t, language } = useI18n();
   const rotationFactor = 2;
 
@@ -57,21 +56,14 @@ export function InteractionProjectCard({
           if (content) content.style.transition = '';
         }, 500);
       }
-      setIsHovered(false);
-    };
-
-    const handleMouseEnter = () => {
-      setIsHovered(true);
     };
 
     card.addEventListener('mousemove', handleMouseMove);
     card.addEventListener('mouseleave', handleMouseLeave);
-    card.addEventListener('mouseenter', handleMouseEnter);
 
     return () => {
       card.removeEventListener('mousemove', handleMouseMove);
       card.removeEventListener('mouseleave', handleMouseLeave);
-      card.removeEventListener('mouseenter', handleMouseEnter);
     };
   }, []);
 
@@ -206,7 +198,7 @@ export function InteractionProjectCard({
           <div style={{ transform: 'translateZ(15px)' }}>
             <Button
               onClick={(e) => {
-                e.stopPropagation();
+                e?.stopPropagation();
                 if (project.link) window.open(project.link, '_blank');
               }}
               variant="secondary"
@@ -234,7 +226,6 @@ export function InteractionTeamMemberCard({
   const cardRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const rotationFactor = 2;
-  const { t } = useI18n();
 
   useEffect(() => {
     const card = cardRef.current;

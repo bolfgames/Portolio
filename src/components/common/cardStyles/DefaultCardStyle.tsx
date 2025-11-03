@@ -14,7 +14,7 @@ export function DefaultProjectCard({
   isVideoPlaying: externalIsVideoPlaying,
   onVideoPlay,
   onVideoEnd,
-  onCardClick,
+  onCardClick: _onCardClick,
   className = '',
 }: ProjectCardStyleProps) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(externalIsVideoPlaying || false);
@@ -115,7 +115,7 @@ export function DefaultProjectCard({
         {/* CTA Button */}
         <Button
           onClick={(e) => {
-            e.stopPropagation();
+            e?.stopPropagation();
             if (project.link) window.open(project.link, '_blank');
           }}
           variant="secondary"
@@ -139,7 +139,6 @@ export function DefaultTeamMemberCard({
   roleColor,
   className = '',
 }: TeamMemberCardStyleProps) {
-  const { t } = useI18n();
 
   return (
     <motion.div

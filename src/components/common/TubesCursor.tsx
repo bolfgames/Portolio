@@ -31,6 +31,7 @@ function TubesCursor() {
         canvas.height = maxHeight;
 
         // Dynamic import from CDN (ES module) - works like the original code
+        // @ts-ignore - CDN module import
         const module = await import('https://cdn.jsdelivr.net/npm/threejs-components@0.0.19/build/cursors/tubes1.min.js');
         
         // Get TubesCursor - try default export first, then the module itself
