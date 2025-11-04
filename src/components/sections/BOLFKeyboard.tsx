@@ -12,6 +12,12 @@ function BOLFKeyboard() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const keypadRef = useRef<HTMLDivElement>(null);
 
+  // Mobil cihaz tespiti
+  const isMobile = () => {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ||
+           (window.innerWidth <= 768 && 'ontouchstart' in window);
+  };
+
   useEffect(() => {
     const audio = new Audio('https://cdn.freesound.org/previews/378/378085_6260145-lq.mp3');
     audio.volume = 0.2;
@@ -116,8 +122,12 @@ function BOLFKeyboard() {
     };
   }, [handleShiftKeyPress, pressKey]);
 
-  // Keypad'e tıklayınca focus al (klavye inputu için)
+  // Keypad'e tıklayınca focus al (klavye inputu için) - Mobilde değil
   const handleKeypadClick = () => {
+    // Mobilde klavye açılmasını engelle
+    if (isMobile()) {
+      return;
+    }
     if (hiddenInputRef.current) {
       hiddenInputRef.current.focus();
     }
@@ -144,14 +154,22 @@ function BOLFKeyboard() {
   const handleClick = (id: string) => {
     if (id === 'one') {
       handleShiftKeyPress();
+      // Mobilde Shift tuşuna tıklandığında klavye açılmasın
+      if (isMobile() && hiddenInputRef.current) {
+        hiddenInputRef.current.blur();
+      }
       return;
     }
     if (animating) return;
     pressKey(id);
-    // Hidden input'a yaz
+    // Hidden input'a yaz - Mobilde de çalışır ama focus yapmaz
     const letter = keyLabels[id];
     if (hiddenInputRef.current) {
       hiddenInputRef.current.value += letter;
+      // Mobilde input'a focus yapma (klavye açılmasın)
+      if (isMobile()) {
+        hiddenInputRef.current.blur();
+      }
     }
   };
 
@@ -162,7 +180,9 @@ function BOLFKeyboard() {
         ref={hiddenInputRef}
         type="text"
         className="sr-only"
-        tabIndex={0}
+        tabIndex={isMobile() ? -1 : 0}
+        readOnly={isMobile()}
+        autoComplete="off"
       />
 
       {/* Klavye */}
