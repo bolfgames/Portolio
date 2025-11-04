@@ -20,6 +20,7 @@ interface ProjectSliderProps {
   onLandscapeDetected?: (isLandscape: boolean) => void;
   isPaused?: boolean;
   resetTimer?: number;
+  isLandscape?: boolean;
 }
 
 export default function ProjectSlider({ 
@@ -29,7 +30,8 @@ export default function ProjectSlider({
   onIndexChange, 
   onLandscapeDetected,
   isPaused: externalPaused,
-  resetTimer
+  resetTimer,
+  isLandscape: externalIsLandscape
 }: ProjectSliderProps) {
   const { t } = useI18n();
   const [currentIndex, setCurrentIndex] = useState(externalIndex ?? 0);
@@ -180,7 +182,7 @@ export default function ProjectSlider({
       </div>
 
       {/* Slider Indicator - at bottom */}
-      <div className="flex justify-center gap-2 mt-auto pt-2 relative z-20">
+      <div className={`flex justify-center gap-2 ${externalIsLandscape ? 'absolute bottom-2 left-1/2 transform -translate-x-1/2 z-30' : 'mt-auto pt-2'} relative z-20`}>
         {projects.map((_, index) => (
           <button
             key={index}

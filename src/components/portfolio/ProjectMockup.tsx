@@ -50,7 +50,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
     const newIndex = (currentIndex - 1 + projects.length) % projects.length;
     setCurrentIndex(newIndex);
     setCurrentProject(projects[newIndex]);
-    setIsLandscape(projects[newIndex].isLandscape || false);
+    // Don't set isLandscape here - let ProjectSlider detect it
     setResetTimer(prev => prev + 1); // Reset timer
   }, [currentIndex, projects]);
 
@@ -58,7 +58,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
     const newIndex = (currentIndex + 1) % projects.length;
     setCurrentIndex(newIndex);
     setCurrentProject(projects[newIndex]);
-    setIsLandscape(projects[newIndex].isLandscape || false);
+    // Don't set isLandscape here - let ProjectSlider detect it
     setResetTimer(prev => prev + 1); // Reset timer
   }, [currentIndex, projects]);
 
@@ -248,11 +248,11 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
 
       {/* Mockup Container */}
       <div className="relative flex items-center gap-4">
-        {/* Previous Arrow */}
+        {/* Previous Arrow - Outside mockup */}
         {projects.length > 1 && (
           <button
             onClick={handlePrevious}
-            className="z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-300"
+            className="z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out"
             aria-label={t('portfolio.previous')}
           >
             <svg className="w-6 h-6 text-bolf-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -270,13 +270,18 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
               transformOrigin: 'center center',
             }}
           >
-              {/* Pause/Resume Button - Top Right */}
+              {/* Pause/Resume Button - Top Right (adjusts position when landscape) */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   togglePause();
                 }}
-                className="absolute top-4 right-4 z-50 p-2 rounded-full bg-bolf-black/90 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-300 backdrop-blur-sm"
+                className="absolute z-50 p-2 rounded-full bg-bolf-black/90 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out backdrop-blur-sm"
+                style={{
+                  top: isLandscape ? '4px' : '16px',
+                  right: isLandscape ? '16px' : '16px',
+                  transform: isLandscape ? 'rotate(-90deg)' : 'rotate(0deg)',
+                }}
                 aria-label={isPaused ? t('portfolio.clickToResume') : t('portfolio.clickToPause')}
               >
                 {isPaused ? (
@@ -335,6 +340,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                       onLandscapeDetected={handleLandscapeDetected}
                       isPaused={isPaused}
                       resetTimer={resetTimer}
+                      isLandscape={isLandscape}
                     />
                   </div>
                 </div>
@@ -367,11 +373,11 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
             </div>
         </div>
 
-        {/* Next Arrow */}
+        {/* Next Arrow - Outside mockup */}
         {projects.length > 1 && (
           <button
             onClick={handleNext}
-            className="z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-300"
+            className="z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out"
             aria-label={t('portfolio.next')}
           >
             <svg className="w-6 h-6 text-bolf-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
