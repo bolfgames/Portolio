@@ -3,6 +3,7 @@ import projectsData from '../config/projects.json';
 import translationsData from '../config/translations.json';
 import type { TeamConfig, ProjectsConfig, TeamMember, Project } from '../models/types';
 import type { Translations, Language } from '../models/i18n';
+import { getAssetPath } from '../utils/assetPath';
 
 /**
  * Data Service - Business logic for fetching application data
@@ -84,6 +85,8 @@ class DataService {
         // name is NOT localized - it's the person's real name
         role: localized?.role || member.role,
         bio: localized?.bio || member.bio,
+        // Fix asset path with base URL
+        avatar: getAssetPath(member.avatar),
       };
     });
     
@@ -108,6 +111,8 @@ class DataService {
       // name is NOT localized - it's the person's real name
       role: localized?.role || member.role,
       bio: localized?.bio || member.bio,
+      // Fix asset path with base URL
+      avatar: getAssetPath(member.avatar),
     };
     
     this.currentLanguage = previousLang;
@@ -157,6 +162,9 @@ class DataService {
         // name is NOT localized - it's the original project name
         description: localized?.description || project.description,
         tags: localized?.tags || project.tags,
+        // Fix asset path with base URL
+        image: getAssetPath(project.image),
+        video: project.video ? getAssetPath(project.video) : undefined,
       };
     });
     
@@ -181,6 +189,9 @@ class DataService {
       // name is NOT localized - it's the original project name
       description: localized?.description || project.description,
       tags: localized?.tags || project.tags,
+      // Fix asset path with base URL
+      image: getAssetPath(project.image),
+      video: project.video ? getAssetPath(project.video) : undefined,
     };
     
     this.currentLanguage = previousLang;
