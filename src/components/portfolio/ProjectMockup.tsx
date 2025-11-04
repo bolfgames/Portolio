@@ -347,7 +347,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 </div>
               </div>
 
-              {/* Slider Indicator - Outside screen content, counter-rotate to stay upright */}
+              {/* Slider Indicator - Bottom center, counter-rotate to stay upright */}
               <div 
                 className="absolute bottom-2 left-1/2 z-30 flex justify-center gap-2"
                 style={{
