@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Button from '../common/Button';
 import { useI18n } from '../../contexts/I18nContext';
 import { settingsService } from '../../services/settingsService';
+import { getAssetPath } from '../../utils/assetPath';
 
 /**
  * Hero Section Component - Logo centered with subtle background
