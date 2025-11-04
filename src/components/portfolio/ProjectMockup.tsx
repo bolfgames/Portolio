@@ -341,10 +341,50 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                       isPaused={isPaused}
                       resetTimer={resetTimer}
                       isLandscape={isLandscape}
+                      showIndicators={false}
                     />
                   </div>
                 </div>
               </div>
+
+              {/* Slider Indicator - Outside screen content, counter-rotate to stay upright */}
+              <div 
+                className="absolute bottom-2 left-1/2 z-30 flex justify-center gap-2"
+                style={{
+                  transform: isLandscape ? 'translateX(-50%) rotate(-90deg)' : 'translateX(-50%) rotate(0deg)',
+                }}
+              >
+                {projects.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      const newIndex = index;
+                      setCurrentIndex(newIndex);
+                      setCurrentProject(projects[newIndex]);
+                      setResetTimer(prev => prev + 1);
+                    }}
+                    className={`h-1.5 rounded-full transition-all duration-300 ${
+                      index === currentIndex
+                        ? 'bg-bolf-neon-blue w-8'
+                        : 'bg-bolf-gray/40 w-1.5 hover:bg-bolf-gray/60'
+                    }`}
+                    aria-label={`Go to project ${index + 1}`}
+                  />
+                ))}
+              </div>
+
+              {/* Pause Indicator - Outside screen content, counter-rotate to stay upright */}
+              {isPaused && (
+                <div 
+                  className="absolute bottom-8 left-1/2 z-30 text-xs text-bolf-gray/60 text-center"
+                  style={{
+                    transform: isLandscape ? 'translateX(-50%) rotate(-90deg)' : 'translateX(-50%) rotate(0deg)',
+                  }}
+                >
+                  {t('portfolio.paused')}
+                </div>
+              )}
 
               {/* Left Side Buttons */}
               {!isLandscape && (

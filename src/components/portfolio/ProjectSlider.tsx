@@ -21,6 +21,7 @@ interface ProjectSliderProps {
   isPaused?: boolean;
   resetTimer?: number;
   isLandscape?: boolean;
+  showIndicators?: boolean;
 }
 
 export default function ProjectSlider({ 
@@ -31,7 +32,8 @@ export default function ProjectSlider({
   onLandscapeDetected,
   isPaused: externalPaused,
   resetTimer,
-  isLandscape: externalIsLandscape
+  isLandscape: externalIsLandscape,
+  showIndicators = true
 }: ProjectSliderProps) {
   const { t } = useI18n();
   const [currentIndex, setCurrentIndex] = useState(externalIndex ?? 0);
@@ -175,6 +177,7 @@ export default function ProjectSlider({
             className="w-full h-full object-contain rounded-lg"
             style={{
               transform: externalIsLandscape ? 'rotate(-90deg)' : 'rotate(0deg)',
+              transformOrigin: 'center center',
             }}
             loading="lazy"
             decoding="async"
@@ -185,26 +188,28 @@ export default function ProjectSlider({
       </div>
 
       {/* Slider Indicator - at bottom */}
-      <div className={`flex justify-center gap-2 ${externalIsLandscape ? 'absolute bottom-2 left-1/2 transform -translate-x-1/2 z-30' : 'mt-auto pt-2 z-20'}`}>
-        {projects.map((_, index) => (
-          <button
-            key={index}
-            onClick={(e) => {
-              e.stopPropagation();
-              handleIndexChange(index);
-            }}
-            className={`h-1.5 rounded-full transition-all duration-300 ${
-              index === currentIndex
-                ? 'bg-bolf-neon-blue w-8'
-                : 'bg-bolf-gray/40 w-1.5 hover:bg-bolf-gray/60'
-            }`}
-            aria-label={`Go to project ${index + 1}`}
-          />
-        ))}
-      </div>
+      {showIndicators && (
+        <div className={`flex justify-center gap-2 ${externalIsLandscape ? 'absolute bottom-2 left-1/2 transform -translate-x-1/2 z-30' : 'mt-auto pt-2 z-20'}`}>
+          {projects.map((_, index) => (
+            <button
+              key={index}
+              onClick={(e) => {
+                e.stopPropagation();
+                handleIndexChange(index);
+              }}
+              className={`h-1.5 rounded-full transition-all duration-300 ${
+                index === currentIndex
+                  ? 'bg-bolf-neon-blue w-8'
+                  : 'bg-bolf-gray/40 w-1.5 hover:bg-bolf-gray/60'
+              }`}
+              aria-label={`Go to project ${index + 1}`}
+            />
+          ))}
+        </div>
+      )}
 
       {/* Pause Indicator */}
-      {isPaused && (
+      {showIndicators && isPaused && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
