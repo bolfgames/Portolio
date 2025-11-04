@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'xs': '384px', // Custom breakpoint for 2-column layout (0-383px: 1 col, 384px+: 2 col)
+        'xs': '300px', // Custom breakpoint for 2-column layout (0-299px: 1 col, 300px+: 2 col)
       },
       colors: {
         'bolf-black': '#000000',

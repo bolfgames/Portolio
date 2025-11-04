@@ -143,7 +143,8 @@ function TeamSection() {
                   opacity: { duration: 0.3 },
                   scale: { duration: 0.3 },
                 }}
-                className="flex-grow basis-full xs:basis-[calc(50%-0.5rem)] md:basis-[calc(33.333%-0.83rem)] lg:basis-[calc(25%-0.75rem)] xl:basis-[calc(20%-0.8rem)] min-w-0"
+                className="flex-grow basis-full xs:basis-[calc(50%-0.5rem)] md:basis-[calc(33.333%-0.83rem)] lg:basis-[calc(25%-0.75rem)] xl:basis-[calc(20%-0.8rem)] min-w-0 max-w-full"
+                style={{ width: '100%' }}
               >
                 <TeamMemberCard 
                   member={member} 
