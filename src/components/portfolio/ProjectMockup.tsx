@@ -276,8 +276,12 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                   e.stopPropagation();
                   togglePause();
                 }}
-                className="absolute top-4 right-4 z-50 p-2 rounded-full bg-bolf-black/90 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out backdrop-blur-sm"
+                className="absolute z-50 p-2 rounded-full bg-bolf-black/90 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out backdrop-blur-sm"
                 style={{
+                  top: isLandscape ? 'auto' : '16px',
+                  right: isLandscape ? '16px' : '16px',
+                  bottom: isLandscape ? '16px' : 'auto',
+                  left: isLandscape ? 'auto' : 'auto',
                   transform: isLandscape ? 'rotate(-90deg)' : 'rotate(0deg)',
                 }}
                 aria-label={isPaused ? t('portfolio.clickToResume') : t('portfolio.clickToPause')}
@@ -351,9 +355,11 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
               <div 
                 className="absolute z-30 flex justify-center gap-2"
                 style={{
-                  left: '50%',
-                  bottom: '8px',
-                  transform: isLandscape ? 'translateX(-50%) rotate(-90deg)' : 'translateX(-50%) rotate(0deg)',
+                  left: isLandscape ? '8px' : '50%',
+                  top: isLandscape ? '50%' : 'auto',
+                  bottom: isLandscape ? 'auto' : '8px',
+                  right: isLandscape ? 'auto' : 'auto',
+                  transform: isLandscape ? 'translateY(-50%) rotate(-90deg)' : 'translateX(-50%) rotate(0deg)',
                 }}
               >
                 {projects.map((_, index) => (
@@ -379,9 +385,13 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
               {/* Pause Indicator - Outside screen content, counter-rotate to stay upright */}
               {isPaused && (
                 <div 
-                  className="absolute bottom-8 left-1/2 z-30 text-xs text-bolf-gray/60 text-center"
+                  className="absolute z-30 text-xs text-bolf-gray/60 text-center"
                   style={{
-                    transform: isLandscape ? 'translateX(-50%) rotate(-90deg)' : 'translateX(-50%) rotate(0deg)',
+                    left: isLandscape ? '8px' : '50%',
+                    top: isLandscape ? 'calc(50% + 20px)' : 'auto',
+                    bottom: isLandscape ? 'auto' : '32px',
+                    right: isLandscape ? 'auto' : 'auto',
+                    transform: isLandscape ? 'translateY(-50%) rotate(-90deg)' : 'translateX(-50%) rotate(0deg)',
                   }}
                 >
                   {t('portfolio.paused')}
