@@ -11,8 +11,8 @@ export default defineConfig({
     },
   },
   // GitHub Pages için base path
-  // main branch'ten deploy edildiğinde /Portolio/ kullanılır
-  base: process.env.NODE_ENV === 'production' ? '/Portolio/' : '/',
+  // main branch'ten deploy edildiğinde /Portfolio/ kullanılır
+  base: process.env.NODE_ENV === 'production' ? '/Portfolio/' : '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
