@@ -21,20 +21,69 @@ function TeamMemberPage() {
     return name ? dataService.getTeamMemberBySlug(name, language) : null;
   }, [name, language]);
 
-  // Restore scroll position when going back
+  // Handle browser back button - scroll to team section
+  useEffect(() => {
+    const handlePopState = () => {
+      // Check if we're coming from team member page
+      const scrollPosition = sessionStorage.getItem('scrollPosition');
+      const fromTeamPage = sessionStorage.getItem('fromTeamPage');
+      
+      if (fromTeamPage === 'true' && scrollPosition) {
+        setTimeout(() => {
+          const teamSection = document.getElementById('team');
+          if (teamSection) {
+            const headerHeight = 80;
+            const elementPosition = teamSection.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = elementPosition - headerHeight;
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          } else {
+            // Fallback to saved scroll position
+            window.scrollTo(0, parseInt(scrollPosition, 10));
+          }
+          sessionStorage.removeItem('scrollPosition');
+          sessionStorage.removeItem('fromTeamPage');
+        }, 100);
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
+
+  // Restore scroll position when going back via button
   const handleBackClick = () => {
     const scrollPosition = sessionStorage.getItem('scrollPosition');
     navigate('/');
     if (scrollPosition) {
       setTimeout(() => {
-        window.scrollTo(0, parseInt(scrollPosition, 10));
+        const teamSection = document.getElementById('team');
+        if (teamSection) {
+          const headerHeight = 80;
+          const elementPosition = teamSection.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = elementPosition - headerHeight;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        } else {
+          window.scrollTo(0, parseInt(scrollPosition, 10));
+        }
         sessionStorage.removeItem('scrollPosition');
+        sessionStorage.removeItem('fromTeamPage');
       }, 100);
     }
   };
 
-  // Scroll to top when page loads
+  // Save scroll position and mark as from team page when component mounts
   useEffect(() => {
+    // Mark that we're coming from team page
+    sessionStorage.setItem('fromTeamPage', 'true');
+    // Scroll to top when page loads
     window.scrollTo(0, 0);
   }, []);
 

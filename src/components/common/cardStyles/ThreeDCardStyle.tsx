@@ -189,7 +189,6 @@ export function ThreeDProjectCard({
         backgroundPosition: 'center',
         boxShadow: '0 0 0 2px rgba(0, 191, 255, 0.4), 0 0 25px 8px rgba(0, 191, 255, 0.15)',
         transformStyle: 'preserve-3d',
-        minHeight: '300px',
         height: 'auto',
         '--x': '50%',
         '--y': '50%',
@@ -200,12 +199,18 @@ export function ThreeDProjectCard({
       <style>{`
         .card-3d {
           position: relative;
-          min-height: 300px;
+          min-height: 200px;
           height: auto;
           will-change: transform, box-shadow, background-size;
           transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1),
                       box-shadow 0.4s ease-out,
                       background-size 1.5s ease-out;
+        }
+
+        @media (min-width: 640px) {
+          .card-3d {
+            min-height: 300px;
+          }
         }
 
         .card-3d::before {
@@ -510,7 +515,6 @@ export function ThreeDTeamMemberCard({
         backgroundPosition: 'center',
         boxShadow: `0 0 0 2px ${roleColor}40, 0 0 25px 8px ${roleColor}15`,
         transformStyle: 'preserve-3d',
-        minHeight: '300px',
         height: 'auto',
         '--x': '50%',
         '--y': '50%',
@@ -522,10 +526,18 @@ export function ThreeDTeamMemberCard({
       <style>{`
         .card-3d {
           position: relative;
+          min-height: 200px;
+          height: auto;
           will-change: transform, box-shadow, background-size;
           transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1),
                       box-shadow 0.4s ease-out,
                       background-size 1.5s ease-out;
+        }
+
+        @media (min-width: 640px) {
+          .card-3d {
+            min-height: 300px;
+          }
         }
 
         .card-3d::before {

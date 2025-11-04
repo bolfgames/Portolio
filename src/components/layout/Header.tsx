@@ -101,7 +101,7 @@ function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a 
-            href="#/" 
+            href="/" 
             className="flex items-center z-10" 
             onClick={(e) => {
               e.preventDefault();
@@ -125,7 +125,7 @@ function Header() {
           <nav className="hidden md:flex items-center space-x-2 flex-wrap">
             <div className="flex items-center space-x-1 flex-wrap px-3 py-2 rounded-full bg-bolf-white/5 backdrop-blur-md border border-bolf-white/10">
               <a 
-                href="#/" 
+                href="/" 
                 className="px-2 py-1.5 text-sm text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-full hover:bg-bolf-white/10 whitespace-nowrap"
                 onClick={(e) => {
                   e.preventDefault();
@@ -135,28 +135,28 @@ function Header() {
                 {t('nav.home')}
               </a>
               <a 
-                href="#about" 
+                href="/#about" 
                 className="px-2 py-1.5 text-sm text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-full hover:bg-bolf-white/10 whitespace-nowrap"
                 onClick={(e) => handleScrollTo('about', e)}
               >
                 {t('nav.about')}
               </a>
               <a 
-                href="#projects" 
+                href="/#projects" 
                 className="px-2 py-1.5 text-sm text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-full hover:bg-bolf-white/10 whitespace-nowrap"
                 onClick={(e) => handleScrollTo('projects', e)}
               >
                 {t('nav.projects')}
               </a>
               <a 
-                href="#team" 
+                href="/#team" 
                 className="px-2 py-1.5 text-sm text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-full hover:bg-bolf-white/10 whitespace-nowrap"
                 onClick={(e) => handleScrollTo('team', e)}
               >
                 {t('nav.team')}
               </a>
               <a 
-                href="#contact" 
+                href="/#contact" 
                 className="px-2 py-1.5 text-sm text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-full hover:bg-bolf-white/10 whitespace-nowrap"
                 onClick={(e) => handleScrollTo('contact', e)}
               >
@@ -252,7 +252,7 @@ function Header() {
             <div className="absolute inset-0 bg-bolf-black/20 backdrop-blur-md" />
             <div className="relative flex flex-col space-y-2">
               <a 
-                href="#/" 
+                href="/" 
                 className="px-4 py-3 text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-lg hover:bg-bolf-white/10"
                 onClick={(e) => {
                   e.preventDefault();
@@ -263,28 +263,28 @@ function Header() {
                 {t('nav.home')}
               </a>
               <a 
-                href="#about" 
+                href="/#about" 
                 className="px-4 py-3 text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-lg hover:bg-bolf-white/10"
                 onClick={(e) => handleScrollTo('about', e)}
               >
                 {t('nav.about')}
               </a>
               <a 
-                href="#projects" 
+                href="/#projects" 
                 className="px-4 py-3 text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-lg hover:bg-bolf-white/10"
                 onClick={(e) => handleScrollTo('projects', e)}
               >
                 {t('nav.projects')}
               </a>
               <a 
-                href="#team" 
+                href="/#team" 
                 className="px-4 py-3 text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-lg hover:bg-bolf-white/10"
                 onClick={(e) => handleScrollTo('team', e)}
               >
                 {t('nav.team')}
               </a>
               <a 
-                href="#contact" 
+                href="/#contact" 
                 className="px-4 py-3 text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-lg hover:bg-bolf-white/10"
                 onClick={(e) => handleScrollTo('contact', e)}
               >

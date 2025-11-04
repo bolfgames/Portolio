@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { I18nProvider } from './contexts/I18nContext';
@@ -23,7 +23,7 @@ function AnimatedRoutes() {
 function App() {
   return (
     <I18nProvider>
-      <HashRouter>
+      <BrowserRouter basename="/Portfolio">
         <Suspense fallback={
           <motion.div 
             initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ function App() {
         }>
           <AnimatedRoutes />
         </Suspense>
-      </HashRouter>
+      </BrowserRouter>
     </I18nProvider>
   );
 }

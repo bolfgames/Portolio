@@ -88,6 +88,7 @@ function TeamSection() {
     // Save scroll position before navigation
     const scrollPosition = window.scrollY;
     sessionStorage.setItem('scrollPosition', scrollPosition.toString());
+    sessionStorage.setItem('fromTeamPage', 'true');
     const slug = dataService.getNameSlug(member.name);
     navigate(`/${slug}`);
   };
