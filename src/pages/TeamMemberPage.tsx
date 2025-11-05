@@ -144,7 +144,7 @@ function TeamMemberPage() {
   useEffect(() => {
     // Mark that we're coming from team page
     sessionStorage.setItem('fromTeamPage', 'true');
-    // Scroll to top when page loads
+    // Scroll to top when page loads - stay at the top
     window.scrollTo(0, 0);
   }, []);
 
@@ -243,7 +243,7 @@ function TeamMemberPage() {
                 <SkillsSection skills={furkanData.skills} />
 
                 {/* Projects Section */}
-                <section className="mb-12">
+                <section id="portfolio-projects" className="mb-12">
                   <motion.h2
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
