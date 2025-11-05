@@ -8,6 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // GitHub Pages routing fix
+      // Handle URL path correction for React Router
+      (function() {
+        var path = window.location.pathname;
+        var search = window.location.search;
+        var hash = window.location.hash;
+        
+        // Eğer query parametresinde path varsa (404.html'den geldiyse)
+        if (search.includes('?p=')) {
+          var pathParam = search.split('?p=')[1].split('&')[0];
+          var decodedPath = decodeURIComponent(pathParam);
+          var newPath = '/Portfolio' + decodedPath;
+          var newSearch = search.replace(/[?&]p=[^&]*/, '').replace(/^&/, '?');
+          window.history.replaceState({}, '', newPath + (newSearch || '') + hash);
+        }
+        // Eğer path'de /?/ varsa (eski redirect'ten kaldıysa)
+        else if (path.includes('/?/')) {
+          var correctedPath = path.replace('/?/', '/');
+          window.history.replaceState({}, '', correctedPath + search + hash);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

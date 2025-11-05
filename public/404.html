@@ -7,20 +7,38 @@
     <script>
       // GitHub Pages fallback for BrowserRouter
       // Single Page Apps for GitHub Pages
-      var pathSegmentsToKeep = 1;
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+      // Redirect 404 to index.html with correct path
+      var path = window.location.pathname;
+      var search = window.location.search;
+      var hash = window.location.hash;
+      
+      // Eğer /Portfolio/ ile başlamıyorsa, /Portfolio/ ekle
+      if (!path.startsWith('/Portfolio/')) {
+        if (path === '/' || path === '/Portfolio') {
+          path = '/Portfolio/';
+        } else {
+          path = '/Portfolio' + path;
+        }
+      }
+      
+      // Index.html'e redirect et, path'i query string olarak geç
+      var redirectPath = '/Portfolio/index.html';
+      if (path !== '/Portfolio/' && path !== '/Portfolio/index.html') {
+        // Path'i query string olarak geç
+        var pathWithoutBase = path.replace('/Portfolio', '');
+        redirectPath += '?p=' + encodeURIComponent(pathWithoutBase);
+      }
+      
+      if (search && search !== '?p=') {
+        redirectPath += (redirectPath.includes('?') ? '&' : '?') + search.slice(1);
+      }
+      
+      redirectPath += hash;
+      
+      window.location.replace(redirectPath);
     </script>
   </head>
   <body>
     <p>Redirecting...</p>
   </body>
 </html>
-
-
