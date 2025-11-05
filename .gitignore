@@ -11,6 +11,8 @@ node_modules
 # dist - GitHub Pages için commit edilmeli
 # dist
 dist-ssr
+# docs - GitHub Pages için commit edilmeli
+# docs
 *.local
 
 # Editor directories and files

@@ -14,7 +14,7 @@ export default defineConfig({
   // main branch'ten deploy edildiğinde /Portfolio/ kullanılır
   base: process.env.NODE_ENV === 'production' ? '/Portfolio/' : '/',
   build: {
-    outDir: 'dist',
+    outDir: 'docs', // GitHub Pages için docs klasörüne build et
     assetsDir: 'assets',
     // Production'da asset path'lerini optimize et
     rollupOptions: {
