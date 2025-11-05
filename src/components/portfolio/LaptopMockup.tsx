@@ -23,6 +23,9 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
   const [resetTimer, setResetTimer] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const mockupRef = useRef<HTMLDivElement>(null);
+  
+  // Emir için yeşil renk (#2ECC71)
+  const accentColor = '#2ECC71';
 
   useEffect(() => {
     if (projects.length > 0 && !currentProject) {
@@ -182,14 +185,20 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
         {/* Previous Arrow */}
         <button
           onClick={handlePrevious}
-          className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 z-20 p-2 rounded-full bg-bolf-black/70 hover:bg-bolf-black/90 border border-bolf-gray/30 hover:border-bolf-neon-blue transition-all group"
+          className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 z-20 p-2 rounded-full bg-bolf-black/70 hover:bg-bolf-black/90 border border-bolf-gray/30 transition-all group"
+          style={{ borderColor: accentColor + '40', '--hover-border-color': accentColor } as React.CSSProperties & { '--hover-border-color': string }}
+          onMouseEnter={(e) => { e.currentTarget.style.borderColor = accentColor; }}
+          onMouseLeave={(e) => { e.currentTarget.style.borderColor = accentColor + '40'; }}
           aria-label={t('portfolio.previous')}
         >
           <svg
-            className="w-6 h-6 text-bolf-gray group-hover:text-bolf-neon-blue transition-colors"
+            className="w-6 h-6 text-bolf-gray transition-colors"
+            style={{ color: accentColor }}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
+            onMouseEnter={(e) => { e.currentTarget.style.color = accentColor; }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = accentColor; }}
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
@@ -253,6 +262,23 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
                   resetTimer={resetTimer}
                   showIndicators={false}
                 />
+                
+                {/* Slider Indicator - Inside Viewport */}
+                {currentProject && currentProject.images.length > 1 && (
+                  <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
+                    {currentProject.images.map((_, index) => (
+                      <div
+                        key={index}
+                        className="rounded-full transition-all"
+                        style={{
+                          height: '8px',
+                          width: index === currentImageIndex ? '24px' : '8px',
+                          backgroundColor: index === currentImageIndex ? accentColor : 'rgba(204, 204, 204, 0.5)',
+                        }}
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Bottom border effect */}
@@ -269,6 +295,57 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
             </div>
           </div>
 
+          {/* Notch */}
+          <div
+            className="relative"
+            style={{
+              background: '#ddd',
+              borderRadius: '0 0 7% 7% / 0 0 95% 95%',
+              boxShadow: '-5px -1px 3px rgba(0, 0, 0, 0.2) inset, 5px -1px 3px rgba(0, 0, 0, 0.2) inset',
+              marginLeft: 'auto',
+              marginRight: 'auto',
+              marginTop: '-3.5%',
+              zIndex: 2,
+              position: 'relative',
+              width: '14%',
+            }}
+          >
+            <div
+              style={{
+                paddingTop: '10%',
+              }}
+            />
+          </div>
+
+          {/* Base (Laptop Body) */}
+          <div
+            className="relative"
+            style={{
+              position: 'relative',
+              width: '100%',
+            }}
+          >
+            {/* Base body */}
+            <div
+              style={{
+                paddingTop: '3.3%',
+                background: 'linear-gradient(#eaeced, #edeef0 55%, #fff 55%, #8a8b8f 56%, #999ba0 61%, #4B4B4F 84%, #262627 89%, rgba(0, 0, 0, .01) 98%)',
+                borderRadius: '0 0 10% 10%/ 0 0 50% 50%',
+              }}
+            />
+            {/* Base shine effect */}
+            <div
+              className="absolute top-0 left-0 right-0"
+              style={{
+                background: 'linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8) 0.5%, rgba(0, 0, 0, 0.4) 3.3%, transparent 15%, rgba(255, 255, 255, 0.8) 50%, transparent 85%, rgba(0, 0, 0, 0.4) 96.7%, rgba(255, 255, 255, 0.8) 99.5%, rgba(0, 0, 0, 0.5) 100%)',
+                height: '53%',
+                position: 'absolute',
+                top: 0,
+                width: '100%',
+              }}
+            />
+          </div>
+
           {/* Pause Indicator */}
           {isPaused && (
             <motion.div
@@ -280,31 +357,20 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
             </motion.div>
           )}
 
-          {/* Slider Indicator */}
-          {currentProject && currentProject.images.length > 1 && (
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
-              {currentProject.images.map((_, index) => (
-                <div
-                  key={index}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentImageIndex
-                      ? 'bg-bolf-neon-blue w-6'
-                      : 'bg-bolf-gray/50'
-                  }`}
-                />
-              ))}
-            </div>
-          )}
         </div>
 
         {/* Next Arrow */}
         <button
           onClick={handleNext}
-          className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 z-20 p-2 rounded-full bg-bolf-black/70 hover:bg-bolf-black/90 border border-bolf-gray/30 hover:border-bolf-neon-blue transition-all group"
+          className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 z-20 p-2 rounded-full bg-bolf-black/70 hover:bg-bolf-black/90 border border-bolf-gray/30 transition-all group"
+          style={{ borderColor: accentColor + '40' }}
+          onMouseEnter={(e) => { e.currentTarget.style.borderColor = accentColor; }}
+          onMouseLeave={(e) => { e.currentTarget.style.borderColor = accentColor + '40'; }}
           aria-label={t('portfolio.next')}
         >
           <svg
-            className="w-6 h-6 text-bolf-gray group-hover:text-bolf-neon-blue transition-colors"
+            className="w-6 h-6 transition-colors"
+            style={{ color: accentColor }}
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -316,12 +382,16 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
         {/* Pause/Resume Button */}
         <button
           onClick={togglePause}
-          className="absolute top-4 left-4 z-20 p-2 rounded-full bg-bolf-black/70 hover:bg-bolf-black/90 border border-bolf-gray/30 hover:border-bolf-neon-blue transition-all group"
+          className="absolute top-4 left-4 z-20 p-2 rounded-full bg-bolf-black/70 hover:bg-bolf-black/90 border border-bolf-gray/30 transition-all group"
+          style={{ borderColor: accentColor + '40' }}
+          onMouseEnter={(e) => { e.currentTarget.style.borderColor = accentColor; }}
+          onMouseLeave={(e) => { e.currentTarget.style.borderColor = accentColor + '40'; }}
           aria-label={isPaused ? t('portfolio.clickToResume') : t('portfolio.clickToPause')}
         >
           {isPaused ? (
             <svg
-              className="w-5 h-5 text-bolf-gray group-hover:text-bolf-neon-blue transition-colors"
+              className="w-5 h-5 transition-colors"
+              style={{ color: accentColor }}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -330,7 +400,8 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
             </svg>
           ) : (
             <svg
-              className="w-5 h-5 text-bolf-gray group-hover:text-bolf-neon-blue transition-colors"
+              className="w-5 h-5 transition-colors"
+              style={{ color: accentColor }}
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -367,7 +438,8 @@ export default function LaptopMockup({ projects }: LaptopMockupProps) {
                 href={currentProject.linkUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-bolf-neon-blue hover:text-bolf-neon-blue/80 transition-colors"
+                className="inline-flex items-center gap-2 transition-colors hover:opacity-80"
+                style={{ color: accentColor }}
               >
                 <span>{translateLink(currentProject.link)}</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

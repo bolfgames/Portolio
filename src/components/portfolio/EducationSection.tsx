@@ -11,9 +11,10 @@ interface Education {
 
 interface EducationSectionProps {
   education: Education;
+  accentColor?: string;
 }
 
-export default function EducationSection({ education }: EducationSectionProps) {
+export default function EducationSection({ education, accentColor }: EducationSectionProps) {
   const { t } = useI18n();
 
   // Try to get translated values, fallback to JSON values
@@ -100,7 +101,7 @@ export default function EducationSection({ education }: EducationSectionProps) {
         transition={{ duration: 0.5, delay: 0.2 }}
         className="bg-bolf-black/50 border border-bolf-gray/20 rounded-lg p-6"
       >
-        <h3 className="text-2xl font-bold text-bolf-neon-blue mb-2">
+        <h3 className="text-2xl font-bold mb-2" style={{ color: accentColor || '#00BFFF' }}>
           {getTranslatedDegree()}
         </h3>
         <p className="text-lg text-bolf-gray mb-1">

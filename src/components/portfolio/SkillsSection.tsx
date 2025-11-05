@@ -3,9 +3,10 @@ import { useI18n } from '../../contexts/I18nContext';
 
 interface SkillsSectionProps {
   skills: string[];
+  accentColor?: string;
 }
 
-export default function SkillsSection({ skills }: SkillsSectionProps) {
+export default function SkillsSection({ skills, accentColor }: SkillsSectionProps) {
   const { t } = useI18n();
 
   // Helper function to translate skills
@@ -56,7 +57,11 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: index * 0.05 }}
-            className="px-4 py-2 bg-bolf-neon-blue/20 border border-bolf-neon-blue/30 rounded-full text-bolf-white text-sm md:text-base font-medium"
+            className="px-4 py-2 rounded-full text-bolf-white text-sm md:text-base font-medium"
+            style={{
+              backgroundColor: accentColor ? `${accentColor}33` : 'rgba(0, 191, 255, 0.2)',
+              border: `1px solid ${accentColor ? `${accentColor}4D` : 'rgba(0, 191, 255, 0.3)'}`,
+            }}
           >
             {translateSkill(skill)}
           </motion.span>

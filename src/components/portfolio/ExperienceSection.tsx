@@ -16,9 +16,10 @@ interface Experience {
 
 interface ExperienceSectionProps {
   experiences: Experience[];
+  accentColor?: string;
 }
 
-export default function ExperienceSection({ experiences }: ExperienceSectionProps) {
+export default function ExperienceSection({ experiences, accentColor }: ExperienceSectionProps) {
   const { t } = useI18n();
 
   // Helper function to translate company names
@@ -223,7 +224,7 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
             className="bg-bolf-black/50 border border-bolf-gray/20 rounded-lg p-6"
           >
             <div className="mb-4">
-              <h3 className="text-2xl font-bold text-bolf-neon-blue mb-2">
+              <h3 className="text-2xl font-bold mb-2" style={{ color: accentColor || '#00BFFF' }}>
                 {translateCompany(exp.company)}
               </h3>
               <p className="text-lg text-bolf-gray mb-1">{translatePosition(exp.position)}</p>
@@ -251,7 +252,8 @@ export default function ExperienceSection({ experiences }: ExperienceSectionProp
                       href={project.linkUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 mt-2 text-bolf-neon-blue hover:text-bolf-orange transition-colors"
+                      className="inline-flex items-center gap-2 mt-2 transition-colors hover:opacity-80"
+                      style={{ color: accentColor || '#00BFFF' }}
                     >
                       {project.link ? translateLink(project.link) : t('portfolio.viewLink')}
                       <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
