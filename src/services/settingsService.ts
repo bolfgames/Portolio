@@ -22,6 +22,10 @@ export interface Settings {
       enabled: boolean;
       description: string;
     };
+    showMilestone: {
+      enabled: boolean;
+      description: string;
+    };
   };
   languages: {
     enabled: string[];

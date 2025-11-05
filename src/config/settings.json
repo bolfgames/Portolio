@@ -15,6 +15,10 @@
     "editorMode": {
       "enabled": false,
       "description": "Editor paneli ve içerik yönetim özelliklerini etkinleştir"
+    },
+    "showMilestone": {
+      "enabled": true,
+      "description": "Milestone timeline özelliğini göster/gizle"
     }
   },
   "languages": {

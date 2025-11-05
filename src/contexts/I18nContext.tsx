@@ -7,7 +7,7 @@ import { dataService } from '../services/dataService';
 import { platformService } from '../services/platformService';
 
 interface I18nContextType {
-  t: (key: string) => string;
+  t: (key: string) => string | any;
   language: Language;
   setLanguage: (lang: Language) => void;
   availableLanguages: Array<{ code: Language; name: string; flag: string }>;

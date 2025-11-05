@@ -29,6 +29,13 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'Freelance': 'portfolio.companies.freelance',
       'Rollic': 'portfolio.companies.rollic',
       'RATIC': 'portfolio.companies.ratic',
+      'Mezuniyet Projesi': 'portfolio.companies.graduationProject',
+      'Graduation Project': 'portfolio.companies.graduationProject',
+      'Abschlussprojekt': 'portfolio.companies.graduationProject',
+      'Projet de Fin d\'Études': 'portfolio.companies.graduationProject',
+      'Proyecto de Graduación': 'portfolio.companies.graduationProject',
+      '卒業プロジェクト': 'portfolio.companies.graduationProject',
+      '毕业项目': 'portfolio.companies.graduationProject',
     };
     
     const key = companyMap[company];

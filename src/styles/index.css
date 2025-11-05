@@ -32,5 +32,17 @@
   .gradient-subtle {
     background: linear-gradient(135deg, rgba(0, 191, 255, 0.1) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 165, 0, 0.1) 100%);
   }
+
+  /* Milestone timeline card positioning */
+  @media (min-width: 768px) {
+    .milestone-card-left {
+      left: calc(30% - 200px - 45px) !important;
+      right: auto !important;
+    }
+    .milestone-card-right {
+      right: calc(30% - 200px - 45px) !important;
+      left: auto !important;
+    }
+  }
 }
 

@@ -156,6 +156,13 @@ function Header() {
                 {t('nav.home')}
               </a>
               <a 
+                href="/#team" 
+                className="px-2 py-1.5 text-sm text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-full hover:bg-bolf-white/10 whitespace-nowrap"
+                onClick={(e) => handleScrollTo('team', e)}
+              >
+                {t('nav.team')}
+              </a>
+              <a 
                 href="/#about" 
                 className="px-2 py-1.5 text-sm text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-full hover:bg-bolf-white/10 whitespace-nowrap"
                 onClick={(e) => handleScrollTo('about', e)}
@@ -168,13 +175,6 @@ function Header() {
                 onClick={(e) => handleScrollTo('projects', e)}
               >
                 {t('nav.projects')}
-              </a>
-              <a 
-                href="/#team" 
-                className="px-2 py-1.5 text-sm text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-full hover:bg-bolf-white/10 whitespace-nowrap"
-                onClick={(e) => handleScrollTo('team', e)}
-              >
-                {t('nav.team')}
               </a>
               <a 
                 href="/#contact" 
@@ -280,6 +280,13 @@ function Header() {
                 {t('nav.home')}
               </a>
               <a 
+                href="/#team" 
+                className="px-4 py-3 text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-lg hover:bg-bolf-white/10"
+                onClick={(e) => handleScrollTo('team', e)}
+              >
+                {t('nav.team')}
+              </a>
+              <a 
                 href="/#about" 
                 className="px-4 py-3 text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-lg hover:bg-bolf-white/10"
                 onClick={(e) => handleScrollTo('about', e)}
@@ -292,13 +299,6 @@ function Header() {
                 onClick={(e) => handleScrollTo('projects', e)}
               >
                 {t('nav.projects')}
-              </a>
-              <a 
-                href="/#team" 
-                className="px-4 py-3 text-bolf-white hover:text-bolf-neon-blue transition-colors rounded-lg hover:bg-bolf-white/10"
-                onClick={(e) => handleScrollTo('team', e)}
-              >
-                {t('nav.team')}
               </a>
               <a 
                 href="/#contact" 

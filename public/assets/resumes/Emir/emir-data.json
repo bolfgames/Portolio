@@ -15,9 +15,9 @@
   },
   "experience": [
     {
-      "company": "BOLF Games",
+      "company": "Mezuniyet Projesi",
       "position": "Level Designer",
-      "period": "Current",
+      "period": "2024-2025",
       "projects": [
         {
           "name": "Black Spot",
@@ -30,7 +30,14 @@
           ],
           "link": "Trailer",
           "linkUrl": ""
-        },
+        }
+      ]
+    },
+    {
+      "company": "BOLF Games",
+      "position": "Level Designer",
+      "period": "Current",
+      "projects": [
         {
           "name": "Gloveffect",
           "description": "FPS-Shooter game developed from a semester project to a playable prototype",

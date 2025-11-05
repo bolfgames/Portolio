@@ -24,7 +24,53 @@
         "paragraph1": "BOLF Games, yaklaşık 2 yıldır sektörde faaliyet gösteren, tutkulu ve gönüllü insanlardan oluşan bir ekiptir.",
         "paragraph2": "Temel misyonumuz: \"Eğlenerek güzel işler çıkartmak ve oyunlar üretmek.\"",
         "paragraph3": "Her birimiz farklı yeteneklere ve bakış açılarına sahip olsak da, ortak amacımız eğlenceli ve kaliteli oyunlar geliştirmek, birbirimizden öğrenmek ve birlikte büyümek."
-      }
+      },
+      "milestones": [
+        {
+          "date": "Ekim 2023",
+          "description": "Ekip, Gloveffect projesini geliştirmek amacıyla kuruldu ve ilk üyeler belirlendi."
+        },
+        {
+          "date": "27 Ekim 2023",
+          "description": "OGEM etkinliğinde proje tanıtımı gerçekleştirildi."
+        },
+        {
+          "date": "Ekim 2023",
+          "description": "OGEM ile çalışma kararından vazgeçildi ve ekip bağımsız çalışma yolunu seçti."
+        },
+        {
+          "date": "3 Nisan 2024",
+          "description": "Stargate'e başvuru yapılarak gelişim süreci başlatıldı."
+        },
+        {
+          "date": "24 Haziran 2024",
+          "description": "Startgate Tekmer kuluçka programına kabul edildi."
+        },
+        {
+          "date": "Yaz 2024",
+          "description": "Pazarlama, kaynak yönetimi ve ekip yönetimi konularında mentorluk alındı."
+        },
+        {
+          "date": "9 Ağustos 2024",
+          "description": "Kuluçka programı tamamlandı ve ekip bağımsız çalışmaya devam etti."
+        },
+        {
+          "date": "Ağustos 2024",
+          "description": "Yeni üyeler eklendi ve eş zamanlı geliştirilecek iki projenin planlaması yapıldı."
+        },
+        {
+          "date": "Ağustos-Eylül 2024",
+          "description": "\"Birdie\" oyunu geliştirilerek Play Store'da yayınlandı."
+        },
+        {
+          "date": "14 Ağustos 2024",
+          "description": "Sosyal medya içerik üretimi başlatıldı ve ilk videolar yayınlandı."
+        },
+        {
+          "date": "Günümüz",
+          "description": "Ekip, 3D vampire survivors benzeri ve kart tabanlı 2D RPG projelerini geliştirmeye devam ediyor."
+        }
+      ]
     },
     "projects": {
       "title": "ORTAK PROJELERİMİZ",
@@ -93,7 +139,8 @@
         "bolfGames": "BOLF Games",
         "freelance": "Serbest Çalışan",
         "rollic": "Rollic",
-        "ratic": "RATIC"
+        "ratic": "RATIC",
+        "graduationProject": "Mezuniyet Projesi"
       },
       "months": {
         "jan": "Oca",
@@ -359,7 +406,53 @@
         "paragraph1": "BOLF Games is a team of passionate and volunteer people who have been active in the industry for approximately 2 years.",
         "paragraph2": "Our core mission: \"Creating great work while having fun and producing games.\"",
         "paragraph3": "Although each of us has different talents and perspectives, our common goal is to develop fun and quality games, learn from each other, and grow together."
-      }
+      },
+      "milestones": [
+        {
+          "date": "October 2023",
+          "description": "Team was established to develop the Gloveffect project with initial members."
+        },
+        {
+          "date": "October 27, 2023",
+          "description": "Project presentation was held at OGEM event."
+        },
+        {
+          "date": "October 2023",
+          "description": "Decision was made to work independently, moving away from OGEM collaboration."
+        },
+        {
+          "date": "April 3, 2024",
+          "description": "Application submitted to Stargate, initiating the development process."
+        },
+        {
+          "date": "June 24, 2024",
+          "description": "Accepted into Startgate Tekmer incubation program."
+        },
+        {
+          "date": "Summer 2024",
+          "description": "Received mentorship in marketing, resource management, and team management."
+        },
+        {
+          "date": "August 9, 2024",
+          "description": "Incubation program completed and team continued independent work."
+        },
+        {
+          "date": "August 2024",
+          "description": "New members joined and planning began for two simultaneous projects."
+        },
+        {
+          "date": "August-September 2024",
+          "description": "\"Birdie\" game was developed and published on Play Store."
+        },
+        {
+          "date": "August 14, 2024",
+          "description": "Social media content production began with first videos published."
+        },
+        {
+          "date": "Present",
+          "description": "Team continues developing 3D vampire survivors-like and card-based 2D RPG projects."
+        }
+      ]
     },
     "projects": {
       "title": "OUR COLLABORATIVE PROJECTS",
@@ -428,7 +521,8 @@
         "bolfGames": "BOLF Games",
         "freelance": "Freelance",
         "rollic": "Rollic",
-        "ratic": "RATIC"
+        "ratic": "RATIC",
+        "graduationProject": "Graduation Project"
       },
       "months": {
         "jan": "Jan",
@@ -696,7 +790,53 @@
         "paragraph1": "BOLF Games ist ein Team aus leidenschaftlichen und freiwilligen Menschen, die seit etwa 2 Jahren in der Branche aktiv sind.",
         "paragraph2": "Unsere Kernmission: \"Großartige Arbeit leisten, während wir Spaß haben und Spiele produzieren.\"",
         "paragraph3": "Obwohl jeder von uns unterschiedliche Talente und Perspektiven hat, ist unser gemeinsames Ziel, unterhaltsame und qualitativ hochwertige Spiele zu entwickeln, voneinander zu lernen und gemeinsam zu wachsen."
-      }
+      },
+      "milestones": [
+        {
+          "date": "Oktober 2023",
+          "description": "Team wurde gegründet, um das Gloveffect-Projekt zu entwickeln, mit ersten Mitgliedern."
+        },
+        {
+          "date": "27. Oktober 2023",
+          "description": "Projektpräsentation wurde bei OGEM-Veranstaltung gehalten."
+        },
+        {
+          "date": "Oktober 2023",
+          "description": "Entscheidung wurde getroffen, unabhängig zu arbeiten, weg von OGEM-Zusammenarbeit."
+        },
+        {
+          "date": "3. April 2024",
+          "description": "Bewerbung bei Stargate eingereicht, Entwicklungsprozess wurde initiiert."
+        },
+        {
+          "date": "24. Juni 2024",
+          "description": "Aufnahme in Startgate Tekmer Inkubationsprogramm."
+        },
+        {
+          "date": "Sommer 2024",
+          "description": "Mentoring erhalten in Marketing, Ressourcenmanagement und Teammanagement."
+        },
+        {
+          "date": "9. August 2024",
+          "description": "Inkubationsprogramm abgeschlossen und Team setzte unabhängige Arbeit fort."
+        },
+        {
+          "date": "August 2024",
+          "description": "Neue Mitglieder traten bei und Planung für zwei gleichzeitige Projekte begann."
+        },
+        {
+          "date": "August-September 2024",
+          "description": "Das Spiel \"Birdie\" wurde entwickelt und im Play Store veröffentlicht."
+        },
+        {
+          "date": "14. August 2024",
+          "description": "Social-Media-Inhaltsproduktion begann mit ersten veröffentlichten Videos."
+        },
+        {
+          "date": "Heute",
+          "description": "Team entwickelt weiterhin 3D-Vampire-Survivors-ähnliche und kartenbasierte 2D-RPG-Projekte."
+        }
+      ]
     },
     "projects": {
       "title": "UNSERE GEMEINSAMEN PROJEKTE",
@@ -765,7 +905,8 @@
         "bolfGames": "BOLF Games",
         "freelance": "Freiberuflich",
         "rollic": "Rollic",
-        "ratic": "RATIC"
+        "ratic": "RATIC",
+        "graduationProject": "Abschlussprojekt"
       },
       "months": {
         "jan": "Jan",
@@ -1033,7 +1174,53 @@
         "paragraph1": "BOLF Games est une équipe de personnes passionnées et bénévoles qui sont actives dans l'industrie depuis environ 2 ans.",
         "paragraph2": "Notre mission principale : \"Créer de grands travaux en s'amusant et produire des jeux.\"",
         "paragraph3": "Bien que chacun de nous ait des talents et des perspectives différents, notre objectif commun est de développer des jeux amusants et de qualité, d'apprendre les uns des autres et de grandir ensemble."
-      }
+      },
+      "milestones": [
+        {
+          "date": "Octobre 2023",
+          "description": "L'équipe a été créée pour développer le projet Gloveffect avec les premiers membres."
+        },
+        {
+          "date": "27 octobre 2023",
+          "description": "Présentation du projet réalisée lors de l'événement OGEM."
+        },
+        {
+          "date": "Octobre 2023",
+          "description": "Décision prise de travailler indépendamment, en s'éloignant de la collaboration OGEM."
+        },
+        {
+          "date": "3 avril 2024",
+          "description": "Candidature soumise à Stargate, initiant le processus de développement."
+        },
+        {
+          "date": "24 juin 2024",
+          "description": "Accepté dans le programme d'incubation Startgate Tekmer."
+        },
+        {
+          "date": "Été 2024",
+          "description": "Mentorat reçu en marketing, gestion des ressources et gestion d'équipe."
+        },
+        {
+          "date": "9 août 2024",
+          "description": "Programme d'incubation terminé et équipe a poursuivi son travail indépendant."
+        },
+        {
+          "date": "Août 2024",
+          "description": "Nouveaux membres rejoints et planification de deux projets simultanés commencée."
+        },
+        {
+          "date": "Août-septembre 2024",
+          "description": "Le jeu \"Birdie\" a été développé et publié sur Play Store."
+        },
+        {
+          "date": "14 août 2024",
+          "description": "Production de contenu sur les réseaux sociaux commencée avec premières vidéos publiées."
+        },
+        {
+          "date": "Aujourd'hui",
+          "description": "L'équipe continue de développer des projets similaires à 3D vampire survivors et RPG 2D basés sur cartes."
+        }
+      ]
     },
     "projects": {
       "title": "NOS PROJETS COLLABORATIFS",
@@ -1102,7 +1289,8 @@
         "bolfGames": "BOLF Games",
         "freelance": "Freelance",
         "rollic": "Rollic",
-        "ratic": "RATIC"
+        "ratic": "RATIC",
+        "graduationProject": "Projet de Fin d'Études"
       },
       "months": {
         "jan": "Jan",
@@ -1370,7 +1558,53 @@
         "paragraph1": "BOLF Games es un equipo de personas apasionadas y voluntarias que llevan aproximadamente 2 años activas en la industria.",
         "paragraph2": "Nuestra misión principal: \"Crear gran trabajo mientras nos divertimos y producimos juegos.\"",
         "paragraph3": "Aunque cada uno de nosotros tiene diferentes talentos y perspectivas, nuestro objetivo común es desarrollar juegos divertidos y de calidad, aprender unos de otros y crecer juntos."
-      }
+      },
+      "milestones": [
+        {
+          "date": "Octubre 2023",
+          "description": "El equipo se estableció para desarrollar el proyecto Gloveffect con los primeros miembros."
+        },
+        {
+          "date": "27 de octubre de 2023",
+          "description": "Se realizó la presentación del proyecto en el evento OGEM."
+        },
+        {
+          "date": "Octubre 2023",
+          "description": "Se tomó la decisión de trabajar independientemente, alejándose de la colaboración con OGEM."
+        },
+        {
+          "date": "3 de abril de 2024",
+          "description": "Se envió solicitud a Stargate, iniciando el proceso de desarrollo."
+        },
+        {
+          "date": "24 de junio de 2024",
+          "description": "Aceptado en el programa de incubación Startgate Tekmer."
+        },
+        {
+          "date": "Verano 2024",
+          "description": "Se recibió mentoría en marketing, gestión de recursos y gestión de equipo."
+        },
+        {
+          "date": "9 de agosto de 2024",
+          "description": "Programa de incubación completado y el equipo continuó trabajando independientemente."
+        },
+        {
+          "date": "Agosto 2024",
+          "description": "Se unieron nuevos miembros y comenzó la planificación de dos proyectos simultáneos."
+        },
+        {
+          "date": "Agosto-septiembre 2024",
+          "description": "El juego \"Birdie\" fue desarrollado y publicado en Play Store."
+        },
+        {
+          "date": "14 de agosto de 2024",
+          "description": "Se inició la producción de contenido en redes sociales con los primeros videos publicados."
+        },
+        {
+          "date": "Hoy",
+          "description": "El equipo continúa desarrollando proyectos similares a 3D vampire survivors y RPG 2D basados en cartas."
+        }
+      ]
     },
     "projects": {
       "title": "NUESTROS PROYECTOS EN COLABORACIÓN",
@@ -1439,7 +1673,8 @@
         "bolfGames": "BOLF Games",
         "freelance": "Freelance",
         "rollic": "Rollic",
-        "ratic": "RATIC"
+        "ratic": "RATIC",
+        "graduationProject": "Proyecto de Graduación"
       },
       "months": {
         "jan": "Ene",
@@ -1707,7 +1942,53 @@
         "paragraph1": "BOLF Gamesは、約2年間業界で活動している情熱的でボランティアの人々で構成されたチームです。",
         "paragraph2": "私たちの核心的な使命：「楽しみながら素晴らしい作品を作り、ゲームを制作する。」",
         "paragraph3": "私たち一人一人が異なる才能と視点を持っていますが、私たちの共通の目標は、楽しく質の高いゲームを開発し、お互いから学び、一緒に成長することです。"
-      }
+      },
+      "milestones": [
+        {
+          "date": "2023年10月",
+          "description": "チームは最初のメンバーと共にGloveffectプロジェクトを開発するために設立されました。"
+        },
+        {
+          "date": "2023年10月27日",
+          "description": "OGEMイベントでプロジェクトプレゼンテーションを行いました。"
+        },
+        {
+          "date": "2023年10月",
+          "description": "OGEMとの協力から離れ、独立して作業することを決定しました。"
+        },
+        {
+          "date": "2024年4月3日",
+          "description": "Stargateに申請を提出し、開発プロセスを開始しました。"
+        },
+        {
+          "date": "2024年6月24日",
+          "description": "Startgate Tekmerインキュベーションプログラムに承認されました。"
+        },
+        {
+          "date": "2024年夏",
+          "description": "マーケティング、リソース管理、チーム管理についてメンタリングを受けました。"
+        },
+        {
+          "date": "2024年8月9日",
+          "description": "インキュベーションプログラムを完了し、チームは独立した作業を継続しました。"
+        },
+        {
+          "date": "2024年8月",
+          "description": "新しいメンバーが参加し、2つの同時プロジェクトの計画が開始されました。"
+        },
+        {
+          "date": "2024年8月-9月",
+          "description": "「Birdie」ゲームが開発され、Play Storeで公開されました。"
+        },
+        {
+          "date": "2024年8月14日",
+          "description": "ソーシャルメディアコンテンツ制作を開始し、最初の動画を公開しました。"
+        },
+        {
+          "date": "現在",
+          "description": "チームは3Dバンパイアサバイバーズ類似およびカードベースの2D RPGプロジェクトの開発を継続しています。"
+        }
+      ]
     },
     "projects": {
       "title": "私たちの共同プロジェクト",
@@ -1777,7 +2058,8 @@
         "bolfGames": "BOLF Games",
         "freelance": "フリーランス",
         "rollic": "Rollic",
-        "ratic": "RATIC"
+        "ratic": "RATIC",
+        "graduationProject": "卒業プロジェクト"
       },
       "months": {
         "jan": "1月",
@@ -2045,7 +2327,53 @@
         "paragraph1": "BOLF Games是一个由充满激情和志愿的人们组成的团队，在行业内活跃了大约2年。",
         "paragraph2": "我们的核心使命：\"在乐趣中创造伟大的作品并制作游戏。\"",
         "paragraph3": "尽管我们每个人都有不同的才能和观点，但我们共同的目标是开发有趣和高质量的游戏，互相学习，共同成长。"
-      }
+      },
+      "milestones": [
+        {
+          "date": "2023年10月",
+          "description": "团队成立，旨在开发Gloveffect项目，初始成员确定。"
+        },
+        {
+          "date": "2023年10月27日",
+          "description": "在OGEM活动上进行了项目展示。"
+        },
+        {
+          "date": "2023年10月",
+          "description": "决定独立工作，脱离与OGEM的合作。"
+        },
+        {
+          "date": "2024年4月3日",
+          "description": "向Stargate提交申请，启动开发流程。"
+        },
+        {
+          "date": "2024年6月24日",
+          "description": "被Startgate Tekmer孵化计划录取。"
+        },
+        {
+          "date": "2024年夏天",
+          "description": "接受了营销、资源管理和团队管理方面的指导。"
+        },
+        {
+          "date": "2024年8月9日",
+          "description": "孵化计划完成，团队继续独立工作。"
+        },
+        {
+          "date": "2024年8月",
+          "description": "新成员加入，开始规划两个同步项目。"
+        },
+        {
+          "date": "2024年8月-9月",
+          "description": "开发了\"Birdie\"游戏并在Play Store发布。"
+        },
+        {
+          "date": "2024年8月14日",
+          "description": "开始制作社交媒体内容，发布了首个视频。"
+        },
+        {
+          "date": "现在",
+          "description": "团队继续开发3D类吸血鬼幸存者和卡牌类2D RPG项目。"
+        }
+      ]
     },
     "projects": {
       "title": "我们的合作项目",
@@ -2114,7 +2442,8 @@
         "bolfGames": "BOLF Games",
         "freelance": "自由职业者",
         "rollic": "Rollic",
-        "ratic": "RATIC"
+        "ratic": "RATIC",
+        "graduationProject": "毕业项目"
       },
       "months": {
         "jan": "1月",

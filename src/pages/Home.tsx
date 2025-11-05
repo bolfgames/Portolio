@@ -14,12 +14,12 @@ function Home() {
     <Layout>
       <TubesCursorWrapper />
       <HeroSection />
+      <Suspense fallback={<div className="h-screen bg-bolf-black" />}>
+        <TeamSection />
+      </Suspense>
       <AboutSection />
       <Suspense fallback={<div className="h-screen bg-bolf-black" />}>
         <ProjectsSection />
-      </Suspense>
-      <Suspense fallback={<div className="h-screen bg-bolf-black" />}>
-        <TeamSection />
       </Suspense>
       <Footer />
     </Layout>

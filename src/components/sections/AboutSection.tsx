@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion';
 import { useI18n } from '../../contexts/I18nContext';
+import { settingsService } from '../../services/settingsService';
+import MilestoneTimeline from './MilestoneTimeline';
 
 /**
  * About Section Component - Professional presentation
@@ -7,6 +9,7 @@ import { useI18n } from '../../contexts/I18nContext';
  */
 function AboutSection() {
   const { t } = useI18n();
+  const showMilestone = settingsService.isFeatureEnabled('features.showMilestone.enabled');
 
   return (
     <section id="about" className="pt-20 md:pt-32 pb-8 md:pb-12 bg-bolf-black">
@@ -84,6 +87,8 @@ function AboutSection() {
           </motion.div>
         </motion.div>
       </div>
+      {/* Milestone Timeline */}
+      {showMilestone && <MilestoneTimeline />}
     </section>
   );
 }

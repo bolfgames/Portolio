@@ -48,9 +48,9 @@ class I18nService {
   }
 
   /**
-   * Translate a key
+   * Translate a key (can return string or array)
    */
-  t(key: string): string {
+  t(key: string): string | any {
     const keys = key.split('.');
     let value: any = this.translations[this.currentLanguage];
 
@@ -60,20 +60,21 @@ class I18nService {
       } else {
         // Fallback to English if key not found in current language
         const enValue = this.getTranslationFallback(key);
-        if (enValue) return enValue;
+        if (enValue !== null) return enValue;
         
         // If still not found, return key without warning (to avoid console spam)
         return key;
       }
     }
 
-    return typeof value === 'string' ? value : key;
+    // Return value as-is (can be string, array, object, etc.)
+    return value !== undefined ? value : key;
   }
 
   /**
    * Fallback to English translation
    */
-  private getTranslationFallback(key: string): string | null {
+  private getTranslationFallback(key: string): any {
     if (this.currentLanguage === 'en') return null;
     
     const keys = key.split('.');
@@ -87,7 +88,7 @@ class I18nService {
       }
     }
 
-    return typeof value === 'string' ? value : null;
+    return value !== undefined ? value : null;
   }
 
   /**
