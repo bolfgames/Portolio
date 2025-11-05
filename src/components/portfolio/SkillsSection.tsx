@@ -12,11 +12,16 @@ export default function SkillsSection({ skills, accentColor }: SkillsSectionProp
   // Helper function to translate skills
   const translateSkill = (skill: string): string => {
     const skillMap: Record<string, string> = {
-      'Unity Engine': 'portfolio.skills.unityEngine',
-      'C#': 'portfolio.skills.csharp',
-      'Git - GitHub': 'portfolio.skills.gitGithub',
-      'SourceTree': 'portfolio.skills.sourceTree',
-      'JetBrains Rider': 'portfolio.skills.jetbrainsRider',
+      'Unity Engine': 'portfolio.skillItems.unityEngine',
+      'C#': 'portfolio.skillItems.csharp',
+      'Git - GitHub': 'portfolio.skillItems.gitGithub',
+      'SourceTree': 'portfolio.skillItems.sourceTree',
+      'JetBrains Rider': 'portfolio.skillItems.jetbrainsRider',
+      'Level Design': 'portfolio.skillItems.levelDesign',
+      'Game Design': 'portfolio.skillItems.gameDesign',
+      'Narrative Design': 'portfolio.skillItems.narrativeDesign',
+      '3D Level Design': 'portfolio.skillItems.3dLevelDesign',
+      'Environment Design': 'portfolio.skillItems.environmentDesign',
     };
     
     const key = skillMap[skill];
@@ -39,10 +44,7 @@ export default function SkillsSection({ skills, accentColor }: SkillsSectionProp
         transition={{ duration: 0.5 }}
         className="text-3xl md:text-4xl font-bold text-bolf-white mb-6"
       >
-        {(() => {
-          const translated = t('portfolio.skills');
-          return translated === 'portfolio.skills' ? 'Teknik Yetenekler' : translated;
-        })()}
+        {t('portfolio.skills')}
       </motion.h2>
 
       <motion.div

@@ -1,55 +1,34 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, useImperativeHandle, forwardRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { getAssetPath } from '../../utils/assetPath';
 
-interface LaptopProject {
-  name: string;
-  images: string[];
-  features?: string[];
-  link?: string;
-  linkUrl?: string;
-}
-
 interface LaptopSliderProps {
-  projects: LaptopProject[];
-  currentIndex?: number;
-  onProjectChange?: (project: LaptopProject) => void;
-  onIndexChange?: (index: number) => void;
-  onImageIndexChange?: (imageIndex: number) => void;
+  images: string[];
+  projectName: string;
   isPaused?: boolean;
   resetTimer?: number;
   showIndicators?: boolean;
+  accentColor?: string;
 }
 
-export default function LaptopSlider({ 
-  projects, 
-  currentIndex: externalIndex, 
-  onProjectChange, 
-  onIndexChange,
-  onImageIndexChange,
+export interface LaptopSliderRef {
+  handlePrevious: () => void;
+  handleNext: () => void;
+}
+
+const LaptopSlider = forwardRef<LaptopSliderRef, LaptopSliderProps>(({ 
+  images,
+  projectName,
   isPaused: externalPaused,
   resetTimer,
-  showIndicators = true
-}: LaptopSliderProps) {
-  const [currentProjectIndex, setCurrentProjectIndex] = useState(externalIndex ?? 0);
+  showIndicators = true,
+  accentColor = '#00BFFF'
+}, ref) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(externalPaused ?? false);
   const [imageLoading, setImageLoading] = useState(true);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const imageRef = useRef<HTMLImageElement | null>(null);
-
-  // Sync with external index if provided
-  useEffect(() => {
-    if (externalIndex !== undefined && externalIndex !== currentProjectIndex) {
-      setCurrentProjectIndex(externalIndex);
-      setCurrentImageIndex(0); // Reset image index when project changes
-    }
-  }, [externalIndex, currentProjectIndex]);
-
-  // Reset image index when project changes
-  useEffect(() => {
-    setCurrentImageIndex(0);
-  }, [currentProjectIndex]);
 
   // Sync with external pause state
   useEffect(() => {
@@ -67,14 +46,12 @@ export default function LaptopSlider({
     }
   }, [resetTimer]);
 
-  // Auto-advance images every 3 seconds
+  // Auto-advance images every 3 seconds (loop)
   useEffect(() => {
-    if (projects.length === 0) return;
+    if (images.length === 0) return;
+    if (images.length === 1) return; // Don't loop if only one image
     if (isPaused) return;
-    if (imageLoading) return;
-
-    const currentProject = projects[currentProjectIndex];
-    if (!currentProject || currentProject.images.length === 0) return;
+    if (imageLoading) return; // Wait for image to load
 
     // Clear existing interval
     if (intervalRef.current) {
@@ -83,7 +60,8 @@ export default function LaptopSlider({
 
     intervalRef.current = setInterval(() => {
       setCurrentImageIndex((prev) => {
-        const nextIndex = (prev + 1) % currentProject.images.length;
+        const nextIndex = (prev + 1) % images.length;
+        setImageLoading(true); // Show loading when changing image
         return nextIndex;
       });
     }, 3000); // 3 seconds
@@ -93,28 +71,37 @@ export default function LaptopSlider({
         clearInterval(intervalRef.current);
       }
     };
-  }, [projects, currentProjectIndex, currentImageIndex, isPaused, imageLoading]);
+  }, [images.length, isPaused, imageLoading]);
 
-  // Notify project change
-  useEffect(() => {
-    if (onProjectChange && projects[currentProjectIndex]) {
-      onProjectChange(projects[currentProjectIndex]);
+  // Handle previous image
+  const handlePrevious = useCallback(() => {
+    setCurrentImageIndex((prev) => {
+      const newIndex = (prev - 1 + images.length) % images.length;
+      setImageLoading(true);
+      return newIndex;
+    });
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
     }
-  }, [currentProjectIndex, projects, onProjectChange]);
+  }, [images.length]);
 
-  // Notify index change
-  useEffect(() => {
-    if (onIndexChange) {
-      onIndexChange(currentProjectIndex);
+  // Handle next image
+  const handleNext = useCallback(() => {
+    setCurrentImageIndex((prev) => {
+      const newIndex = (prev + 1) % images.length;
+      setImageLoading(true);
+      return newIndex;
+    });
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
     }
-  }, [currentProjectIndex, onIndexChange]);
+  }, [images.length]);
 
-  // Notify image index change
-  useEffect(() => {
-    if (onImageIndexChange) {
-      onImageIndexChange(currentImageIndex);
-    }
-  }, [currentImageIndex, onImageIndexChange]);
+  // Expose handlers via ref
+  useImperativeHandle(ref, () => ({
+    handlePrevious,
+    handleNext
+  }), [handlePrevious, handleNext]);
 
   const handleImageLoad = useCallback(() => {
     setImageLoading(false);
@@ -135,32 +122,28 @@ export default function LaptopSlider({
     };
   }, []);
 
-  if (projects.length === 0) {
+  if (images.length === 0) {
     return null;
   }
 
-  const currentProject = projects[currentProjectIndex];
-  if (!currentProject || currentProject.images.length === 0) {
-    return null;
-  }
-
-  const currentImage = currentProject.images[currentImageIndex];
+  const currentImage = images[currentImageIndex];
+  const imagePath = getAssetPath(`assets/resumes/Emir/project_images/${currentImage}`);
 
   return (
-    <div className="relative w-full h-full flex flex-col">
+    <div className="relative w-full h-full flex flex-col" style={{ width: '100%', height: '100%' }}>
       {/* Image Container */}
-      <div className="relative flex-1 flex items-center justify-center min-h-0 overflow-hidden">
+      <div className="relative flex-1 flex items-center justify-center overflow-hidden" style={{ width: '100%', height: '100%' }}>
         {imageLoading && (
           <div className="absolute inset-0 flex items-center justify-center z-0">
-            <div className="w-8 h-8 border-2 border-bolf-neon-blue border-t-transparent rounded-full animate-spin" />
+            <div className="w-8 h-8 border-2 border-t-transparent rounded-full animate-spin" style={{ borderColor: accentColor, borderTopColor: 'transparent' }} />
           </div>
         )}
         <AnimatePresence mode="wait">
           <motion.img
             ref={imageRef}
-            key={`${currentProject.name}-${currentImageIndex}-${currentImage}`}
-            src={getAssetPath(`assets/resumes/Emir/project_images/${currentImage}`)}
-            alt={`${currentProject.name} - ${currentImageIndex + 1}`}
+            key={`${projectName}-${currentImageIndex}-${currentImage}`}
+            src={imagePath}
+            alt={`${projectName} - ${currentImageIndex + 1}`}
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: imageLoading ? 0 : 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.05 }}
@@ -175,16 +158,17 @@ export default function LaptopSlider({
       </div>
 
       {/* Slider Indicator - at bottom */}
-      {showIndicators && currentProject.images.length > 1 && (
+      {showIndicators && images.length > 1 && (
         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex gap-2 z-10">
-          {currentProject.images.map((_, index) => (
+          {images.map((_, index) => (
             <button
               key={index}
-              className={`w-2 h-2 rounded-full transition-all ${
-                index === currentImageIndex
-                  ? 'bg-bolf-neon-blue w-6'
-                  : 'bg-bolf-gray/50 hover:bg-bolf-gray/70'
-              }`}
+              className="rounded-full transition-all"
+              style={{
+                height: '8px',
+                width: index === currentImageIndex ? '24px' : '8px',
+                backgroundColor: index === currentImageIndex ? accentColor : 'rgba(204, 204, 204, 0.5)',
+              }}
               onClick={() => {
                 setCurrentImageIndex(index);
                 setImageLoading(true);
@@ -196,5 +180,8 @@ export default function LaptopSlider({
       )}
     </div>
   );
-}
+});
 
+LaptopSlider.displayName = 'LaptopSlider';
+
+export default LaptopSlider;

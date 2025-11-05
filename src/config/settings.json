@@ -5,7 +5,7 @@
       "description": "BOLF klavye animasyonunu göster/gizle"
     },
     "developerMode": {
-      "enabled": true,
+      "enabled": false,
       "description": "Developer mode ve panel özelliklerini etkinleştir"
     },
     "tubesCursor": {

@@ -222,7 +222,7 @@
         "environmentCreation": "Çevre oluşturma",
         "gameplayMechanicsDesign": "Oynanış mekanikleri tasarımı"
       },
-      "skills": {
+      "skillItems": {
         "unityEngine": "Unity Engine",
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
@@ -545,9 +545,19 @@
         "infinityLoopingUI": "Infinity looping background UI",
         "firebaseLoginLeaderboard": "Firebase for login and leaderboard system",
         "clueSystem": "Clue system",
-        "levelSystem": "Level system"
+        "levelSystem": "Level system",
+        "levelDesign": "Level Design",
+        "gameDesign": "Game Design",
+        "narrativeDesign": "Narrative Design",
+        "3dLevelDesign": "3D Level Design",
+        "environmentDesign": "Environment Design",
+        "fpsGameplayMechanics": "FPS gameplay mechanics",
+        "tpsGameplayMechanics": "TPS gameplay mechanics",
+        "prototypeDevelopment": "Prototype development",
+        "environmentCreation": "Environment creation",
+        "gameplayMechanicsDesign": "Gameplay mechanics design"
       },
-      "skills": {
+      "skillItems": {
         "unityEngine": "Unity Engine",
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
@@ -872,9 +882,19 @@
         "infinityLoopingUI": "Endlosschleifen-Hintergrund-UI",
         "firebaseLoginLeaderboard": "Firebase für Login- und Bestenliste-System",
         "clueSystem": "Hinweis-System",
-        "levelSystem": "Level-System"
+        "levelSystem": "Level-System",
+        "levelDesign": "Level-Design",
+        "gameDesign": "Spiel-Design",
+        "narrativeDesign": "Narratives Design",
+        "3dLevelDesign": "3D-Level-Design",
+        "environmentDesign": "Umgebungsdesign",
+        "fpsGameplayMechanics": "FPS-Gameplay-Mechaniken",
+        "tpsGameplayMechanics": "TPS-Gameplay-Mechaniken",
+        "prototypeDevelopment": "Prototyp-Entwicklung",
+        "environmentCreation": "Umgebungserstellung",
+        "gameplayMechanicsDesign": "Gameplay-Mechaniken-Design"
       },
-      "skills": {
+      "skillItems": {
         "unityEngine": "Unity Engine",
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
@@ -1199,9 +1219,19 @@
         "infinityLoopingUI": "UI de fond en boucle infinie",
         "firebaseLoginLeaderboard": "Firebase pour système de connexion et classement",
         "clueSystem": "Système d'indices",
-        "levelSystem": "Système de niveaux"
+        "levelSystem": "Système de niveaux",
+        "levelDesign": "Conception de Niveaux",
+        "gameDesign": "Conception de Jeux",
+        "narrativeDesign": "Conception Narrative",
+        "3dLevelDesign": "Conception de Niveaux 3D",
+        "environmentDesign": "Conception d'Environnement",
+        "fpsGameplayMechanics": "Mécaniques de gameplay FPS",
+        "tpsGameplayMechanics": "Mécaniques de gameplay TPS",
+        "prototypeDevelopment": "Développement de prototype",
+        "environmentCreation": "Création d'environnement",
+        "gameplayMechanicsDesign": "Conception de mécaniques de gameplay"
       },
-      "skills": {
+      "skillItems": {
         "unityEngine": "Unity Engine",
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
@@ -1526,9 +1556,19 @@
         "infinityLoopingUI": "UI de fondo en bucle infinito",
         "firebaseLoginLeaderboard": "Firebase para sistema de inicio de sesión y clasificación",
         "clueSystem": "Sistema de pistas",
-        "levelSystem": "Sistema de niveles"
+        "levelSystem": "Sistema de niveles",
+        "levelDesign": "Diseño de Niveles",
+        "gameDesign": "Diseño de Juegos",
+        "narrativeDesign": "Diseño Narrativo",
+        "3dLevelDesign": "Diseño de Niveles 3D",
+        "environmentDesign": "Diseño de Entornos",
+        "fpsGameplayMechanics": "Mecánicas de gameplay FPS",
+        "tpsGameplayMechanics": "Mecánicas de gameplay TPS",
+        "prototypeDevelopment": "Desarrollo de prototipo",
+        "environmentCreation": "Creación de entornos",
+        "gameplayMechanicsDesign": "Diseño de mecánicas de gameplay"
       },
-      "skills": {
+      "skillItems": {
         "unityEngine": "Unity Engine",
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
@@ -1702,6 +1742,7 @@
       "education": "教育",
       "experience": "経験",
       "skills": "技術スキル",
+      "skillsTitle": "技術スキル",
       "projects": "ポートフォリオプロジェクト",
       "company": "会社",
       "position": "役職",
@@ -1853,9 +1894,19 @@
         "infinityLoopingUI": "無限ループ背景UI",
         "firebaseLoginLeaderboard": "ログインとリーダーボードシステム用Firebase",
         "clueSystem": "手がかりシステム",
-        "levelSystem": "レベルシステム"
+        "levelSystem": "レベルシステム",
+        "levelDesign": "レベルデザイン",
+        "gameDesign": "ゲームデザイン",
+        "narrativeDesign": "ナラティブデザイン",
+        "3dLevelDesign": "3Dレベルデザイン",
+        "environmentDesign": "環境デザイン",
+        "fpsGameplayMechanics": "FPSゲームプレイメカニクス",
+        "tpsGameplayMechanics": "TPSゲームプレイメカニクス",
+        "prototypeDevelopment": "プロトタイプ開発",
+        "environmentCreation": "環境作成",
+        "gameplayMechanicsDesign": "ゲームプレイメカニクスデザイン"
       },
-      "skills": {
+      "skillItems": {
         "unityEngine": "Unity Engine",
         "csharp": "C#",
         "gitGithub": "Git - GitHub",
@@ -2180,9 +2231,19 @@
         "infinityLoopingUI": "无限循环背景UI",
         "firebaseLoginLeaderboard": "登录和排行榜系统用Firebase",
         "clueSystem": "线索系统",
-        "levelSystem": "关卡系统"
+        "levelSystem": "关卡系统",
+        "levelDesign": "关卡设计",
+        "gameDesign": "游戏设计",
+        "narrativeDesign": "叙事设计",
+        "3dLevelDesign": "3D关卡设计",
+        "environmentDesign": "环境设计",
+        "fpsGameplayMechanics": "FPS游戏机制",
+        "tpsGameplayMechanics": "TPS游戏机制",
+        "prototypeDevelopment": "原型开发",
+        "environmentCreation": "环境创建",
+        "gameplayMechanicsDesign": "游戏机制设计"
       },
-      "skills": {
+      "skillItems": {
         "unityEngine": "Unity Engine",
         "csharp": "C#",
         "gitGithub": "Git - GitHub",

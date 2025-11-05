@@ -163,6 +163,8 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'Narrative Design': 'portfolio.projectFeatures.narrativeDesign',
       '3D Level Design': 'portfolio.projectFeatures.3dLevelDesign',
       'Environment Design': 'portfolio.projectFeatures.environmentDesign',
+      'environment design': 'portfolio.projectFeatures.environmentDesign',
+      'Environment design': 'portfolio.projectFeatures.environmentDesign',
       'Environment creation': 'portfolio.projectFeatures.environmentCreation',
       'Gameplay mechanics design': 'portfolio.projectFeatures.gameplayMechanicsDesign',
       'Prototype development': 'portfolio.projectFeatures.prototypeDevelopment',
