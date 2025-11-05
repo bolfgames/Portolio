@@ -349,11 +349,15 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 </div>
               </div>
 
-              {/* Slider Indicator - Yatay modda alt orta, dikey modda alt orta */}
+              {/* Slider Indicator - Yatay modda sağ orta, dikey modda alt orta */}
               <div 
-                className="absolute bottom-2 left-1/2 z-30 flex justify-center gap-2"
+                className={`absolute z-30 flex justify-center gap-2 ${
+                  isLandscape ? 'right-2 top-1/2' : 'bottom-2 left-1/2'
+                }`}
                 style={{
-                  transform: isLandscape ? 'translateX(-50%) translateY(0) rotate(-90deg)' : 'translateX(-50%) translateY(0) rotate(0deg)',
+                  transform: isLandscape 
+                    ? 'translateY(-50%) rotate(-90deg)' 
+                    : 'translateX(-50%) translateY(0) rotate(0deg)',
                 }}
               >
                 {projects.map((_, index) => (
