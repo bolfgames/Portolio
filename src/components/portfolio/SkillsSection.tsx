@@ -38,7 +38,10 @@ export default function SkillsSection({ skills }: SkillsSectionProps) {
         transition={{ duration: 0.5 }}
         className="text-3xl md:text-4xl font-bold text-bolf-white mb-6"
       >
-        {t('portfolio.skills')}
+        {(() => {
+          const translated = t('portfolio.skills');
+          return translated === 'portfolio.skills' ? 'Teknik Yetenekler' : translated;
+        })()}
       </motion.h2>
 
       <motion.div

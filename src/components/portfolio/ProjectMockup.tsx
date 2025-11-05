@@ -9,7 +9,8 @@ interface Project {
   features?: string[];
   link?: string;
   linkUrl?: string;
-  isLandscape?: boolean;
+  landscapeScale?: number; // Yatay modda fotoğraf için scale değeri
+  portraitScale?: number; // Dikey modda fotoğraf için scale değeri
 }
 
 interface ProjectMockupProps {
@@ -29,7 +30,6 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
   useEffect(() => {
     if (projects.length > 0 && !currentProject) {
       setCurrentProject(projects[0]);
-      setIsLandscape(projects[0].isLandscape || false);
       setCurrentIndex(0);
     }
   }, [projects, currentProject]);
@@ -50,7 +50,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
     const newIndex = (currentIndex - 1 + projects.length) % projects.length;
     setCurrentIndex(newIndex);
     setCurrentProject(projects[newIndex]);
-    // Don't set isLandscape here - let ProjectSlider detect it
+    setIsLandscape(false); // Reset landscape state, let ProjectSlider detect it
     setResetTimer(prev => prev + 1); // Reset timer
   }, [currentIndex, projects]);
 
@@ -58,7 +58,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
     const newIndex = (currentIndex + 1) % projects.length;
     setCurrentIndex(newIndex);
     setCurrentProject(projects[newIndex]);
-    // Don't set isLandscape here - let ProjectSlider detect it
+    setIsLandscape(false); // Reset landscape state, let ProjectSlider detect it
     setResetTimer(prev => prev + 1); // Reset timer
   }, [currentIndex, projects]);
 
@@ -240,30 +240,14 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className="text-xl md:text-2xl font-bold text-bolf-white mb-4 text-center"
+          className={`text-xl md:text-2xl font-bold text-bolf-white text-center ${isLandscape ? 'mb-[-140px]' : 'mb-4'}`}
         >
           {translateProjectName(currentProject.name)}
         </motion.h3>
       )}
 
       {/* Mockup Container */}
-      <div className={`relative flex items-center ${isLandscape ? 'flex-col gap-4' : 'flex-row gap-4'}`}>
-        {/* Previous Arrow - Outside mockup */}
-        {projects.length > 1 && (
-          <button
-            onClick={handlePrevious}
-            className={`z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out ${
-              isLandscape ? 'order-1' : 'order-1'
-            }`}
-            aria-label={t('portfolio.previous')}
-          >
-            <svg className="w-6 h-6 text-bolf-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isLandscape ? "M19 9l-7 7-7-7" : "M15 19l-7-7 7-7"} />
-            </svg>
-          </button>
-        )}
-
-        <div className={`relative ${isLandscape ? 'order-2' : 'order-2'}`} ref={mockupRef}>
+      <div className="relative flex items-center justify-center" ref={mockupRef}>
           {/* iPhone Mockup */}
           <div
             className="relative rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-8 border-zinc-900 transition-all duration-600 ease-in-out w-[280px] h-[600px] max-w-[70vw] max-h-[150vw]"
@@ -272,7 +256,45 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
               transformOrigin: 'center center',
             }}
           >
-              {/* Pause/Resume Button - Yatay modda sol üst, dikey modda sağ üst */}
+          {/* Previous Arrow - Outside mockup */}
+          {projects.length > 1 && (
+            <button
+              onClick={handlePrevious}
+              className={`absolute z-40 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out ${
+                isLandscape 
+                  ? 'bottom-[-60px] left-1/2 -translate-x-1/2' 
+                  : 'left-[-60px] top-1/2 -translate-y-1/2'
+              }`}
+              aria-label={t('portfolio.previous')}
+            >
+              <svg className="w-6 h-6 text-bolf-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{
+                transform: isLandscape ? 'rotate(180deg)' : 'rotate(0deg)',
+              }}>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isLandscape ? "M5 15l7-7 7 7" : "M15 19l-7-7 7-7"} />
+              </svg>
+            </button>
+          )}
+
+          {/* Next Arrow - Outside mockup */}
+          {projects.length > 1 && (
+            <button
+              onClick={handleNext}
+              className={`absolute z-40 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out ${
+                isLandscape 
+                  ? 'top-[-60px] left-1/2 -translate-x-1/2' 
+                  : 'right-[-60px] top-1/2 -translate-y-1/2'
+              }`}
+              aria-label={t('portfolio.next')}
+            >
+              <svg className="w-6 h-6 text-bolf-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" style={{
+                transform: isLandscape ? 'rotate(180deg)' : 'rotate(0deg)',
+              }}>
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isLandscape ? "M19 9l-7 7-7-7" : "M9 5l7 7-7 7"} />
+              </svg>
+            </button>
+          )}
+
+          {/* Pause/Resume Button - Yatay modda sol üst, dikey modda sağ üst */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
@@ -337,6 +359,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                   
                   <div className="w-full h-full" onClick={(e) => e.stopPropagation()}>
                     <ProjectSlider
+                      key={`${currentProject?.name}-${currentIndex}-${currentProject?.landscapeScale}-${currentProject?.portraitScale}`}
                       projects={projects}
                       currentIndex={currentIndex}
                       onProjectChange={handleProjectChange}
@@ -345,16 +368,18 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                       isPaused={isPaused}
                       resetTimer={resetTimer}
                       isLandscape={isLandscape}
+                      landscapeScale={currentProject?.landscapeScale ?? 1.86}
+                      portraitScale={currentProject?.portraitScale ?? 1}
                       showIndicators={false}
                     />
                   </div>
                 </div>
               </div>
 
-              {/* Slider Indicator - Yatay modda sağ kenar orta, dikey modda alt orta */}
+              {/* Slider Indicator - Yatay modda sağ orta kenar, dikey modda alt orta */}
               <div 
                 className={`absolute z-30 flex justify-center gap-2 ${
-                  isLandscape ? 'right-1 top-1/2' : 'bottom-2 left-1/2'
+                  isLandscape ? 'right-[-56px] top-1/2' : 'bottom-2 left-1/2'
                 }`}
                 style={{
                   transform: isLandscape 
@@ -370,6 +395,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                       const newIndex = index;
                       setCurrentIndex(newIndex);
                       setCurrentProject(projects[newIndex]);
+                      setIsLandscape(false); // Reset landscape state, let ProjectSlider detect it
                       setResetTimer(prev => prev + 1);
                     }}
                     className={`h-1.5 rounded-full transition-all duration-300 ${
@@ -382,12 +408,16 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 ))}
               </div>
 
-              {/* Pause Indicator - Above slider, counter-rotate to stay upright */}
+              {/* Pause Indicator - Yatay modda sağ kenar slider'ın üstünde, dikey modda slider'ın üstü */}
               {isPaused && (
                 <div 
-                  className="absolute bottom-8 left-1/2 z-30 text-xs text-bolf-gray/60 text-center"
+                  className={`absolute z-30 text-xs text-bolf-gray/60 text-center whitespace-nowrap ${
+                    isLandscape ? 'right-[-38px] top-1/2 translate-y-[-35px]' : 'bottom-8 left-1/2'
+                  }`}
                   style={{
-                    transform: isLandscape ? 'translateX(-50%) rotate(-90deg)' : 'translateX(-50%) rotate(0deg)',
+                    transform: isLandscape 
+                      ? 'translateY(-50%) rotate(-90deg)' 
+                      : 'translateX(-50%) rotate(0deg)',
                   }}
                 >
                   {t('portfolio.paused')}
@@ -419,22 +449,6 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 </>
               )}
             </div>
-        </div>
-
-        {/* Next Arrow - Outside mockup */}
-        {projects.length > 1 && (
-          <button
-            onClick={handleNext}
-            className={`z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out ${
-              isLandscape ? 'order-3' : 'order-3'
-            }`}
-            aria-label={t('portfolio.next')}
-          >
-            <svg className="w-6 h-6 text-bolf-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isLandscape ? "M5 15l7-7 7 7" : "M9 5l7 7-7 7"} />
-            </svg>
-          </button>
-        )}
       </div>
 
       {/* Project Details Below Mockup */}
@@ -444,7 +458,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className={`max-w-2xl w-full px-4 ${isLandscape ? 'mt-3' : 'mt-6'}`}
+          className={`max-w-2xl w-full px-4 ${isLandscape ? 'mt-[-130px]' : 'mt-6'}`}
         >
           <div className="bg-bolf-black/50 border border-bolf-gray/20 rounded-lg p-6">
             {currentProject.features && currentProject.features.length > 0 && (

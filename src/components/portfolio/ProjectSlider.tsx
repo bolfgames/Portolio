@@ -9,7 +9,6 @@ interface Project {
   features?: string[];
   link?: string;
   linkUrl?: string;
-  isLandscape?: boolean;
 }
 
 interface ProjectSliderProps {
@@ -21,6 +20,8 @@ interface ProjectSliderProps {
   isPaused?: boolean;
   resetTimer?: number;
   isLandscape?: boolean;
+  landscapeScale?: number; // Yatay modda fotoğraf için scale değeri
+  portraitScale?: number; // Dikey modda fotoğraf için scale değeri
   showIndicators?: boolean;
 }
 
@@ -33,6 +34,8 @@ export default function ProjectSlider({
   isPaused: externalPaused,
   resetTimer,
   isLandscape: externalIsLandscape,
+  landscapeScale = 1.86, // Default scale değeri
+  portraitScale = 1, // Default dikey scale değeri
   showIndicators = true
 }: ProjectSliderProps) {
   const { t } = useI18n();
@@ -48,14 +51,19 @@ export default function ProjectSlider({
     if (externalIndex !== undefined && externalIndex !== currentIndex) {
       setCurrentIndex(externalIndex);
     }
-  }, [externalIndex]);
+  }, [externalIndex, currentIndex]);
 
   // Sync with external pause state
   useEffect(() => {
     if (externalPaused !== undefined && externalPaused !== isPaused) {
       setIsPaused(externalPaused);
     }
-  }, [externalPaused]);
+  }, [externalPaused, isPaused]);
+
+  // Force re-render when scale props change
+  useEffect(() => {
+    // This ensures the component updates when scale props change
+  }, [landscapeScale, portraitScale]);
 
   // Handle timer reset
   useEffect(() => {
@@ -158,7 +166,17 @@ export default function ProjectSlider({
   return (
     <div className="relative w-full h-full flex flex-col">
       {/* Image Container */}
-      <div className="relative w-full flex-1 flex items-center justify-center min-h-0">
+      <div 
+        className="relative flex-1 flex items-center justify-center min-h-0 overflow-hidden"
+        style={{
+          transform: externalIsLandscape 
+            ? `rotate(-90deg) scale(${landscapeScale})` 
+            : `rotate(0deg) scale(${portraitScale})`,
+          transformOrigin: 'center center',
+          width: externalIsLandscape ? '100%' : '100%',
+          height: externalIsLandscape ? '100%' : '100%',
+        }}
+      >
         {imageLoading && (
           <div className="absolute inset-0 flex items-center justify-center z-0">
             <div className="w-8 h-8 border-2 border-bolf-neon-blue border-t-transparent rounded-full animate-spin" />
@@ -174,10 +192,12 @@ export default function ProjectSlider({
             animate={{ opacity: imageLoading ? 0 : 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.05 }}
             transition={{ duration: 0.4 }}
-            className="w-full h-full object-contain rounded-lg"
+            className="object-contain rounded-lg"
             style={{
-              transform: externalIsLandscape ? 'rotate(-90deg)' : 'rotate(0deg)',
-              transformOrigin: 'center center',
+              maxWidth: externalIsLandscape ? '100%' : '100%',
+              maxHeight: externalIsLandscape ? '100%' : '100%',
+              width: externalIsLandscape ? 'auto' : '100%',
+              height: externalIsLandscape ? 'auto' : '100%',
             }}
             loading="lazy"
             decoding="async"

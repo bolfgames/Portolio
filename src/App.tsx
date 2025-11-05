@@ -21,9 +21,12 @@ function AnimatedRoutes() {
 }
 
 function App() {
+  // Development modunda basename kullanma, production'da /Portfolio kullan
+  const basename = import.meta.env.PROD ? '/Portfolio' : '/';
+  
   return (
     <I18nProvider>
-      <BrowserRouter basename="/Portfolio">
+      <BrowserRouter basename={basename}>
         <Suspense fallback={
           <motion.div 
             initial={{ opacity: 0 }}
