@@ -247,12 +247,12 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
       )}
 
       {/* Mockup Container */}
-      <div className="relative flex items-center gap-4">
+      <div className={`relative flex items-center gap-4 ${isLandscape ? 'flex-row' : 'flex-col'}`}>
         {/* Previous Arrow - Outside mockup */}
         {projects.length > 1 && (
           <button
             onClick={handlePrevious}
-            className="z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out"
+            className="z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out order-1"
             aria-label={t('portfolio.previous')}
           >
             <svg className="w-6 h-6 text-bolf-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -261,7 +261,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
           </button>
         )}
 
-        <div className="relative" ref={mockupRef}>
+        <div className="relative order-2" ref={mockupRef}>
           {/* iPhone Mockup */}
           <div
             className="relative rounded-[45px] shadow-[0_0_2px_2px_rgba(255,255,255,0.1)] border-8 border-zinc-900 transition-all duration-600 ease-in-out w-[280px] h-[600px] max-w-[70vw] max-h-[150vw]"
@@ -270,7 +270,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
               transformOrigin: 'center center',
             }}
           >
-              {/* Pause/Resume Button - Top Right */}
+              {/* Pause/Resume Button - Top Right (yatay modda sağ üst, dikey modda da sağ üst) */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
@@ -347,7 +347,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 </div>
               </div>
 
-              {/* Slider Indicator - Bottom center, counter-rotate to stay upright */}
+              {/* Slider Indicator - Bottom center (yatay modda alt orta, counter-rotate to stay upright) */}
               <div 
                 className="absolute bottom-2 left-1/2 z-30 flex justify-center gap-2"
                 style={{
@@ -374,7 +374,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 ))}
               </div>
 
-              {/* Pause Indicator - Outside screen content, counter-rotate to stay upright */}
+              {/* Pause Indicator - Above slider, counter-rotate to stay upright */}
               {isPaused && (
                 <div 
                   className="absolute bottom-8 left-1/2 z-30 text-xs text-bolf-gray/60 text-center"
@@ -417,7 +417,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
         {projects.length > 1 && (
           <button
             onClick={handleNext}
-            className="z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out"
+            className="z-30 p-2 rounded-full bg-bolf-black/80 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out order-3"
             aria-label={t('portfolio.next')}
           >
             <svg className="w-6 h-6 text-bolf-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
