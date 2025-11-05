@@ -247,7 +247,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
       )}
 
       {/* Mockup Container */}
-      <div className={`relative flex items-center gap-4 ${isLandscape ? 'flex-row' : 'flex-col'}`}>
+      <div className={`relative flex items-center ${isLandscape ? 'flex-row gap-8' : 'flex-row gap-4'}`}>
         {/* Previous Arrow - Outside mockup */}
         {projects.length > 1 && (
           <button
@@ -270,13 +270,15 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
               transformOrigin: 'center center',
             }}
           >
-              {/* Pause/Resume Button - Top Right (yatay modda sağ üst, dikey modda da sağ üst) */}
+              {/* Pause/Resume Button - Yatay modda sol üst, dikey modda sağ üst */}
               <button
                 onClick={(e) => {
                   e.stopPropagation();
                   togglePause();
                 }}
-                className="absolute top-4 right-4 z-50 p-2 rounded-full bg-bolf-black/90 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out backdrop-blur-sm"
+                className={`absolute z-50 p-2 rounded-full bg-bolf-black/90 border border-bolf-gray/40 hover:bg-bolf-neon-blue/20 hover:border-bolf-neon-blue transition-all duration-600 ease-in-out backdrop-blur-sm ${
+                  isLandscape ? 'top-4 left-4' : 'top-4 right-4'
+                }`}
                 style={{
                   transform: isLandscape ? 'rotate(-90deg)' : 'rotate(0deg)',
                 }}
@@ -347,11 +349,11 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
                 </div>
               </div>
 
-              {/* Slider Indicator - Bottom center (yatay modda alt orta, counter-rotate to stay upright) */}
+              {/* Slider Indicator - Yatay modda alt orta, dikey modda alt orta */}
               <div 
                 className="absolute bottom-2 left-1/2 z-30 flex justify-center gap-2"
                 style={{
-                  transform: isLandscape ? 'translateX(-50%) rotate(-90deg)' : 'translateX(-50%) rotate(0deg)',
+                  transform: isLandscape ? 'translateX(-50%) translateY(0) rotate(-90deg)' : 'translateX(-50%) translateY(0) rotate(0deg)',
                 }}
               >
                 {projects.map((_, index) => (
@@ -434,7 +436,7 @@ export default function ProjectMockup({ year, projects }: ProjectMockupProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-6 max-w-2xl w-full px-4"
+          className={`max-w-2xl w-full px-4 ${isLandscape ? 'mt-3' : 'mt-6'}`}
         >
           <div className="bg-bolf-black/50 border border-bolf-gray/20 rounded-lg p-6">
             {currentProject.features && currentProject.features.length > 0 && (
