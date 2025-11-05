@@ -119,7 +119,8 @@
           ],
           "link": "Google Play Store",
           "linkUrl": "https://play.google.com/store/search?q=the%20Birdie",
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Bomberman",
@@ -130,7 +131,8 @@
             "Smooth controls",
             "Responsive visual and sound effects"
           ],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Bus Jam",
@@ -145,7 +147,8 @@
           ],
           "link": "App Store / Google Play Store",
           "linkUrl": "https://play.google.com/store/search?q=Bus%20Jam",
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         }
       ]
     },
@@ -162,7 +165,8 @@
             "UnityAction as Signals",
             "Touch Input system"
           ],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "BattleWheelsMayhemArena",
@@ -174,7 +178,8 @@
             "Cinemachine for camera",
             "Scriptable Object (Vehicle, Weapon, Level Datas)"
           ],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "MatchTile",
@@ -187,7 +192,8 @@
             "Safe Areas Handler for iPhone notch issue",
             "Scriptable Object for levels"
           ],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Buildopolis",
@@ -198,7 +204,8 @@
             "UnityAction as Signals",
             "Interface (IDamageable)"
           ],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "VictoryDawn",
@@ -208,13 +215,15 @@
             "Grid system",
             "Post-process"
           ],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Claw of Vengeance",
           "image": "Claw of Vengeance.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 2.2,
+          "portraitScale": 1
         },
         {
           "name": "Revolt of the Exiles",
@@ -225,19 +234,22 @@
             "Firebase to save datas",
             "Infinity looping background UI"
           ],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Stack Diamonds",
           "image": "Stack Diamonds.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 2.2,
+          "portraitScale": 1
         },
         {
           "name": "ISH - Mad Libs",
           "image": "ISH - Mad Libs.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         }
       ]
     },
@@ -248,31 +260,36 @@
           "name": "Crypto Jumper",
           "image": "Crypto Jumper.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Sloppy Jelly",
           "image": "Sloppy Jelly.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Space Blizzard",
           "image": "Space Blizzard.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Crypto Ball",
           "image": "CryptoBall.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 1.66,
+          "portraitScale": 1
         },
         {
           "name": "Multi Merge",
           "image": "Multi Merge.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Laser Defender",
@@ -284,19 +301,22 @@
             "UnityAction as Signals",
             "Touch Input system"
           ],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Save The Villagers",
           "image": "Save The Villagers.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 2.16,
+          "portraitScale": 1
         },
         {
           "name": "Argon Assault Ships",
           "image": "Argon Assoult Ships.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         }
       ]
     },
@@ -307,7 +327,8 @@
           "name": "Basic Blocks",
           "image": "Basic Blocks.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Wizard Guesser",
@@ -317,19 +338,22 @@
             "Firebase for login and leaderboard system",
             "Clue system"
           ],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Math Game",
           "image": "MathGame.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "Breaking Blocks",
           "image": "Breaking Blocks.jpg",
           "features": [],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         },
         {
           "name": "TileVania",
@@ -340,7 +364,8 @@
             "Cinemachine for camera",
             "Grid system"
           ],
-          "isLandscape": false
+          "landscapeScale": 1.86,
+          "portraitScale": 1
         }
       ]
     }
