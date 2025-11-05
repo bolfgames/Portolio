@@ -446,7 +446,7 @@ function TeamMemberPage() {
                   </motion.h2>
 
                   <div className="space-y-16">
-                    {emirData.projects.map((project, index) => (
+                    {emirData.projects.map((project) => (
                       <LaptopMockup key={project.name} project={project} />
                     ))}
                   </div>
