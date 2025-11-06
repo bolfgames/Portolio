@@ -105,6 +105,14 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
         }
       } catch {}
     }
+    if (position.includes('3D Sanatçı & Sanat Yönetmeni') || position.includes('3D Artist & Art Director')) {
+      try {
+        const translated = t('portfolio.positions.3dArtistArtDirector');
+        if (translated && translated !== 'portfolio.positions.3dArtistArtDirector') {
+          return translated;
+        }
+      } catch {}
+    }
     return position;
   };
 
@@ -149,6 +157,8 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'Miniverse': 'portfolio.projectNames.miniverse',
       'Neptune': 'portfolio.projectNames.neptune',
       'Magnesian': 'portfolio.projectNames.magnesian',
+      'The Birdie': 'portfolio.projectNames.theBirdie',
+      'Lunscale': 'portfolio.projectNames.lunscale',
     };
     
     const key = nameMap[name];
@@ -184,6 +194,9 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
           'Okul projesi olarak başladığımız daha sonrasında bugLabTekmer ön inkübasyonuna girip geliştirdiğimiz bir proje.': 'portfolio.projectDescriptions.miniverseDescription',
           'Startup olarak başlayan uluslararası bir şirket. Çocuklara yönelik mobil cihazlarda müzik eğitimini oyunlaştırıyorlar. AI kullanımı ile çocukların enstrümanları kullanışına göre puanlandırma ve tavsiye verme. Kurulumu sonrası Almanya\'da Fraunhofer HHI tech startup programına katıldı.': 'portfolio.projectDescriptions.neptuneDescription',
           '5 kişi olarak geliştirdiğimiz bir Action-Platformer. 2 ve 3 Boyutlu sahnelemeyi ve oynanışı birbirine kattığımız, hikayesi boyunca farklı dünyalara tanık olduğumuz ve geçtiğimiz bir oyun. OGEM destek programı sonrasında Steam sayfası açıldı.': 'portfolio.projectDescriptions.magnesianDescription',
+          '3D artist ve art director olarak görev aldım. Projenin görsel dilini baştan sona oluşturma ve yönetme konusunda değerli deneyimler kazandım.': 'portfolio.projectDescriptions.gloveffectDescriptionErdem',
+          'Art director olarak görev aldım. Play Store\'da yayınlanan oyunumuzun görsel yönetimini üstlendim.': 'portfolio.projectDescriptions.theBirdieDescriptionErdem',
+          'Proje yönetimi, 3D artist ve art director olarak görev aldım.': 'portfolio.projectDescriptions.lunscaleDescriptionErdem',
         };
     
     const key = descMap[description];
@@ -248,6 +261,11 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'Sound ve Audio sistemlerinin inşası': 'portfolio.projectFeatures.soundAudioSystems',
       'Unity Editor kodlaması ile takım arkadaşları için yaratılan tools': 'portfolio.projectFeatures.unityEditorTools',
       'Inventory Sistemi': 'portfolio.projectFeatures.inventorySystem',
+      '3D Modelleme': 'portfolio.projectFeatures.3dModeling',
+      'Sanat Yönetmenliği': 'portfolio.projectFeatures.artDirection',
+      'Görsel Dil Oluşturma': 'portfolio.projectFeatures.visualLanguageCreation',
+      'Görsel Yönetim': 'portfolio.projectFeatures.visualManagement',
+      'Proje Yönetimi': 'portfolio.projectFeatures.projectManagement',
     };
     
     const key = featureMap[feature];
