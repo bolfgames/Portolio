@@ -138,7 +138,9 @@
         "freelance": "Serbest Çalışan",
         "levelDesigner": "Seviye Tasarımcısı",
         "2dDesigner": "2D Tasarımcı",
-        "unityDeveloperGameDesigner": "Unity Developer & Game Designer"
+        "unityDeveloperGameDesigner": "Unity Developer & Game Designer",
+        "coFounderGameDeveloper": "Co-Founder and Game Developer",
+        "gameDeveloper": "Game Developer"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -147,7 +149,10 @@
         "ratic": "RATIC",
         "graduationProject": "Mezuniyet Projesi",
         "durih": "Durih",
-        "lunscale": "Lunscale"
+        "lunscale": "Lunscale",
+        "microcosmos": "Microcosmos",
+        "neptuneForKids": "NeptuneForKids",
+        "teamRezerve": "Team Rezerve"
       },
       "months": {
         "jan": "Oca",
@@ -178,7 +183,10 @@
         "lunscaleDescription": "Proje için konsept sanat ve görsel tasarım alanlarında çalıştım. Çizimlerimle projenin görsel kimliğini şekillendirdim ve sanatsal yönlendirmelerde bulundum.",
         "gloveffectDescriptionAhmetEmir": "Yarıyıl projesi olarak başlayan FPS-Shooter oyunu, oynanabilir bir prototip haline getirildi.",
         "lunscaleDescriptionAhmetEmir": "Oyun Tasarımcısı olarak görev aldım.",
-        "diruhDescriptionAhmetEmir": "Unity Developer & Game Designer olarak görev aldım."
+        "diruhDescriptionAhmetEmir": "Unity Developer & Game Designer olarak görev aldım.",
+        "miniverseDescription": "Okul projesi olarak başladığımız daha sonrasında bugLabTekmer ön inkübasyonuna girip geliştirdiğimiz bir proje.",
+        "neptuneDescription": "Startup olarak başlayan uluslararası bir şirket. Çocuklara yönelik mobil cihazlarda müzik eğitimini oyunlaştırıyorlar. AI kullanımı ile çocukların enstrümanları kullanışına göre puanlandırma ve tavsiye verme. Kurulumu sonrası Almanya'da Fraunhofer HHI tech startup programına katıldı.",
+        "magnesianDescription": "5 kişi olarak geliştirdiğimiz bir Action-Platformer. 2 ve 3 Boyutlu sahnelemeyi ve oynanışı birbirine kattığımız, hikayesi boyunca farklı dünyalara tanık olduğumuz ve geçtiğimiz bir oyun. OGEM destek programı sonrasında Steam sayfası açıldı."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -230,7 +238,10 @@
         "tpsShooter": "TPS Shooter",
         "durih": "Durih",
         "lunscale": "Lunscale",
-        "personalArt": "Kişisel çizimler"
+        "personalArt": "Kişisel çizimler",
+        "miniverse": "Miniverse",
+        "neptune": "Neptune",
+        "magnesian": "Magnesian"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Flappy Bird'den ilham alan seviye tabanlı arcade oyunu",
@@ -289,7 +300,19 @@
         "kartTasarim": "Kart Tasarımı",
         "gorselTasarim": "Görsel Tasarım",
         "unityDevelopment": "Unity Geliştirme",
-        "csharpProgramming": "C# Programlama"
+        "csharpProgramming": "C# Programlama",
+        "marketInventorySystem": "Market ve Inventory Sistemi",
+        "tilemapSystem": "Tarla ve inşaat için Tilemap sistemi",
+        "npcDialogueSystems": "NPC ve Dialogue Sistemleri",
+        "scriptableObjects": "Scriptable Objects",
+        "minigames": "Oyundaki farklı minigameler",
+        "resolutionSettings": "Farklı mobil cihazlar için çözünürlük ayarları",
+        "uxExperience": "UX tecrübesi",
+        "androidBuild": "Android build",
+        "enemyNpcAi": "Enemy ve NPC AI",
+        "soundAudioSystems": "Sound ve Audio sistemlerinin inşası",
+        "unityEditorTools": "Unity Editor kodlaması ile takım arkadaşları için yaratılan tools",
+        "inventorySystem": "Inventory Sistemi"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -308,7 +331,15 @@
         "unity": "Unity",
         "github": "GitHub",
         "trello": "Trello",
-        "figma": "Figma"
+        "figma": "Figma",
+        "scriptableObjects": "Scriptable Objects",
+        "npcSystems": "NPC Systems",
+        "dialogueSystems": "Dialogue Systems",
+        "inventorySystems": "Inventory Systems",
+        "tilemapSystems": "Tilemap Systems",
+        "aiSystems": "AI Systems",
+        "audioSystems": "Audio Systems",
+        "unityEditorTools": "Unity Editor Tools"
       },
       "links": {
         "googlePlayStore": "Google Play Store",

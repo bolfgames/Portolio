@@ -38,6 +38,9 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       '毕业项目': 'portfolio.companies.graduationProject',
       'Durih': 'portfolio.companies.durih',
       'Lunscale': 'portfolio.companies.lunscale',
+      'Microcosmos': 'portfolio.companies.microcosmos',
+      'NeptuneForKids': 'portfolio.companies.neptuneForKids',
+      'Team Rezerve': 'portfolio.companies.teamRezerve',
     };
     
     const key = companyMap[company];
@@ -86,6 +89,22 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
         }
       } catch {}
     }
+    if (position.includes('Co-Founder and Game Developer') || position === 'Co-Founder and Game Developer') {
+      try {
+        const translated = t('portfolio.positions.coFounderGameDeveloper');
+        if (translated && translated !== 'portfolio.positions.coFounderGameDeveloper') {
+          return translated;
+        }
+      } catch {}
+    }
+    if (position.includes('Game Developer') && !position.includes('Co-Founder')) {
+      try {
+        const translated = t('portfolio.positions.gameDeveloper');
+        if (translated && translated !== 'portfolio.positions.gameDeveloper') {
+          return translated;
+        }
+      } catch {}
+    }
     return position;
   };
 
@@ -127,6 +146,9 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'Black Spot': 'portfolio.projectNames.blackSpot',
       'Gloveffect': 'portfolio.projectNames.gloveffect',
       'TPS Shooter': 'portfolio.projectNames.tpsShooter',
+      'Miniverse': 'portfolio.projectNames.miniverse',
+      'Neptune': 'portfolio.projectNames.neptune',
+      'Magnesian': 'portfolio.projectNames.magnesian',
     };
     
     const key = nameMap[name];
@@ -159,6 +181,9 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
           'Yarıyıl projesi olarak başlayan FPS-Shooter oyunu, oynanabilir bir prototip haline getirildi.': 'portfolio.projectDescriptions.gloveffectDescriptionAhmetEmir',
           'Oyun Tasarımcısı olarak görev aldım.': 'portfolio.projectDescriptions.lunscaleDescriptionAhmetEmir',
           'Unity Developer & Game Designer olarak görev aldım.': 'portfolio.projectDescriptions.diruhDescriptionAhmetEmir',
+          'Okul projesi olarak başladığımız daha sonrasında bugLabTekmer ön inkübasyonuna girip geliştirdiğimiz bir proje.': 'portfolio.projectDescriptions.miniverseDescription',
+          'Startup olarak başlayan uluslararası bir şirket. Çocuklara yönelik mobil cihazlarda müzik eğitimini oyunlaştırıyorlar. AI kullanımı ile çocukların enstrümanları kullanışına göre puanlandırma ve tavsiye verme. Kurulumu sonrası Almanya\'da Fraunhofer HHI tech startup programına katıldı.': 'portfolio.projectDescriptions.neptuneDescription',
+          '5 kişi olarak geliştirdiğimiz bir Action-Platformer. 2 ve 3 Boyutlu sahnelemeyi ve oynanışı birbirine kattığımız, hikayesi boyunca farklı dünyalara tanık olduğumuz ve geçtiğimiz bir oyun. OGEM destek programı sonrasında Steam sayfası açıldı.': 'portfolio.projectDescriptions.magnesianDescription',
         };
     
     const key = descMap[description];
@@ -211,6 +236,18 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
       'C# Programming': 'portfolio.projectFeatures.csharpProgramming',
       'C# Programlama': 'portfolio.projectFeatures.csharpProgramming',
       'Oyun Tasarımı': 'portfolio.projectFeatures.gameDesign',
+      'Market ve Inventory Sistemi': 'portfolio.projectFeatures.marketInventorySystem',
+      'Tarla ve inşaat için Tilemap sistemi': 'portfolio.projectFeatures.tilemapSystem',
+      'NPC ve Dialogue Sistemleri': 'portfolio.projectFeatures.npcDialogueSystems',
+      'Scriptable Objects': 'portfolio.projectFeatures.scriptableObjects',
+      'Oyundaki farklı minigameler': 'portfolio.projectFeatures.minigames',
+      'Farklı mobil cihazlar için çözünürlük ayarları': 'portfolio.projectFeatures.resolutionSettings',
+      'UX tecrübesi': 'portfolio.projectFeatures.uxExperience',
+      'Android build': 'portfolio.projectFeatures.androidBuild',
+      'Enemy ve NPC AI': 'portfolio.projectFeatures.enemyNpcAi',
+      'Sound ve Audio sistemlerinin inşası': 'portfolio.projectFeatures.soundAudioSystems',
+      'Unity Editor kodlaması ile takım arkadaşları için yaratılan tools': 'portfolio.projectFeatures.unityEditorTools',
+      'Inventory Sistemi': 'portfolio.projectFeatures.inventorySystem',
     };
     
     const key = featureMap[feature];

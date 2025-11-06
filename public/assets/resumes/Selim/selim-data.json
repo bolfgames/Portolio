@@ -1,0 +1,127 @@
+{
+  "contact": {
+    "email": "selimsabuncu0@gmail.com",
+    "phone": "",
+    "location": "Istanbul, Türkiye",
+    "linkedin": "linkedin.com/in/selimsabuncu",
+    "github": "github.com/selimsabuncu"
+  },
+  "education": {
+    "degree": "Dijital Oyun Tasarımı Lisansı",
+    "university": "İstanbul Bilgi Üniversitesi",
+    "faculty": "İletişim Fakültesi",
+    "period": "2021-2025",
+    "location": "Istanbul, Türkiye"
+  },
+  "experience": [
+    {
+      "company": "Microcosmos",
+      "position": "Co-Founder and Game Developer",
+      "period": "Current",
+      "projects": [
+        {
+          "name": "Miniverse",
+          "description": "Okul projesi olarak başladığımız daha sonrasında bugLabTekmer ön inkübasyonuna girip geliştirdiğimiz bir proje.",
+          "features": [
+            "Market ve Inventory Sistemi",
+            "Tarla ve inşaat için Tilemap sistemi",
+            "NPC ve Dialogue Sistemleri",
+            "Scriptable Objects"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "NeptuneForKids",
+      "position": "Game Developer",
+      "period": "Current",
+      "projects": [
+        {
+          "name": "Neptune",
+          "description": "Startup olarak başlayan uluslararası bir şirket. Çocuklara yönelik mobil cihazlarda müzik eğitimini oyunlaştırıyorlar. AI kullanımı ile çocukların enstrümanları kullanışına göre puanlandırma ve tavsiye verme. Kurulumu sonrası Almanya'da Fraunhofer HHI tech startup programına katıldı.",
+          "features": [
+            "Oyundaki farklı minigameler",
+            "Farklı mobil cihazlar için çözünürlük ayarları",
+            "UX tecrübesi",
+            "Android build"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Team Rezerve",
+      "position": "Game Developer",
+      "period": "Current",
+      "projects": [
+        {
+          "name": "Magnesian",
+          "description": "5 kişi olarak geliştirdiğimiz bir Action-Platformer. 2 ve 3 Boyutlu sahnelemeyi ve oynanışı birbirine kattığımız, hikayesi boyunca farklı dünyalara tanık olduğumuz ve geçtiğimiz bir oyun. OGEM destek programı sonrasında Steam sayfası açıldı.",
+          "features": [
+            "Enemy ve NPC AI",
+            "Sound ve Audio sistemlerinin inşası",
+            "Unity Editor kodlaması ile takım arkadaşları için yaratılan tools",
+            "Inventory Sistemi"
+          ]
+        }
+      ]
+    }
+  ],
+  "skills": [
+    "Unity",
+    "C#",
+    "GitHub",
+    "Scriptable Objects",
+    "NPC Systems",
+    "Dialogue Systems",
+    "Inventory Systems",
+    "Tilemap Systems",
+    "AI Systems",
+    "Audio Systems",
+    "Unity Editor Tools"
+  ],
+  "projects": [
+    {
+      "name": "Miniverse",
+      "images": [
+        "Miniverse/Miniverse1.png",
+        "Miniverse/Miniverse2.png",
+        "Miniverse/Miniverse3.png"
+      ],
+      "features": [
+        "Market ve Inventory Sistemi",
+        "Tarla ve inşaat için Tilemap sistemi",
+        "NPC ve Dialogue Sistemleri",
+        "Scriptable Objects"
+      ]
+    },
+    {
+      "name": "Neptune",
+      "images": [
+        "Neptune/Neptune1.png",
+        "Neptune/Neptune2.png",
+        "Neptune/Neptune3.png"
+      ],
+      "features": [
+        "Oyundaki farklı minigameler",
+        "Farklı mobil cihazlar için çözünürlük ayarları",
+        "UX tecrübesi",
+        "Android build"
+      ]
+    },
+    {
+      "name": "Magnesian",
+      "images": [
+        "Magnesian/Magnesian1.jpg",
+        "Magnesian/Magnesian2.png",
+        "Magnesian/Magnesian3.png"
+      ],
+      "features": [
+        "Enemy ve NPC AI",
+        "Sound ve Audio sistemlerinin inşası",
+        "Unity Editor kodlaması ile takım arkadaşları için yaratılan tools",
+        "Inventory Sistemi"
+      ]
+    }
+  ]
+}
+

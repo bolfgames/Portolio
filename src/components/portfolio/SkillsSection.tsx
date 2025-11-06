@@ -29,6 +29,14 @@ export default function SkillsSection({ skills, accentColor }: SkillsSectionProp
       'GitHub': 'portfolio.skillItems.github',
       'Trello': 'portfolio.skillItems.trello',
       'Figma': 'portfolio.skillItems.figma',
+      'Scriptable Objects': 'portfolio.skillItems.scriptableObjects',
+      'NPC Systems': 'portfolio.skillItems.npcSystems',
+      'Dialogue Systems': 'portfolio.skillItems.dialogueSystems',
+      'Inventory Systems': 'portfolio.skillItems.inventorySystems',
+      'Tilemap Systems': 'portfolio.skillItems.tilemapSystems',
+      'AI Systems': 'portfolio.skillItems.aiSystems',
+      'Audio Systems': 'portfolio.skillItems.audioSystems',
+      'Unity Editor Tools': 'portfolio.skillItems.unityEditorTools',
     };
     
     const key = skillMap[skill];
