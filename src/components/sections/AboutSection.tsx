@@ -77,7 +77,7 @@ function AboutSection() {
               <div className="text-bolf-gray text-sm md:text-base">{t('about.stats.yearsExperience')}</div>
             </div>
             <div className="p-6 bg-bolf-black/50 border border-bolf-white/5 rounded-lg">
-              <div className="text-3xl md:text-4xl font-bold text-bolf-orange mb-2">5</div>
+              <div className="text-3xl md:text-4xl font-bold text-bolf-orange mb-2">6</div>
               <div className="text-bolf-gray text-sm md:text-base">{t('about.stats.teamMembers')}</div>
             </div>
             <div className="p-6 bg-bolf-black/50 border border-bolf-white/5 rounded-lg">
