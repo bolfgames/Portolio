@@ -429,8 +429,8 @@ function TeamMemberPage() {
   const isAtaCem = member?.name.toLowerCase().includes('ata');
   const isErdem = member?.name.toLowerCase().includes('erdem');
   const isSelim = member?.name.toLowerCase().includes('selim');
-  // Emir Sayın için yeşil (#2ECC71), Ahmet Emir için mor (#9B59B6), Ata Cem ve Erdem için altın (#FFD700), Selim için mavi (#3498DB), diğerleri için role color
-  const accentColor = isEmir ? '#2ECC71' : (isAhmetEmir ? '#9B59B6' : (isAtaCem ? '#FFD700' : (isErdem ? '#FFD700' : (isSelim ? '#3498DB' : roleColor))));
+  // Emir Sayın için yeşil (#2ECC71), Ahmet Emir için mor (#9B59B6), Ata Cem için altın (#FFD700), Erdem için turuncu (#FF8C00), Selim için mavi (#3498DB), diğerleri için role color
+  const accentColor = isEmir ? '#2ECC71' : (isAhmetEmir ? '#9B59B6' : (isAtaCem ? '#FFD700' : (isErdem ? '#FF8C00' : (isSelim ? '#3498DB' : roleColor))));
 
   return (
     <Layout>
@@ -875,7 +875,8 @@ function TeamMemberPage() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="text-3xl md:text-4xl font-bold text-bolf-white mb-6"
+                    className="text-3xl md:text-4xl font-bold mb-6"
+                    style={{ color: accentColor }}
                   >
                     {t('portfolio.contact')}
                   </motion.h2>
@@ -961,7 +962,8 @@ function TeamMemberPage() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="text-3xl md:text-4xl font-bold text-bolf-white mb-8"
+                    className="text-3xl md:text-4xl font-bold mb-8"
+                    style={{ color: accentColor }}
                   >
                     {t('portfolio.projects')}
                   </motion.h2>
