@@ -31,7 +31,6 @@
         "camera5.1_1.jpg",
         "camera5_1.jpg",
         "camera8.jpg",
-        "camera8_1.jpg",
         "camera9_1.jpg"
       ]
     },
@@ -55,10 +54,9 @@
     {
       "name": "DDs MAc 10",
       "images": [
-        "mac1.3bbn.,.jpg",
+        "mac1.3bbn.jpg",
         "mac1.6.jpg",
-        "macbbdc.jpg",
-        "macbbdc_1.jpg"
+        "macbbdc.jpg"
       ]
     }
   ]
