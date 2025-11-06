@@ -61,6 +61,13 @@
           "features": [
             "Oyun Tasarımı"
           ]
+        },
+        {
+          "name": "the Birdie",
+          "description": "Oyun Tasarımcısı olarak görev aldım.",
+          "features": [
+            "Oyun Tasarımı"
+          ]
         }
       ]
     }
@@ -172,6 +179,20 @@
         "Oyun Tasarımı",
         "Game Jam"
       ]
+    },
+    {
+      "name": "the Birdie",
+      "images": [
+        "TheBirdie/birdie_1.png",
+        "TheBirdie/birdie_2.png",
+        "TheBirdie/birdie_3.png",
+        "TheBirdie/birdie_4.png",
+        "TheBirdie/birdie_5.png"
+      ],
+      "features": [
+        "Oyun Tasarımı"
+      ],
+      "videoUrl": "https://drive.google.com/file/d/1A8jXOrAwFPL6pSMrhwAQCO7jP50T83Ee/view?usp=sharing"
     }
   ]
 }

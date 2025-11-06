@@ -101,6 +101,25 @@ export default function SteamStyleProject({ project, accentColor = '#2ECC71', im
     return videoId ? `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg` : null;
   };
 
+  // Extract Google Drive file ID from URL and convert to embed format
+  const getGoogleDriveEmbedUrl = (url: string) => {
+    const regExp = /\/file\/d\/([a-zA-Z0-9_-]+)/;
+    const match = url.match(regExp);
+    const fileId = match ? match[1] : null;
+    if (!fileId) return null;
+    return `https://drive.google.com/file/d/${fileId}/preview`;
+  };
+
+  // Check if URL is Google Drive
+  const isGoogleDriveUrl = (url: string) => {
+    return url.includes('drive.google.com');
+  };
+
+  // Check if URL is YouTube
+  const isYouTubeUrl = (url: string) => {
+    return url.includes('youtube.com') || url.includes('youtu.be');
+  };
+
   // When selectedIndex changes via prev/next, reset video if it's a video
   // But preserve video playing state if user clicked thumbnail
   useEffect(() => {
@@ -118,8 +137,19 @@ export default function SteamStyleProject({ project, accentColor = '#2ECC71', im
   }, [selectedIndex, displayItems, clickedVideoIndex]);
 
   const currentItem = displayItems[selectedIndex];
-  const embedUrl = currentItem.type === 'video' && currentItem.url ? getYouTubeEmbedUrl(currentItem.url, isVideoPlaying) : null;
-  const thumbnailUrl = currentItem.type === 'video' && currentItem.url ? getYouTubeThumbnailUrl(currentItem.url) : null;
+  let embedUrl: string | null = null;
+  let thumbnailUrl: string | null = null;
+  
+  if (currentItem.type === 'video' && currentItem.url) {
+    if (isYouTubeUrl(currentItem.url)) {
+      embedUrl = getYouTubeEmbedUrl(currentItem.url, isVideoPlaying);
+      thumbnailUrl = getYouTubeThumbnailUrl(currentItem.url);
+    } else if (isGoogleDriveUrl(currentItem.url)) {
+      embedUrl = getGoogleDriveEmbedUrl(currentItem.url);
+      // Google Drive doesn't provide thumbnails, so we'll use a placeholder or first image
+      thumbnailUrl = project.images.length > 0 ? getAssetPath(`${getImageBasePath()}/${project.images[0]}`) : null;
+    }
+  }
 
   // Helper function to translate project names
   const translateProjectName = (name: string): string => {
@@ -134,6 +164,7 @@ export default function SteamStyleProject({ project, accentColor = '#2ECC71', im
       'Lunscale': 'portfolio.projectNames.lunscale',
       'Balloose': 'portfolio.projectNames.balloose',
       'Gallooop': 'portfolio.projectNames.gallooop',
+      'the Birdie': 'portfolio.projectNames.theBirdie',
     };
     
     const key = nameMap[name];
@@ -282,6 +313,7 @@ export default function SteamStyleProject({ project, accentColor = '#2ECC71', im
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                     className="steam-video-iframe"
+                    style={{ width: '100%', height: '100%', border: 'none' }}
                   />
                 )}
               </div>
@@ -343,8 +375,17 @@ export default function SteamStyleProject({ project, accentColor = '#2ECC71', im
                 aria-label={`View ${item.type === 'video' ? 'video' : `image ${index + 1}`}`}
               >
                 {item.type === 'video' ? (
-                  <div className="steam-thumbnail-video">
-                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="steam-thumbnail-video" style={{ position: 'relative' }}>
+                    {item.url && isGoogleDriveUrl(item.url) && project.images.length > 0 ? (
+                      <img
+                        src={getAssetPath(`${getImageBasePath()}/${project.images[0]}`)}
+                        alt={`${project.name} video thumbnail`}
+                        className="steam-thumbnail-image"
+                        style={{ opacity: 0.7 }}
+                        loading="lazy"
+                      />
+                    ) : null}
+                    <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1 }}>
                       <path d="M8 5v14l11-7z"/>
                     </svg>
                   </div>
