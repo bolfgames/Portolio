@@ -47,11 +47,11 @@
     {
       "name": "Durih",
       "images": [
-        "durih_1.jpg",
-        "durih_2.png",
-        "durih_3.png",
-        "durih_4.png",
-        "durih_5.png"
+        "Durih/durih_1.jpg",
+        "Durih/durih_2.png",
+        "Durih/durih_3.png",
+        "Durih/durih_4.png",
+        "Durih/durih_5.png"
       ],
       "features": [
         "Karakter Tasarımı",
@@ -62,10 +62,15 @@
     {
       "name": "Lunscale",
       "images": [
-        "lundscale_1.jpg",
-        "lundscale_2.jpg",
-        "lundscale_3.jpg",
-        "lundscale_4.jpg"
+        "Lundscale/lundscale_1.jpg",
+        "Lundscale/lundscale_2.jpg",
+        "Lundscale/lundscale_3.jpg",
+        "Lundscale/lundscale_4.jpg",
+        "Lundscale/1001.jpg",
+        "Lundscale/1002.jpg",
+        "Lundscale/1003.jpg",
+        "Lundscale/1004.jpg",
+        "Lundscale/1005.jpg"
       ],
       "features": [
         "Konsept Çizimi"
@@ -74,10 +79,10 @@
     {
       "name": "Kişisel çizimler",
       "images": [
-        "personal_1.jpg",
-        "personal_2.jpg",
-        "personal_3.jpg",
-        "personal_4.jpg"
+        "kisisel_cizimler/personal_1.jpg",
+        "kisisel_cizimler/personal_2.jpg",
+        "kisisel_cizimler/personal_3.jpg",
+        "kisisel_cizimler/personal_4.jpg"
       ]
     }
   ]

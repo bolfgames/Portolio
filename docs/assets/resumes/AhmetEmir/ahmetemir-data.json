@@ -131,7 +131,12 @@
         "Lunscale/lundscale_1.jpg",
         "Lunscale/lundscale_2.jpg",
         "Lunscale/lundscale_3.jpg",
-        "Lunscale/lundscale_4.jpg"
+        "Lunscale/lundscale_4.jpg",
+        "Lunscale/1001.jpg",
+        "Lunscale/1002.jpg",
+        "Lunscale/1003.jpg",
+        "Lunscale/1004.jpg",
+        "Lunscale/1005.jpg"
       ],
       "features": [
         "Oyun Tasarımı"
@@ -150,7 +155,8 @@
         "Balloose/Ekran görüntüsü 2024-12-22 132726.png"
       ],
       "features": [
-        "Oyun Tasarımı"
+        "Oyun Tasarımı",
+        "Game Jam"
       ]
     },
     {
@@ -163,7 +169,8 @@
         "Gallooop/5.jpg"
       ],
       "features": [
-        "Oyun Tasarımı"
+        "Oyun Tasarımı",
+        "Game Jam"
       ]
     }
   ]

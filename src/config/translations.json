@@ -319,7 +319,8 @@
         "enemyNpcAi": "Enemy ve NPC AI",
         "soundAudioSystems": "Sound ve Audio sistemlerinin inşası",
         "unityEditorTools": "Unity Editor kodlaması ile takım arkadaşları için yaratılan tools",
-        "inventorySystem": "Inventory Sistemi"
+        "inventorySystem": "Inventory Sistemi",
+        "gameJam": "Game Jam"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -769,7 +770,8 @@
         "enemyNpcAi": "Enemy and NPC AI",
         "soundAudioSystems": "Sound and Audio system construction",
         "unityEditorTools": "Unity Editor coding tools created for team members",
-        "inventorySystem": "Inventory System"
+        "inventorySystem": "Inventory System",
+        "gameJam": "Game Jam"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1201,7 +1203,8 @@
         "enemyNpcAi": "Feind- und NPC-KI",
         "soundAudioSystems": "Sound- und Audio-Systemkonstruktion",
         "unityEditorTools": "Unity Editor-Codierungstools für Teammitglieder erstellt",
-        "inventorySystem": "Inventarsystem"
+        "inventorySystem": "Inventarsystem",
+        "gameJam": "Game Jam"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1633,7 +1636,8 @@
         "enemyNpcAi": "IA ennemie et PNJ",
         "soundAudioSystems": "Construction de systèmes sonores et audio",
         "unityEditorTools": "Outils de codage Unity Editor créés pour les membres de l'équipe",
-        "inventorySystem": "Système d'inventaire"
+        "inventorySystem": "Système d'inventaire",
+        "gameJam": "Game Jam"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2065,7 +2069,8 @@
         "enemyNpcAi": "IA de enemigos y NPC",
         "soundAudioSystems": "Construcción de sistemas de sonido y audio",
         "unityEditorTools": "Herramientas de codificación Unity Editor creadas para miembros del equipo",
-        "inventorySystem": "Sistema de inventario"
+        "inventorySystem": "Sistema de inventario",
+        "gameJam": "Game Jam"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2498,7 +2503,8 @@
         "enemyNpcAi": "敵とNPCのAI",
         "soundAudioSystems": "サウンドとオーディオシステムの構築",
         "unityEditorTools": "チームメンバー向けに作成されたUnity Editorコーディングツール",
-        "inventorySystem": "インベントリシステム"
+        "inventorySystem": "インベントリシステム",
+        "gameJam": "Game Jam"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2930,7 +2936,8 @@
         "enemyNpcAi": "敌人和NPC AI",
         "soundAudioSystems": "声音和音频系统构建",
         "unityEditorTools": "为团队成员创建的Unity Editor编码工具",
-        "inventorySystem": "库存系统"
+        "inventorySystem": "库存系统",
+        "gameJam": "Game Jam"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",

@@ -847,22 +847,7 @@ function TeamMemberPage() {
 
                   <div className="space-y-16">
                     {ataCemData.projects.map((project) => (
-                      <div key={project.name} className="mb-12">
-                        <motion.h3
-                          initial={{ opacity: 0, y: -10 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.3 }}
-                          className="text-2xl md:text-3xl font-bold mb-6 text-center"
-                          style={{ color: accentColor }}
-                        >
-                          {project.name}
-                        </motion.h3>
-                        <ResponsiveSlideshow
-                          images={project.images}
-                          projectName={project.name}
-                          accentColor={accentColor}
-                        />
-                      </div>
+                      <SteamStyleProject key={project.name} project={project} accentColor={accentColor} imageBasePath="assets/resumes/AtaCem/project_images" />
                     ))}
                   </div>
                 </section>

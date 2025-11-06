@@ -178,6 +178,7 @@ export default function SteamStyleProject({ project, accentColor = '#2ECC71', im
       'Sound ve Audio sistemlerinin inşası': 'portfolio.projectFeatures.soundAudioSystems',
       'Unity Editor kodlaması ile takım arkadaşları için yaratılan tools': 'portfolio.projectFeatures.unityEditorTools',
       'Inventory Sistemi': 'portfolio.projectFeatures.inventorySystem',
+      'Game Jam': 'portfolio.projectFeatures.gameJam',
     };
     
     const key = featureMap[feature];
