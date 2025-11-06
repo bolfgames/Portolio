@@ -439,6 +439,12 @@
           "name": "Ata Cem Kılınç",
           "role": "2D Tasarımcı",
           "bio": ""
+        },
+        {
+          "id": 6,
+          "name": "Selim Sabuncu",
+          "role": "Unity Oyun Geliştirici",
+          "bio": ""
         }
       ]
     }
@@ -848,6 +854,12 @@
           "name": "Ata Cem Kılınç",
           "role": "2D Designer",
           "bio": ""
+        },
+        {
+          "id": 6,
+          "name": "Selim Sabuncu",
+          "role": "Unity Game Developer",
+          "bio": ""
         }
       ]
     }
@@ -1253,6 +1265,12 @@
           "id": 5,
           "name": "Ata Cem Kılınç",
           "role": "2D-Designer",
+          "bio": ""
+        },
+        {
+          "id": 6,
+          "name": "Selim Sabuncu",
+          "role": "Unity Spieleentwickler",
           "bio": ""
         }
       ]
@@ -1660,6 +1678,12 @@
           "name": "Ata Cem Kılınç",
           "role": "Designer 2D",
           "bio": ""
+        },
+        {
+          "id": 6,
+          "name": "Selim Sabuncu",
+          "role": "Développeur de Jeux Unity",
+          "bio": ""
         }
       ]
     }
@@ -2065,6 +2089,12 @@
           "id": 5,
           "name": "Ata Cem Kılınç",
           "role": "Designer 2D",
+          "bio": ""
+        },
+        {
+          "id": 6,
+          "name": "Selim Sabuncu",
+          "role": "Desarrollador de Juegos Unity",
           "bio": ""
         }
       ]
@@ -2473,6 +2503,12 @@
           "name": "Ata Cem Kılınç",
           "role": "2Dデザイナー",
           "bio": ""
+        },
+        {
+          "id": 6,
+          "name": "Selim Sabuncu",
+          "role": "Unityゲーム開発者",
+          "bio": ""
         }
       ]
     }
@@ -2878,6 +2914,12 @@
           "id": 5,
           "name": "Ata Cem Kılınç",
           "role": "2D设计师",
+          "bio": ""
+        },
+        {
+          "id": 6,
+          "name": "Selim Sabuncu",
+          "role": "Unity游戏开发者",
           "bio": ""
         }
       ]

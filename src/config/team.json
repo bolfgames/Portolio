@@ -89,6 +89,24 @@
       },
       "projects": [],
       "socialLinks": {}
+    },
+    {
+      "id": 6,
+      "name": "Selim Sabuncu",
+      "role": "Unity Oyun Geliştirici",
+      "roleType": "developer",
+      "bio": "",
+      "avatar": "/assets/team-members/Selim_1.jpg",
+      "avatarCrop": {
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 100,
+        "scale": 1,
+        "rotation": 0
+      },
+      "projects": [],
+      "socialLinks": {}
     }
   ]
 }
