@@ -429,8 +429,8 @@ function TeamMemberPage() {
   const isAtaCem = member?.name.toLowerCase().includes('ata');
   const isErdem = member?.name.toLowerCase().includes('erdem');
   const isSelim = member?.name.toLowerCase().includes('selim');
-  // Emir Sayın için yeşil (#2ECC71), Ahmet Emir için mor (#9B59B6), Ata Cem ve Erdem için altın (#FFD700), Selim için koyu yeşil (#27AE60), diğerleri için role color
-  const accentColor = isEmir ? '#2ECC71' : (isAhmetEmir ? '#9B59B6' : (isAtaCem ? '#FFD700' : (isErdem ? '#FFD700' : (isSelim ? '#27AE60' : roleColor))));
+  // Emir Sayın için yeşil (#2ECC71), Ahmet Emir için mor (#9B59B6), Ata Cem ve Erdem için altın (#FFD700), Selim için mavi (#3498DB), diğerleri için role color
+  const accentColor = isEmir ? '#2ECC71' : (isAhmetEmir ? '#9B59B6' : (isAtaCem ? '#FFD700' : (isErdem ? '#FFD700' : (isSelim ? '#3498DB' : roleColor))));
 
   return (
     <Layout>
@@ -998,7 +998,7 @@ function TeamMemberPage() {
                   </div>
                 </section>
               </div>
-            ) : selimData && member?.name.toLowerCase().includes('selim') ? (
+              ) : selimData && member?.name.toLowerCase().includes('selim') ? (
               <div className="space-y-12">
                 {/* Contact Section */}
                 <section className="mb-12">
@@ -1006,7 +1006,8 @@ function TeamMemberPage() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="text-3xl md:text-4xl font-bold text-bolf-white mb-6"
+                    className="text-3xl md:text-4xl font-bold mb-6"
+                    style={{ color: accentColor }}
                   >
                     {t('portfolio.contact')}
                   </motion.h2>
@@ -1076,7 +1077,8 @@ function TeamMemberPage() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
-                    className="text-3xl md:text-4xl font-bold text-bolf-white mb-8"
+                    className="text-3xl md:text-4xl font-bold mb-8"
+                    style={{ color: accentColor }}
                   >
                     {t('portfolio.projects')}
                   </motion.h2>
