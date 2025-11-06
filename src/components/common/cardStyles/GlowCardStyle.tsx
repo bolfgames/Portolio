@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import type { ProjectCardStyleProps, TeamMemberCardStyleProps } from './types';
 import { platformService } from '../../../services/platformService';
-import Button from '../Button';
 import { useI18n } from '../../../contexts/I18nContext';
 
 /**
@@ -205,7 +204,7 @@ export function GlowProjectCard({
         </p>
 
         {/* Platforms */}
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2">
           {project.platforms.map((platform) => (
             <span
               key={platform}
@@ -216,20 +215,6 @@ export function GlowProjectCard({
             </span>
           ))}
         </div>
-
-
-        {/* CTA Button */}
-        <Button
-          onClick={(e) => {
-            e?.stopPropagation();
-            if (project.link) window.open(project.link, '_blank');
-          }}
-          variant="secondary"
-          size="small"
-          className="w-full"
-        >
-          {t('projects.viewDetails')}
-        </Button>
       </div>
     </div>
   );

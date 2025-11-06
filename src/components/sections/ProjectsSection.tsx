@@ -1,10 +1,12 @@
-import { useMemo, useEffect } from 'react';
+import { useMemo, useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { dataService } from '../../services/dataService';
 import { platformService } from '../../services/platformService';
 import ProjectCard from '../common/ProjectCard';
+import ProjectModal from '../common/ProjectModal';
 import { useI18n } from '../../contexts/I18nContext';
 import BOLFKeyboardWrapper from './BOLFKeyboard';
+import type { Project } from '../../models/types';
 
 /**
  * Projects Section Component
@@ -12,6 +14,8 @@ import BOLFKeyboardWrapper from './BOLFKeyboard';
  */
 function ProjectsSection() {
   const { t, language } = useI18n();
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   
   // Update services language when language changes
   useEffect(() => {
@@ -24,6 +28,16 @@ function ProjectsSection() {
     // Pass language directly to get localized data
     return dataService.getAllProjects(language);
   }, [language]);
+
+  const handleProjectClick = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setTimeout(() => setSelectedProject(null), 300); // Delay to allow animation
+  };
 
   return (
     <section id="projects" className="pt-8 md:pt-12 pb-20 md:pb-32 bg-bolf-black">
@@ -55,11 +69,18 @@ function ProjectsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
-              <ProjectCard project={project} />
+              <ProjectCard project={project} onCardClick={handleProjectClick} />
             </motion.div>
           ))}
         </div>
       </div>
+
+      {/* Project Modal */}
+      <ProjectModal
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </section>
   );
 }

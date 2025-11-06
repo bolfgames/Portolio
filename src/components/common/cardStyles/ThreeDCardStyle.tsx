@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import type { ProjectCardStyleProps, TeamMemberCardStyleProps } from './types';
 import { platformService } from '../../../services/platformService';
-import Button from '../Button';
 import { useI18n } from '../../../contexts/I18nContext';
 
 /**
@@ -362,22 +361,6 @@ export function ThreeDProjectCard({
                 <span>{platformService.getPlatformDisplayName(platform)}</span>
               </span>
             ))}
-          </div>
-
-
-          {/* CTA Button */}
-          <div style={{ transform: 'translateZ(40px)' }}>
-            <Button
-                onClick={(e) => {
-                  e?.stopPropagation();
-                  if (project.link) window.open(project.link, '_blank');
-                }}
-              variant="primary"
-              size="small"
-              className="w-full sm:w-auto min-w-[190px]"
-            >
-              {t('projects.viewDetails')}
-            </Button>
           </div>
         </div>
       </div>

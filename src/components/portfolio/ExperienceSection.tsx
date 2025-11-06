@@ -174,7 +174,27 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
   };
 
   // Helper function to translate descriptions
-  const translateDescription = (description: string): string => {
+  const translateDescription = (description: string, projectName?: string): string => {
+    // Special handling for "Görev alındı." based on project name
+    if (description === 'Görev alındı.' && projectName) {
+      if (projectName === 'Balloose') {
+        try {
+          const translated = t('portfolio.projectDescriptions.ballooseDescriptionErdem');
+          if (translated && translated !== 'portfolio.projectDescriptions.ballooseDescriptionErdem') {
+            return translated;
+          }
+        } catch {}
+      }
+      if (projectName === 'Gallooop') {
+        try {
+          const translated = t('portfolio.projectDescriptions.gallooopDescriptionErdem');
+          if (translated && translated !== 'portfolio.projectDescriptions.gallooopDescriptionErdem') {
+            return translated;
+          }
+        } catch {}
+      }
+    }
+
     const descMap: Record<string, string> = {
       'Level-based arcade game inspired by Flappy Bird': 'portfolio.projectDescriptions.levelBasedArcade',
       'Local multiplayer for touch tables': 'portfolio.projectDescriptions.localMultiplayer',
@@ -337,7 +357,7 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
                   <h4 className="text-xl font-semibold text-bolf-white mb-2">
                     {translateProjectName(project.name)}
                   </h4>
-                  <p className="text-bolf-gray/80 mb-2">{translateDescription(project.description)}</p>
+                  <p className="text-bolf-gray/80 mb-2">{translateDescription(project.description, project.name)}</p>
                   
                   {project.features && project.features.length > 0 && (
                     <ul className="list-disc list-inside space-y-1 text-bolf-gray/70 ml-4">

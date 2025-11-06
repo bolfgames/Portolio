@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import type { ProjectCardStyleProps, TeamMemberCardStyleProps } from './types';
 import { platformService } from '../../../services/platformService';
-import Button from '../Button';
 import { useI18n } from '../../../contexts/I18nContext';
 
 /**
@@ -134,7 +133,7 @@ export function NFTProjectCard({
         <hr style={{ width: '100%', border: 'none', borderBottom: '1px solid rgba(136, 136, 136, 0.3)', marginTop: 0 }} />
 
         {/* Type Badge / Creator */}
-        <div className="flex items-center mt-2 mb-2">
+        <div className="flex items-center mt-2">
           <div className="flex items-center border border-white/10 p-1 mr-2 rounded-full" style={{ boxShadow: 'inset 0 0 0 4px rgba(0, 0, 0, 0.7)' }}>
             {project.type === 'media' ? (
               <span className="text-xs">📺</span>
@@ -146,19 +145,6 @@ export function NFTProjectCard({
             <span style={{ textDecoration: 'none' }}>{project.type === 'media' ? t('projects.mediaBadge') : 'Game'}</span>
           </p>
         </div>
-
-        {/* CTA Button */}
-        <Button
-          onClick={(e) => {
-            e?.stopPropagation();
-            if (project.link) window.open(project.link, '_blank');
-          }}
-          variant="secondary"
-          size="small"
-          className="w-full mt-2"
-        >
-          {t('projects.viewDetails')}
-        </Button>
       </div>
     </div>
   );

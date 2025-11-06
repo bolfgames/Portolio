@@ -2,40 +2,40 @@
   "projects": [
     {
       "id": 1,
-      "name": "Project Alpha",
-      "description": "An exciting action-adventure game with innovative gameplay mechanics.",
+      "name": "Durih",
+      "description": "Kart tabanlı 2D RPG oyun projesi. Oyun karakterleri, konsept sanat çalışmaları ve kart tasarımları üzerinde çalışıldı.",
       "platforms": ["PC", "Mobile"],
-      "image": "/assets/icons/placeholder-project.jpg",
+      "image": "assets/resumes/Emir/project_images/durih_1.jpg",
       "link": "#",
-      "tags": ["Action", "Adventure", "Indie"],
+      "tags": ["RPG", "Card Game", "2D"],
       "type": "game"
     },
     {
       "id": 2,
-      "name": "Project Beta",
-      "description": "A strategic puzzle game that challenges your mind.",
-      "platforms": ["PC", "Web"],
-      "image": "/assets/images/projects/project-beta.jpg",
+      "name": "Lunscale",
+      "description": "3D vampire survivors benzeri oyun projesi. Proje yönetimi, görsel tasarım ve oyun tasarımı alanlarında çalışıldı.",
+      "platforms": ["PC", "Mobile"],
+      "image": "assets/resumes/AhmetEmir/project_images/Lunscale/lundscale_1.jpg",
       "link": "#",
-      "tags": ["Puzzle", "Strategy", "Casual"],
+      "tags": ["Action", "Survivor", "3D"],
       "type": "game"
     },
     {
       "id": 3,
-      "name": "Project Gamma",
-      "description": "Immerse yourself in a beautiful fantasy world.",
-      "platforms": ["PC", "Console"],
-      "image": "/assets/images/projects/project-gamma.jpg",
+      "name": "Gloveffect",
+      "description": "Yarıyıl projesi olarak başlayan FPS-Shooter oyunu, oynanabilir bir prototip haline getirildi.",
+      "platforms": ["PC"],
+      "image": "assets/resumes/Emir/project_images/Gloveffect_1.jpg",
       "link": "#",
-      "tags": ["RPG", "Fantasy", "Story-Driven"],
+      "tags": ["FPS", "Shooter", "Prototype"],
       "type": "game"
     },
     {
       "id": 4,
-      "name": "BOLF Media - Oyun Haberleri",
+      "name": "BOLF Medya",
       "description": "Oyun dünyasından en güncel haberler, incelemeler ve içerikler. Instagram ve Youtube'da yayınlanan BOLF Media içerikleri.",
       "platforms": ["Web"],
-      "image": "/assets/icons/placeholder-project.jpg",
+      "image": "assets/icons/fulllogobznpng_Çalışma Yüzeyi 1.png",
       "video": "",
       "link": "#",
       "tags": ["Media", "News", "Content"],
@@ -43,14 +43,13 @@
     },
     {
       "id": 5,
-      "name": "BOLF Media - YouTube Serisi",
-      "description": "Youtube'da yayınlanan oyun haberleri ve içerik serileri.",
-      "platforms": ["Web"],
-      "image": "/assets/icons/placeholder-project.jpg",
-      "video": "",
-      "link": "#",
-      "tags": ["Media", "YouTube", "Video"],
-      "type": "media"
+      "name": "the Birdie",
+      "description": "Flappy Bird'den ilham alan seviye tabanlı arcade oyunu. Play Store'da yayınlanan mobil oyun.",
+      "platforms": ["Mobile"],
+      "image": "assets/resumes/AhmetEmir/project_images/TheBirdie/birdie_1.png",
+      "link": "https://play.google.com/store/apps/details?id=com.BOLFGames.Birdie",
+      "tags": ["Arcade", "Mobile", "Casual"],
+      "type": "game"
     }
   ]
 }

@@ -197,7 +197,9 @@
         "lunscaleDescriptionFurkan": "Unity Game Developer olarak görev aldım.",
         "gloveffectDescriptionErdem": "3D artist ve art director olarak görev aldım. Projenin görsel dilini baştan sona oluşturma ve yönetme konusunda değerli deneyimler kazandım.",
         "theBirdieDescriptionErdem": "Art director olarak görev aldım. Play Store'da yayınlanan oyunumuzun görsel yönetimini üstlendim.",
-        "lunscaleDescriptionErdem": "Proje yönetimi, 3D artist ve art director olarak görev aldım."
+        "lunscaleDescriptionErdem": "Proje yönetimi, 3D artist ve art director olarak görev aldım.",
+        "ballooseDescriptionErdem": "Görev alındı.",
+        "gallooopDescriptionErdem": "Görev alındı."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -402,33 +404,33 @@
       "projects": [
         {
           "id": 1,
-          "name": "Proje Alpha",
-          "description": "Yenilikçi oynanış mekanikleriyle heyecan verici bir aksiyon-macera oyunu.",
-          "tags": ["Aksiyon", "Macera", "Indie"]
+          "name": "Durih",
+          "description": "Kart tabanlı 2D RPG oyun projesi. Oyun karakterleri, konsept sanat çalışmaları ve kart tasarımları üzerinde çalışıldı.",
+          "tags": ["RPG", "Kart Oyunu", "2D"]
         },
         {
           "id": 2,
-          "name": "Proje Beta",
-          "description": "Zihninizi zorlayan stratejik bir bulmaca oyunu.",
-          "tags": ["Bulmaca", "Strateji", "Casual"]
+          "name": "Lunscale",
+          "description": "3D vampire survivors benzeri oyun projesi. Proje yönetimi, görsel tasarım ve oyun tasarımı alanlarında çalışıldı.",
+          "tags": ["Aksiyon", "Survivor", "3D"]
         },
         {
           "id": 3,
-          "name": "Proje Gamma",
-          "description": "Kendinizi güzel bir fantastik dünyaya bırakın.",
-          "tags": ["RPG", "Fantastik", "Hikaye Odaklı"]
+          "name": "Gloveffect",
+          "description": "Yarıyıl projesi olarak başlayan FPS-Shooter oyunu, oynanabilir bir prototip haline getirildi.",
+          "tags": ["FPS", "Shooter", "Prototip"]
         },
         {
           "id": 4,
-          "name": "BOLF Media - Oyun Haberleri",
+          "name": "BOLF Medya",
           "description": "Oyun dünyasından en güncel haberler, incelemeler ve içerikler. Instagram ve Youtube'da yayınlanan BOLF Media içerikleri.",
           "tags": ["Medya", "Haberler", "İçerik"]
         },
         {
           "id": 5,
-          "name": "BOLF Media - YouTube Serisi",
-          "description": "Youtube'da yayınlanan oyun haberleri ve içerik serileri.",
-          "tags": ["Medya", "YouTube", "Video"]
+          "name": "the Birdie",
+          "description": "Flappy Bird'den ilham alan seviye tabanlı arcade oyunu. Play Store'da yayınlanan mobil oyun.",
+          "tags": ["Arcade", "Mobil", "Casual"]
         }
       ],
       "team": [
@@ -667,7 +669,9 @@
         "lunscaleDescriptionFurkan": "Worked as Unity Game Developer.",
         "gloveffectDescriptionErdem": "Worked as 3D artist and art director. Gained valuable experience in creating and managing a project's visual language from start to finish.",
         "theBirdieDescriptionErdem": "Worked as art director. Took charge of the visual management of our game published on Play Store.",
-        "lunscaleDescriptionErdem": "Worked as project manager, 3D artist, and art director."
+        "lunscaleDescriptionErdem": "Worked as project manager, 3D artist, and art director.",
+        "ballooseDescriptionErdem": "Task assigned.",
+        "gallooopDescriptionErdem": "Task assigned."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -876,33 +880,33 @@
       "projects": [
         {
           "id": 1,
-          "name": "Project Alpha",
-          "description": "An exciting action-adventure game with innovative gameplay mechanics.",
-          "tags": ["Action", "Adventure", "Indie"]
+          "name": "Durih",
+          "description": "Card-based 2D RPG game project. Worked on game characters, concept art, and card designs.",
+          "tags": ["RPG", "Card Game", "2D"]
         },
         {
           "id": 2,
-          "name": "Project Beta",
-          "description": "A strategic puzzle game that challenges your mind.",
-          "tags": ["Puzzle", "Strategy", "Casual"]
+          "name": "Lunscale",
+          "description": "3D vampire survivors-like game project. Worked on project management, visual design, and game design.",
+          "tags": ["Action", "Survivor", "3D"]
         },
         {
           "id": 3,
-          "name": "Project Gamma",
-          "description": "Immerse yourself in a beautiful fantasy world.",
-          "tags": ["RPG", "Fantasy", "Story-Driven"]
+          "name": "Gloveffect",
+          "description": "FPS-Shooter game that started as a semester project and was developed into a playable prototype.",
+          "tags": ["FPS", "Shooter", "Prototype"]
         },
         {
           "id": 4,
-          "name": "BOLF Media - Game News",
+          "name": "BOLF Media",
           "description": "The latest news, reviews and content from the gaming world. BOLF Media content published on Instagram and Youtube.",
           "tags": ["Media", "News", "Content"]
         },
         {
           "id": 5,
-          "name": "BOLF Media - YouTube Series",
-          "description": "Game news and content series published on Youtube.",
-          "tags": ["Media", "YouTube", "Video"]
+          "name": "the Birdie",
+          "description": "Level-based arcade game inspired by Flappy Bird. Mobile game published on Play Store.",
+          "tags": ["Arcade", "Mobile", "Casual"]
         }
       ],
       "team": [
@@ -1141,7 +1145,9 @@
         "lunscaleDescriptionFurkan": "Als Unity Spieleentwickler gearbeitet.",
         "gloveffectDescriptionErdem": "Als 3D-Künstler und Art Director gearbeitet. Wertvolle Erfahrungen in der Erstellung und Verwaltung der visuellen Sprache eines Projekts von Anfang bis Ende gesammelt.",
         "theBirdieDescriptionErdem": "Als Art Director gearbeitet. Übernahm die visuelle Verwaltung unseres im Play Store veröffentlichten Spiels.",
-        "lunscaleDescriptionErdem": "Als Projektmanager, 3D-Künstler und Art Director gearbeitet."
+        "lunscaleDescriptionErdem": "Als Projektmanager, 3D-Künstler und Art Director gearbeitet.",
+        "ballooseDescriptionErdem": "Aufgabe zugewiesen.",
+        "gallooopDescriptionErdem": "Aufgabe zugewiesen."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1344,33 +1350,33 @@
       "projects": [
         {
           "id": 1,
-          "name": "Projekt Alpha",
-          "description": "Ein aufregendes Action-Adventure-Spiel mit innovativen Gameplay-Mechaniken.",
-          "tags": ["Action", "Adventure", "Indie"]
+          "name": "Durih",
+          "description": "Kartenbasiertes 2D-RPG-Spielprojekt. Arbeit an Spielcharakteren, Konzeptkunst und Kartendesigns.",
+          "tags": ["RPG", "Kartenspiel", "2D"]
         },
         {
           "id": 2,
-          "name": "Projekt Beta",
-          "description": "Ein strategisches Puzzlespiel, das Ihren Verstand herausfordert.",
-          "tags": ["Puzzle", "Strategie", "Casual"]
+          "name": "Lunscale",
+          "description": "3D-Vampire-Survivors-ähnliches Spielprojekt. Arbeit an Projektmanagement, visuellem Design und Spieldesign.",
+          "tags": ["Action", "Survivor", "3D"]
         },
         {
           "id": 3,
-          "name": "Projekt Gamma",
-          "description": "Tauchen Sie ein in eine wunderschöne Fantasiewelt.",
-          "tags": ["RPG", "Fantasy", "Story-Driven"]
+          "name": "Gloveffect",
+          "description": "FPS-Shooter-Spiel, das als Semesterprojekt begann und zu einem spielbaren Prototyp entwickelt wurde.",
+          "tags": ["FPS", "Shooter", "Prototyp"]
         },
         {
           "id": 4,
-          "name": "BOLF Media - Spielemeldungen",
+          "name": "BOLF Media",
           "description": "Die neuesten Nachrichten, Reviews und Inhalte aus der Spielewelt. BOLF Media-Inhalte auf Instagram und Youtube veröffentlicht.",
-          "tags": ["Media", "Nachrichten", "Inhalt"]
+          "tags": ["Medien", "Nachrichten", "Inhalt"]
         },
         {
           "id": 5,
-          "name": "BOLF Media - YouTube-Serie",
-          "description": "Spielemeldungen und Inhaltsserien, die auf Youtube veröffentlicht werden.",
-          "tags": ["Media", "YouTube", "Video"]
+          "name": "the Birdie",
+          "description": "Levelbasiertes Arcade-Spiel, inspiriert von Flappy Bird. Mobiles Spiel, das im Play Store veröffentlicht wurde.",
+          "tags": ["Arcade", "Mobil", "Casual"]
         }
       ],
       "team": [
@@ -1609,7 +1615,9 @@
         "lunscaleDescriptionFurkan": "Travail en tant que Développeur de Jeux Unity.",
         "gloveffectDescriptionErdem": "Travail en tant qu'artiste 3D et directeur artistique. Acquérir une expérience précieuse dans la création et la gestion du langage visuel d'un projet du début à la fin.",
         "theBirdieDescriptionErdem": "Travail en tant que directeur artistique. Pris en charge de la gestion visuelle de notre jeu publié sur Play Store.",
-        "lunscaleDescriptionErdem": "Travail en tant que chef de projet, artiste 3D et directeur artistique."
+        "lunscaleDescriptionErdem": "Travail en tant que chef de projet, artiste 3D et directeur artistique.",
+        "ballooseDescriptionErdem": "Tâche assignée.",
+        "gallooopDescriptionErdem": "Tâche assignée."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2077,7 +2085,9 @@
         "lunscaleDescriptionFurkan": "Trabajé como Desarrollador de Juegos Unity.",
         "gloveffectDescriptionErdem": "Trabajé como artista 3D y director artístico. Adquirí valiosa experiencia en la creación y gestión del lenguaje visual de un proyecto de principio a fin.",
         "theBirdieDescriptionErdem": "Trabajé como director artístico. Me encargué de la gestión visual de nuestro juego publicado en Play Store.",
-        "lunscaleDescriptionErdem": "Trabajé como gerente de proyecto, artista 3D y director artístico."
+        "lunscaleDescriptionErdem": "Trabajé como gerente de proyecto, artista 3D y director artístico.",
+        "ballooseDescriptionErdem": "Tarea asignada.",
+        "gallooopDescriptionErdem": "Tarea asignada."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2280,33 +2290,33 @@
       "projects": [
         {
           "id": 1,
-          "name": "Proyecto Alpha",
-          "description": "Un emocionante juego de acción y aventura con mecánicas de juego innovadoras.",
-          "tags": ["Acción", "Aventura", "Indie"]
+          "name": "Durih",
+          "description": "Proyecto de juego RPG 2D basado en cartas. Trabajo en personajes del juego, arte conceptual y diseños de cartas.",
+          "tags": ["RPG", "Juego de Cartas", "2D"]
         },
         {
           "id": 2,
-          "name": "Proyecto Beta",
-          "description": "Un juego de rompecabezas estratégico que desafía tu mente.",
-          "tags": ["Rompecabezas", "Estrategia", "Casual"]
+          "name": "Lunscale",
+          "description": "Proyecto de juego similar a vampire survivors 3D. Trabajo en gestión de proyectos, diseño visual y diseño de juegos.",
+          "tags": ["Acción", "Survivor", "3D"]
         },
         {
           "id": 3,
-          "name": "Proyecto Gamma",
-          "description": "Sumérgete en un hermoso mundo de fantasía.",
-          "tags": ["RPG", "Fantasía", "Story-Driven"]
+          "name": "Gloveffect",
+          "description": "Juego FPS-Shooter que comenzó como proyecto de semestre y fue desarrollado en un prototipo jugable.",
+          "tags": ["FPS", "Shooter", "Prototipo"]
         },
         {
           "id": 4,
-          "name": "BOLF Media - Noticias de Juegos",
-          "description": "Las últimas noticias, reseñas y contenidos del mundo de los juegos. Contenidos de BOLF Media publicados en Instagram y Youtube.",
+          "name": "BOLF Media",
+          "description": "Las últimas noticias, reseñas y contenido del mundo de los juegos. Contenido de BOLF Media publicado en Instagram y Youtube.",
           "tags": ["Medios", "Noticias", "Contenido"]
         },
         {
           "id": 5,
-          "name": "BOLF Media - Serie de YouTube",
-          "description": "Noticias de juegos y series de contenido publicadas en Youtube.",
-          "tags": ["Medios", "YouTube", "Video"]
+          "name": "the Birdie",
+          "description": "Juego arcade basado en niveles inspirado en Flappy Bird. Juego móvil publicado en Play Store.",
+          "tags": ["Arcade", "Móvil", "Casual"]
         }
       ],
       "team": [
@@ -2546,7 +2556,9 @@
         "lunscaleDescriptionFurkan": "Unityゲーム開発者として働きました。",
         "gloveffectDescriptionErdem": "3Dアーティストとアートディレクターとして働きました。プロジェクトの視覚言語を最初から最後まで作成および管理する貴重な経験を積みました。",
         "theBirdieDescriptionErdem": "アートディレクターとして働きました。Play Storeで公開されたゲームの視覚管理を担当しました。",
-        "lunscaleDescriptionErdem": "プロジェクトマネージャー、3Dアーティスト、アートディレクターとして働きました。"
+        "lunscaleDescriptionErdem": "プロジェクトマネージャー、3Dアーティスト、アートディレクターとして働きました。",
+        "ballooseDescriptionErdem": "タスクが割り当てられました。",
+        "gallooopDescriptionErdem": "タスクが割り当てられました。"
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2749,33 +2761,33 @@
       "projects": [
         {
           "id": 1,
-          "name": "プロジェクトアルファ",
-          "description": "革新的なゲームプレイメカニクスを備えた刺激的なアクションアドベンチャーゲーム。",
-          "tags": ["アクション", "アドベンチャー", "インディー"]
+          "name": "Durih",
+          "description": "カードベースの2D RPGゲームプロジェクト。ゲームキャラクター、コンセプトアート、カードデザインに取り組みました。",
+          "tags": ["RPG", "カードゲーム", "2D"]
         },
         {
           "id": 2,
-          "name": "プロジェクトベータ",
-          "description": "あなたの心に挑戦する戦略的なパズルゲーム。",
-          "tags": ["パズル", "ストラテジー", "カジュアル"]
+          "name": "Lunscale",
+          "description": "3Dバンパイアサバイバーズ風のゲームプロジェクト。プロジェクト管理、ビジュアルデザイン、ゲームデザインに取り組みました。",
+          "tags": ["アクション", "サバイバー", "3D"]
         },
         {
           "id": 3,
-          "name": "プロジェクトガンマ",
-          "description": "美しいファンタジーの世界に没入してください。",
-          "tags": ["RPG", "ファンタジー", "ストーリー重視"]
+          "name": "Gloveffect",
+          "description": "学期プロジェクトとして始まったFPSシューティングゲームが、プレイ可能なプロトタイプに開発されました。",
+          "tags": ["FPS", "シューター", "プロトタイプ"]
         },
         {
           "id": 4,
-          "name": "BOLF Media - ゲームニュース",
+          "name": "BOLF Media",
           "description": "ゲーム世界からの最新ニュース、レビュー、コンテンツ。InstagramとYoutubeで公開されているBOLF Mediaコンテンツ。",
           "tags": ["メディア", "ニュース", "コンテンツ"]
         },
         {
           "id": 5,
-          "name": "BOLF Media - YouTubeシリーズ",
-          "description": "Youtubeで公開されているゲームニュースとコンテンツシリーズ。",
-          "tags": ["メディア", "YouTube", "動画"]
+          "name": "the Birdie",
+          "description": "Flappy Birdにインスパイアされたレベルベースのアーケードゲーム。Play Storeで公開されたモバイルゲーム。",
+          "tags": ["アーケード", "モバイル", "カジュアル"]
         }
       ],
       "team": [
@@ -3014,7 +3026,9 @@
         "lunscaleDescriptionFurkan": "作为Unity游戏开发者工作。",
         "gloveffectDescriptionErdem": "作为3D艺术家和艺术总监工作。在从头到尾创建和管理项目的视觉语言方面获得了宝贵的经验。",
         "theBirdieDescriptionErdem": "作为艺术总监工作。负责我们在Play Store上发布的游戏的视觉管理。",
-        "lunscaleDescriptionErdem": "作为项目经理、3D艺术家和艺术总监工作。"
+        "lunscaleDescriptionErdem": "作为项目经理、3D艺术家和艺术总监工作。",
+        "ballooseDescriptionErdem": "任务已分配。",
+        "gallooopDescriptionErdem": "任务已分配。"
       },
       "periods": {
         "2019-2024": "2019-2024",

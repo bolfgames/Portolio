@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import type { ProjectCardStyleProps, TeamMemberCardStyleProps } from './types';
 import { platformService } from '../../../services/platformService';
-import Button from '../Button';
 import { useI18n } from '../../../contexts/I18nContext';
 
 /**
@@ -198,20 +197,6 @@ export function InteractionProjectCard({
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div style={{ transform: 'translateZ(15px)' }}>
-            <Button
-              onClick={(e) => {
-                e?.stopPropagation();
-                if (project.link) window.open(project.link, '_blank');
-              }}
-              variant="secondary"
-              size="small"
-              className="w-full"
-            >
-              {t('projects.viewDetails')}
-            </Button>
-          </div>
         </div>
       </div>
     </div>

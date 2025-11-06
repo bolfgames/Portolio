@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import type { ProjectCardStyleProps, TeamMemberCardStyleProps } from './types';
 import { platformService } from '../../../services/platformService';
-import Button from '../Button';
 import { useI18n } from '../../../contexts/I18nContext';
 
 /**
@@ -14,7 +13,7 @@ export function DefaultProjectCard({
   isVideoPlaying: externalIsVideoPlaying,
   onVideoPlay,
   onVideoEnd,
-  onCardClick: _onCardClick,
+  onCardClick,
   className = '',
 }: ProjectCardStyleProps) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(externalIsVideoPlaying || false);
@@ -37,7 +36,8 @@ export function DefaultProjectCard({
   return (
     <motion.div
       whileHover={{ y: -5 }}
-      className={`bg-bolf-black border border-bolf-gray/20 rounded-lg overflow-hidden hover:border-bolf-neon-blue/30 transition-all duration-300 group ${className}`}
+      onClick={onCardClick}
+      className={`bg-bolf-black border border-bolf-gray/20 rounded-lg overflow-hidden hover:border-bolf-neon-blue/30 transition-all duration-300 group cursor-pointer ${className}`}
     >
       {/* Project Image/Video */}
       <div className="relative h-24 bg-gradient-to-br from-bolf-neon-blue/10 to-bolf-orange/10 overflow-hidden">
@@ -101,7 +101,7 @@ export function DefaultProjectCard({
         </p>
 
         {/* Platforms */}
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2">
           {project.platforms.map((platform) => (
             <span
               key={platform}
@@ -112,20 +112,6 @@ export function DefaultProjectCard({
             </span>
           ))}
         </div>
-
-
-        {/* CTA Button */}
-        <Button
-          onClick={(e) => {
-            e?.stopPropagation();
-            if (project.link) window.open(project.link, '_blank');
-          }}
-          variant="secondary"
-          size="small"
-          className="w-full"
-        >
-          {t('projects.viewDetails')}
-        </Button>
       </div>
     </motion.div>
   );

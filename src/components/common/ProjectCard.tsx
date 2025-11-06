@@ -11,6 +11,7 @@ import { NFTProjectCard } from './cardStyles/NFTCardStyle';
 
 interface ProjectCardProps {
   project: Project;
+  onCardClick?: (project: Project) => void;
 }
 
 /**
@@ -18,7 +19,7 @@ interface ProjectCardProps {
  * Follows Single Responsibility Principle and Strategy Pattern
  * Dynamically selects card style based on settings
  */
-function ProjectCard({ project }: ProjectCardProps) {
+function ProjectCard({ project, onCardClick }: ProjectCardProps) {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
   const [cardStyle, setCardStyle] = useState(() => settingsService.getProjectCardStyle());
 
@@ -40,8 +41,8 @@ function ProjectCard({ project }: ProjectCardProps) {
   };
 
   const handleCardClick = () => {
-    if (project.link) {
-      window.open(project.link, '_blank');
+    if (onCardClick) {
+      onCardClick(project);
     }
   };
 
