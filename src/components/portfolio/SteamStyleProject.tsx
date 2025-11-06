@@ -121,6 +121,29 @@ export default function SteamStyleProject({ project, accentColor = '#2ECC71', im
   const embedUrl = currentItem.type === 'video' && currentItem.url ? getYouTubeEmbedUrl(currentItem.url, isVideoPlaying) : null;
   const thumbnailUrl = currentItem.type === 'video' && currentItem.url ? getYouTubeThumbnailUrl(currentItem.url) : null;
 
+  // Helper function to translate project names
+  const translateProjectName = (name: string): string => {
+    const nameMap: Record<string, string> = {
+      'Black Spot': 'portfolio.projectNames.blackSpot',
+      'Gloveffect': 'portfolio.projectNames.gloveffect',
+      'TPS Shooter': 'portfolio.projectNames.tpsShooter',
+      'Miniverse': 'portfolio.projectNames.miniverse',
+      'Neptune': 'portfolio.projectNames.neptune',
+      'Magnesian': 'portfolio.projectNames.magnesian',
+    };
+    
+    const key = nameMap[name];
+    if (key) {
+      try {
+        const translated = t(key);
+        if (translated && translated !== key) {
+          return translated;
+        }
+      } catch {}
+    }
+    return name;
+  };
+
   // Helper function to translate features
   const translateFeature = (feature: string): string => {
     const featureMap: Record<string, string> = {
@@ -139,6 +162,18 @@ export default function SteamStyleProject({ project, accentColor = '#2ECC71', im
       'Oyun Tasarımı': 'portfolio.projectFeatures.gameDesign',
       'C# Programming': 'portfolio.projectFeatures.csharpProgramming',
       'C# Programlama': 'portfolio.projectFeatures.csharpProgramming',
+      'Market ve Inventory Sistemi': 'portfolio.projectFeatures.marketInventorySystem',
+      'Tarla ve inşaat için Tilemap sistemi': 'portfolio.projectFeatures.tilemapSystem',
+      'NPC ve Dialogue Sistemleri': 'portfolio.projectFeatures.npcDialogueSystems',
+      'Scriptable Objects': 'portfolio.projectFeatures.scriptableObjects',
+      'Oyundaki farklı minigameler': 'portfolio.projectFeatures.minigames',
+      'Farklı mobil cihazlar için çözünürlük ayarları': 'portfolio.projectFeatures.resolutionSettings',
+      'UX tecrübesi': 'portfolio.projectFeatures.uxExperience',
+      'Android build': 'portfolio.projectFeatures.androidBuild',
+      'Enemy ve NPC AI': 'portfolio.projectFeatures.enemyNpcAi',
+      'Sound ve Audio sistemlerinin inşası': 'portfolio.projectFeatures.soundAudioSystems',
+      'Unity Editor kodlaması ile takım arkadaşları için yaratılan tools': 'portfolio.projectFeatures.unityEditorTools',
+      'Inventory Sistemi': 'portfolio.projectFeatures.inventorySystem',
     };
     
     const key = featureMap[feature];
@@ -162,7 +197,7 @@ export default function SteamStyleProject({ project, accentColor = '#2ECC71', im
         className="steam-project-header"
       >
         <h3 className="steam-project-title" style={{ color: accentColor }}>
-          {project.name}
+          {translateProjectName(project.name)}
         </h3>
         {project.features && project.features.length > 0 && (
           <div className="steam-project-features">

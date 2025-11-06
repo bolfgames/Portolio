@@ -628,7 +628,10 @@
         "lunscaleDescription": "Worked on concept art and visual design for the project. I shaped the project's visual identity with my drawings and provided artistic direction.",
         "gloveffectDescriptionAhmetEmir": "FPS-Shooter game that started as a semester project and was developed into a playable prototype.",
         "lunscaleDescriptionAhmetEmir": "Worked as Game Designer.",
-        "diruhDescriptionAhmetEmir": "Worked as Unity Developer & Game Designer."
+        "diruhDescriptionAhmetEmir": "Worked as Unity Developer & Game Designer.",
+        "miniverseDescription": "A project that started as a school project and was later developed by entering bugLabTekmer pre-incubation.",
+        "neptuneDescription": "An international company that started as a startup. They gamify music education for children on mobile devices. Using AI, they score and provide recommendations based on how children use instruments. After its establishment, it participated in Fraunhofer HHI tech startup program in Germany.",
+        "magnesianDescription": "An Action-Platformer developed by 5 people. A game that combines 2D and 3D staging and gameplay, where we witness and pass through different worlds throughout its story. Steam page was opened after OGEM support program."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -680,7 +683,10 @@
         "tpsShooter": "TPS Shooter",
         "durih": "Durih",
         "lunscale": "Lunscale",
-        "personalArt": "Personal Art"
+        "personalArt": "Personal Art",
+        "miniverse": "Miniverse",
+        "neptune": "Neptune",
+        "magnesian": "Magnesian"
       },
       "projectFeatures": {
         "levelBasedArcadeGame": "Level-based arcade game inspired by Flappy Bird",
@@ -739,7 +745,19 @@
         "kartTasarim": "Card Design",
         "gorselTasarim": "Visual Design",
         "unityDevelopment": "Unity Development",
-        "csharpProgramming": "C# Programming"
+        "csharpProgramming": "C# Programming",
+        "marketInventorySystem": "Market and Inventory System",
+        "tilemapSystem": "Tilemap system for farming and construction",
+        "npcDialogueSystems": "NPC and Dialogue Systems",
+        "scriptableObjects": "Scriptable Objects",
+        "minigames": "Different minigames in the game",
+        "resolutionSettings": "Resolution settings for different mobile devices",
+        "uxExperience": "UX experience",
+        "androidBuild": "Android build",
+        "enemyNpcAi": "Enemy and NPC AI",
+        "soundAudioSystems": "Sound and Audio system construction",
+        "unityEditorTools": "Unity Editor coding tools created for team members",
+        "inventorySystem": "Inventory System"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1043,7 +1061,10 @@
         "lunscaleDescription": "An Konzeptkunst und visuellem Design für das Projekt gearbeitet. Ich prägte die visuelle Identität des Projekts mit meinen Zeichnungen und gab künstlerische Richtungen vor.",
         "gloveffectDescriptionAhmetEmir": "FPS-Shooter-Spiel, das als Semesterprojekt begann und zu einem spielbaren Prototyp entwickelt wurde.",
         "lunscaleDescriptionAhmetEmir": "Als Spieledesigner gearbeitet.",
-        "diruhDescriptionAhmetEmir": "Als Unity Entwickler & Spieledesigner gearbeitet."
+        "diruhDescriptionAhmetEmir": "Als Unity Entwickler & Spieledesigner gearbeitet.",
+        "miniverseDescription": "Ein Projekt, das als Schulprojekt begann und später durch den Eintritt in die bugLabTekmer Vor-Inkubation entwickelt wurde.",
+        "neptuneDescription": "Ein internationales Unternehmen, das als Startup begann. Sie gamifizieren die Musikerziehung für Kinder auf mobilen Geräten. Mit KI bewerten sie und geben Empfehlungen basierend auf der Art und Weise, wie Kinder Instrumente verwenden. Nach seiner Gründung nahm es am Fraunhofer HHI Tech-Startup-Programm in Deutschland teil.",
+        "magnesianDescription": "Ein Action-Platformer, der von 5 Personen entwickelt wurde. Ein Spiel, das 2D- und 3D-Inszenierung und Gameplay kombiniert, in dem wir während seiner Geschichte verschiedene Welten erleben und durchqueren. Steam-Seite wurde nach dem OGEM-Unterstützungsprogramm eröffnet."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1151,7 +1172,19 @@
         "kartTasarim": "Kartendesign",
         "gorselTasarim": "Visuelles Design",
         "unityDevelopment": "Unity Entwicklung",
-        "csharpProgramming": "C# Programmierung"
+        "csharpProgramming": "C# Programmierung",
+        "marketInventorySystem": "Markt- und Inventarsystem",
+        "tilemapSystem": "Tilemap-System für Landwirtschaft und Bau",
+        "npcDialogueSystems": "NPC- und Dialogsysteme",
+        "scriptableObjects": "Scriptable Objects",
+        "minigames": "Verschiedene Minispiele im Spiel",
+        "resolutionSettings": "Auflösungseinstellungen für verschiedene mobile Geräte",
+        "uxExperience": "UX-Erfahrung",
+        "androidBuild": "Android Build",
+        "enemyNpcAi": "Feind- und NPC-KI",
+        "soundAudioSystems": "Sound- und Audio-Systemkonstruktion",
+        "unityEditorTools": "Unity Editor-Codierungstools für Teammitglieder erstellt",
+        "inventorySystem": "Inventarsystem"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1455,7 +1488,10 @@
         "lunscaleDescription": "Travail sur l'art conceptuel et le design visuel pour le projet. J'ai façonné l'identité visuelle du projet avec mes dessins et fourni des directions artistiques.",
         "gloveffectDescriptionAhmetEmir": "Jeu FPS-Shooter qui a commencé comme projet de semestre et a été développé en prototype jouable.",
         "lunscaleDescriptionAhmetEmir": "Travail en tant que Concepteur de Jeux.",
-        "diruhDescriptionAhmetEmir": "Travail en tant que Développeur Unity & Concepteur de Jeux."
+        "diruhDescriptionAhmetEmir": "Travail en tant que Développeur Unity & Concepteur de Jeux.",
+        "miniverseDescription": "Un projet qui a commencé comme projet scolaire et a été développé plus tard en entrant dans la pré-incubation bugLabTekmer.",
+        "neptuneDescription": "Une entreprise internationale qui a commencé comme startup. Ils gamifient l'éducation musicale pour les enfants sur les appareils mobiles. En utilisant l'IA, ils notent et fournissent des recommandations basées sur la façon dont les enfants utilisent les instruments. Après sa création, elle a participé au programme tech startup Fraunhofer HHI en Allemagne.",
+        "magnesianDescription": "Un Action-Platformer développé par 5 personnes. Un jeu qui combine la mise en scène 2D et 3D et le gameplay, où nous témoignons et traversons différents mondes tout au long de son histoire. La page Steam a été ouverte après le programme de soutien OGEM."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1563,7 +1599,19 @@
         "kartTasarim": "Design de Cartes",
         "gorselTasarim": "Design Visuel",
         "unityDevelopment": "Développement Unity",
-        "csharpProgramming": "Programmation C#"
+        "csharpProgramming": "Programmation C#",
+        "marketInventorySystem": "Système de marché et d'inventaire",
+        "tilemapSystem": "Système Tilemap pour l'agriculture et la construction",
+        "npcDialogueSystems": "Systèmes NPC et de dialogue",
+        "scriptableObjects": "Scriptable Objects",
+        "minigames": "Différents minijeux dans le jeu",
+        "resolutionSettings": "Paramètres de résolution pour différents appareils mobiles",
+        "uxExperience": "Expérience UX",
+        "androidBuild": "Build Android",
+        "enemyNpcAi": "IA ennemie et PNJ",
+        "soundAudioSystems": "Construction de systèmes sonores et audio",
+        "unityEditorTools": "Outils de codage Unity Editor créés pour les membres de l'équipe",
+        "inventorySystem": "Système d'inventaire"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1867,7 +1915,10 @@
         "lunscaleDescription": "Trabajé en arte conceptual y diseño visual para el proyecto. Di forma a la identidad visual del proyecto con mis dibujos y proporcioné direcciones artísticas.",
         "gloveffectDescriptionAhmetEmir": "Juego FPS-Shooter que comenzó como proyecto de semestre y fue desarrollado en un prototipo jugable.",
         "lunscaleDescriptionAhmetEmir": "Trabajé como Diseñador de Juegos.",
-        "diruhDescriptionAhmetEmir": "Trabajé como Desarrollador Unity & Diseñador de Juegos."
+        "diruhDescriptionAhmetEmir": "Trabajé como Desarrollador Unity & Diseñador de Juegos.",
+        "miniverseDescription": "Un proyecto que comenzó como proyecto escolar y fue desarrollado posteriormente al entrar en la pre-incubación bugLabTekmer.",
+        "neptuneDescription": "Una empresa internacional que comenzó como startup. Gamifican la educación musical para niños en dispositivos móviles. Usando IA, califican y brindan recomendaciones basadas en cómo los niños usan los instrumentos. Después de su establecimiento, participó en el programa tech startup Fraunhofer HHI en Alemania.",
+        "magnesianDescription": "Un Action-Platformer desarrollado por 5 personas. Un juego que combina escenografía 2D y 3D y gameplay, donde presenciamos y atravesamos diferentes mundos a lo largo de su historia. La página de Steam se abrió después del programa de apoyo OGEM."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1975,7 +2026,19 @@
         "kartTasarim": "Diseño de Cartas",
         "gorselTasarim": "Diseño Visual",
         "unityDevelopment": "Desarrollo Unity",
-        "csharpProgramming": "Programación C#"
+        "csharpProgramming": "Programación C#",
+        "marketInventorySystem": "Sistema de mercado e inventario",
+        "tilemapSystem": "Sistema Tilemap para agricultura y construcción",
+        "npcDialogueSystems": "Sistemas NPC y de diálogo",
+        "scriptableObjects": "Scriptable Objects",
+        "minigames": "Diferentes minijuegos en el juego",
+        "resolutionSettings": "Configuraciones de resolución para diferentes dispositivos móviles",
+        "uxExperience": "Experiencia UX",
+        "androidBuild": "Build de Android",
+        "enemyNpcAi": "IA de enemigos y NPC",
+        "soundAudioSystems": "Construcción de sistemas de sonido y audio",
+        "unityEditorTools": "Herramientas de codificación Unity Editor creadas para miembros del equipo",
+        "inventorySystem": "Sistema de inventario"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2280,7 +2343,10 @@
         "lunscaleDescription": "プロジェクトのコンセプトアートと視覚デザインに取り組みました。私の絵でプロジェクトの視覚的アイデンティティを形作り、芸術的な方向性を提供しました。",
         "gloveffectDescriptionAhmetEmir": "学期プロジェクトとして始まり、遊べるプロトタイプに開発されたFPSシューターゲーム。",
         "lunscaleDescriptionAhmetEmir": "ゲームデザイナーとして働きました。",
-        "diruhDescriptionAhmetEmir": "Unity開発者＆ゲームデザイナーとして働きました。"
+        "diruhDescriptionAhmetEmir": "Unity開発者＆ゲームデザイナーとして働きました。",
+        "miniverseDescription": "学校プロジェクトとして始まり、その後bugLabTekmer前インキュベーションに入って開発されたプロジェクト。",
+        "neptuneDescription": "スタートアップとして始まった国際的な企業。モバイルデバイスで子供向けの音楽教育をゲーミフィケーションしています。AIを使用して、子供が楽器を使用する方法に基づいてスコアリングと推奨を提供します。設立後、ドイツのFraunhofer HHIテックスタートアッププログラムに参加しました。",
+        "magnesianDescription": "5人で開発したアクションプラットフォーマー。2Dと3Dのステージングとゲームプレイを組み合わせたゲームで、ストーリーを通じて異なる世界を目撃し、通過します。OGEMサポートプログラム後にSteamページが開設されました。"
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2388,7 +2454,19 @@
         "kartTasarim": "カードデザイン",
         "gorselTasarim": "ビジュアルデザイン",
         "unityDevelopment": "Unity開発",
-        "csharpProgramming": "C#プログラミング"
+        "csharpProgramming": "C#プログラミング",
+        "marketInventorySystem": "マーケットとインベントリシステム",
+        "tilemapSystem": "農業と建設のためのTilemapシステム",
+        "npcDialogueSystems": "NPCとダイアログシステム",
+        "scriptableObjects": "Scriptable Objects",
+        "minigames": "ゲーム内の様々なミニゲーム",
+        "resolutionSettings": "異なるモバイルデバイス用の解像度設定",
+        "uxExperience": "UX経験",
+        "androidBuild": "Androidビルド",
+        "enemyNpcAi": "敵とNPCのAI",
+        "soundAudioSystems": "サウンドとオーディオシステムの構築",
+        "unityEditorTools": "チームメンバー向けに作成されたUnity Editorコーディングツール",
+        "inventorySystem": "インベントリシステム"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2692,7 +2770,10 @@
         "lunscaleDescription": "为项目从事概念艺术和视觉设计工作。我用我的绘画塑造了项目的视觉身份，并提供了艺术方向。",
         "gloveffectDescriptionAhmetEmir": "从学期项目开始开发的FPS射击游戏，已开发成可玩原型。",
         "lunscaleDescriptionAhmetEmir": "作为游戏设计师工作。",
-        "diruhDescriptionAhmetEmir": "作为Unity开发者和游戏设计师工作。"
+        "diruhDescriptionAhmetEmir": "作为Unity开发者和游戏设计师工作。",
+        "miniverseDescription": "一个作为学校项目开始的项目，后来通过进入bugLabTekmer预孵化进行开发。",
+        "neptuneDescription": "一家作为初创公司开始的国际公司。他们在移动设备上为儿童游戏化音乐教育。使用AI，他们根据儿童使用乐器的方式评分并提供建议。成立后，它参加了德国的Fraunhofer HHI科技初创计划。",
+        "magnesianDescription": "由5人开发的动作平台游戏。一个将2D和3D场景和游戏玩法结合在一起的游戏，我们在整个故事中见证并穿越不同的世界。在OGEM支持计划后开设了Steam页面。"
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2800,7 +2881,19 @@
         "kartTasarim": "卡片设计",
         "gorselTasarim": "视觉设计",
         "unityDevelopment": "Unity开发",
-        "csharpProgramming": "C#编程"
+        "csharpProgramming": "C#编程",
+        "marketInventorySystem": "市场和库存系统",
+        "tilemapSystem": "用于农业和建筑的Tilemap系统",
+        "npcDialogueSystems": "NPC和对话系统",
+        "scriptableObjects": "Scriptable Objects",
+        "minigames": "游戏中的不同小游戏",
+        "resolutionSettings": "不同移动设备的分辨率设置",
+        "uxExperience": "UX体验",
+        "androidBuild": "Android构建",
+        "enemyNpcAi": "敌人和NPC AI",
+        "soundAudioSystems": "声音和音频系统构建",
+        "unityEditorTools": "为团队成员创建的Unity Editor编码工具",
+        "inventorySystem": "库存系统"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
