@@ -1,96 +1,141 @@
 {
   "contact": {
-    "email": "",
-    "phone": "",
-    "location": "",
-    "linkedin": "",
-    "artstation": ""
+    "email": "erdemtmrr@gmail.com",
+    "phone": "+90 534 780 1350",
+    "location": "Istanbul, Türkiye",
+    "linkedin": "linkedin.com/in/erdem-temür-7a18ba1a0",
+    "instagram": "erdemtmrr"
   },
   "education": {
-    "degree": "",
-    "university": "",
-    "faculty": "",
-    "period": "",
-    "location": ""
+    "degree": "Görsel İletişim Tasarımı (VCD)",
+    "university": "İstanbul Bilgi Üniversitesi",
+    "faculty": "İletişim Fakültesi",
+    "period": "2021-2025",
+    "location": "Istanbul, Türkiye"
   },
-  "experience": [],
-  "skills": [],
+  "experience": [
+    {
+      "company": "BOLF Games",
+      "position": "3D Sanatçı & Sanat Yönetmeni",
+      "period": "",
+      "projects": [
+        {
+          "name": "Gloveffect",
+          "description": "3D artist ve art director olarak görev aldım. Projenin görsel dilini baştan sona oluşturma ve yönetme konusunda değerli deneyimler kazandım.",
+          "features": [
+            "3D Modelleme",
+            "Sanat Yönetmenliği",
+            "Görsel Dil Oluşturma"
+          ]
+        },
+        {
+          "name": "The Birdie",
+          "description": "Art director olarak görev aldım. Play Store'da yayınlanan oyunumuzun görsel yönetimini üstlendim.",
+          "features": [
+            "Sanat Yönetmenliği",
+            "Görsel Yönetim"
+          ],
+          "link": "Google Play Store",
+          "linkUrl": "https://play.google.com/store/apps/details?id=com.BOLFGames.Birdie"
+        },
+        {
+          "name": "Lunscale",
+          "description": "Proje yönetimi, 3D artist ve art director olarak görev aldım.",
+          "features": [
+            "Proje Yönetimi",
+            "3D Modelleme",
+            "Sanat Yönetmenliği"
+          ]
+        }
+      ]
+    }
+  ],
+  "skills": [
+    "3D Modelleme",
+    "Hard Surface Modelleme",
+    "Sci-fi Modelleme",
+    "Texture Tasarlama",
+    "Sanat Yönetmenliği",
+    "Görsel Dil Oluşturma"
+  ],
   "projects": [
     {
       "name": "DDs Bunga",
       "images": [
-        "WhatsApp Image 2024-07-09 at 03.53.27_fbc84e71.jpg",
-        "WhatsApp Image 2024-07-09 at 03.53.28_7d8ebde7.jpg",
-        "WhatsApp Image 2024-07-12 at 01.06.33_ee1a7e8a.jpg"
+        "DDs Bunga/WhatsApp Image 2024-07-09 at 03.53.27_fbc84e71.jpg",
+        "DDs Bunga/WhatsApp Image 2024-07-09 at 03.53.28_7d8ebde7.jpg",
+        "DDs Bunga/WhatsApp Image 2024-07-12 at 01.06.33_ee1a7e8a.jpg"
       ]
     },
     {
       "name": "DDs CMR",
       "images": [
-        "camera11.6_1.jpg",
-        "camera5.1_1.jpg",
-        "camera5_1.jpg",
-        "camera8.jpg",
-        "camera9_1.jpg"
-      ]
+        "DDs CMR/camera11.6_1.jpg",
+        "DDs CMR/camera5.1_1.jpg",
+        "DDs CMR/camera5_1.jpg",
+        "DDs CMR/camera8.jpg",
+        "DDs CMR/camera9_1.jpg"
+      ],
+      "landscapeScale": 0.75,
+      "portraitScale": 0.75
     },
     {
       "name": "DDs CP",
       "images": [
-        "WhatsApp Image 2025-10-11 at 22.20.21_4bfc1d14.jpg",
-        "WhatsApp Image 2025-10-11 at 22.20.21_4c571340.jpg",
-        "WhatsApp Image 2025-10-11 at 22.20.21_61e5e95d.jpg"
+        "DDs CP/WhatsApp Image 2025-10-11 at 22.20.21_4bfc1d14.jpg",
+        "DDs CP/WhatsApp Image 2025-10-11 at 22.20.21_4c571340.jpg",
+        "DDs CP/WhatsApp Image 2025-10-11 at 22.20.21_61e5e95d.jpg"
       ]
     },
     {
       "name": "DDs G10",
       "images": [
-        "untitled.jpg",
-        "untitled.tif2.tif3.jpg",
-        "untitled.tif2.tif3.tif4.tif5.jpg",
-        "untitled.tif2.tif3.tif4.tif5.tif6.jpg"
+        "DDs G10/untitled.jpg",
+        "DDs G10/untitled.tif2.tif3.jpg",
+        "DDs G10/untitled.tif2.tif3.tif4.tif5.jpg",
+        "DDs G10/untitled.tif2.tif3.tif4.tif5.tif6.jpg"
       ]
     },
     {
       "name": "DDs MAc 10",
       "images": [
-        "mac1.3bbn.jpg",
-        "mac1.6.jpg",
-        "macbbdc.jpg"
+        "DDs MAc 10/mac1.3bbn.jpg",
+        "DDs MAc 10/mac1.6.jpg",
+        "DDs MAc 10/macbbdc.jpg"
       ]
     },
     {
       "name": "Texture",
       "images": [
-        "1.png",
-        "2.png",
-        "3.png",
-        "4.png",
-        "5.png",
-        "6.png",
-        "7.png",
-        "8.png",
-        "9.png",
-        "10.png",
-        "11.png",
-        "12.png",
-        "13.png",
-        "14.png",
-        "15.png",
-        "16.png",
-        "17.png",
-        "18.png",
-        "19.png",
-        "20.png",
-        "21.png",
-        "22.png",
-        "23.png",
-        "24.png",
-        "25.png",
-        "26.png",
-        "27.png",
-        "28.png",
-        "29.png"
+        "texture_transparent/1.png",
+        "texture_transparent/2.png",
+        "texture_transparent/3.png",
+        "texture_transparent/4.png",
+        "texture_transparent/5.png",
+        "texture_transparent/6.png",
+        "texture_transparent/7.png",
+        "texture_transparent/8.png",
+        "texture_transparent/9.png",
+        "texture_transparent/10.png",
+        "texture_transparent/11.png",
+        "texture_transparent/12.png",
+        "texture_transparent/13.png",
+        "texture_transparent/14.png",
+        "texture_transparent/15.png",
+        "texture_transparent/16.png",
+        "texture_transparent/17.png",
+        "texture_transparent/18.png",
+        "texture_transparent/19.png",
+        "texture_transparent/20.png",
+        "texture_transparent/21.png",
+        "texture_transparent/22.png",
+        "texture_transparent/23.png",
+        "texture_transparent/24.png",
+        "texture_transparent/25.png",
+        "texture_transparent/26.png",
+        "texture_transparent/27.png",
+        "texture_transparent/28.png",
+        "texture_transparent/29.png"
       ],
       "useTweenMax": true
     }

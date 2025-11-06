@@ -82,7 +82,10 @@ export default function ResponsiveSlideshow({
   const projectFolder = getProjectFolder();
   const currentImage = images[currentSlide];
   // Build path - encode folder and image names but keep slashes
-  const imagePath = getAssetPath(`${imageBasePath}/${projectFolder}/${currentImage}`);
+  // Check if image path already includes folder name (for Erdem's projects)
+  const imagePath = currentImage.includes('/') 
+    ? getAssetPath(`${imageBasePath}/${currentImage}`)
+    : getAssetPath(`${imageBasePath}/${projectFolder}/${currentImage}`);
 
   // Check if this is Durih project and slide 3, 4, or 5 (index 2, 3, 4)
   const isDurihVertical = projectName === 'Durih' && (currentSlide === 2 || currentSlide === 3 || currentSlide === 4);

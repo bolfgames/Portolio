@@ -28,6 +28,15 @@ export default function EducationSection({ education, accentColor }: EducationSe
         }
       } catch {}
     }
+    // Check if this is Erdem's education (VCD)
+    if (education.degree === 'Görsel İletişim Tasarımı (VCD)') {
+      try {
+        const translated = t('portfolio.educationData.erdemDegree');
+        if (translated && translated !== 'portfolio.educationData.erdemDegree') {
+          return translated;
+        }
+      } catch {}
+    }
     // Check if this is Ahmet Emir's or Emir's education
     if (education.degree === 'Dijital Oyun Tasarımı Lisansı') {
       try {
@@ -50,7 +59,7 @@ export default function EducationSection({ education, accentColor }: EducationSe
         }
       } catch {}
     }
-    // Check if this is Ahmet Emir's or Emir's education
+    // Check if this is Erdem's, Ahmet Emir's or Emir's education (all İstanbul Bilgi)
     if (education.university === 'İstanbul Bilgi Üniversitesi') {
       try {
         const translated = t('portfolio.educationData.university');
@@ -73,7 +82,7 @@ export default function EducationSection({ education, accentColor }: EducationSe
         }
       } catch {}
     }
-    // Check if this is Ahmet Emir's or Emir's education
+    // Check if this is Erdem's, Ahmet Emir's or Emir's education (all İletişim Fakültesi)
     if (education.faculty === 'İletişim Fakültesi') {
       try {
         const translated = t('portfolio.educationData.faculty');

@@ -133,9 +133,13 @@ export default function TweenMaxSlideshow({
   };
 
   const projectFolder = getProjectFolder();
-  const imagePaths = images.map(img => 
-    getAssetPath(`${imageBasePath}/${projectFolder}/${img}`)
-  );
+  const imagePaths = images.map(img => {
+    // Check if image path already includes folder name (for Erdem's projects)
+    if (img.includes('/')) {
+      return getAssetPath(`${imageBasePath}/${img}`);
+    }
+    return getAssetPath(`${imageBasePath}/${projectFolder}/${img}`);
+  });
 
   // Debug: Log paths for first image
   useEffect(() => {

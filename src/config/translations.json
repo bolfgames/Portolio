@@ -131,7 +131,10 @@
         "emirFaculty": "İletişim Fakültesi",
         "ataCemDegree": "Çizgi Film ve Animasyon",
         "ataCemUniversity": "İstanbul Aydın Üniversitesi",
-        "ataCemFaculty": "Güzel Sanatlar Fakültesi"
+        "ataCemFaculty": "Güzel Sanatlar Fakültesi",
+        "erdemDegree": "Görsel İletişim Tasarımı (VCD)",
+        "erdemUniversity": "İstanbul Bilgi Üniversitesi",
+        "erdemFaculty": "İletişim Fakültesi"
       },
       "positions": {
         "unityGameDeveloper": "Unity Oyun Geliştirici",
@@ -191,7 +194,10 @@
         "gallooopDescription": "Game Jam projesi olarak geliştirilen bir oyun.",
         "durihDescriptionSelim": "Game Developer olarak görev aldım.",
         "durihDescriptionEmir": "Seviye Tasarımcısı olarak görev aldım.",
-        "lunscaleDescriptionFurkan": "Unity Game Developer olarak görev aldım."
+        "lunscaleDescriptionFurkan": "Unity Game Developer olarak görev aldım.",
+        "gloveffectDescriptionErdem": "3D artist ve art director olarak görev aldım. Projenin görsel dilini baştan sona oluşturma ve yönetme konusunda değerli deneyimler kazandım.",
+        "theBirdieDescriptionErdem": "Art director olarak görev aldım. Play Store'da yayınlanan oyunumuzun görsel yönetimini üstlendim.",
+        "lunscaleDescriptionErdem": "Proje yönetimi, 3D artist ve art director olarak görev aldım."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -320,7 +326,15 @@
         "soundAudioSystems": "Sound ve Audio sistemlerinin inşası",
         "unityEditorTools": "Unity Editor kodlaması ile takım arkadaşları için yaratılan tools",
         "inventorySystem": "Inventory Sistemi",
-        "gameJam": "Game Jam"
+        "gameJam": "Game Jam",
+        "3dModeling": "3D Modelleme",
+        "hardSurfaceModeling": "Hard Surface Modelleme",
+        "sciFiModeling": "Sci-fi Modelleme",
+        "textureDesign": "Texture Tasarlama",
+        "artDirection": "Sanat Yönetmenliği",
+        "visualLanguageCreation": "Görsel Dil Oluşturma",
+        "visualManagement": "Görsel Yönetim",
+        "projectManagement": "Proje Yönetimi"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -589,14 +603,20 @@
         "emirFaculty": "Faculty of Communication",
         "ataCemDegree": "Animation and Cartoon",
         "ataCemUniversity": "Istanbul Aydin University",
-        "ataCemFaculty": "Faculty of Fine Arts"
+        "ataCemFaculty": "Faculty of Fine Arts",
+        "erdemDegree": "Visual Communication Design (VCD)",
+        "erdemUniversity": "Istanbul Bilgi University",
+        "erdemFaculty": "Faculty of Communication"
       },
       "positions": {
         "unityGameDeveloper": "Unity Game Developer",
         "freelance": "Freelance",
         "levelDesigner": "Level Designer",
         "2dDesigner": "2D Designer",
-        "unityDeveloperGameDesigner": "Unity Developer & Game Designer"
+        "unityDeveloperGameDesigner": "Unity Developer & Game Designer",
+        "coFounderGameDeveloper": "Co-Founder and Game Developer",
+        "gameDeveloper": "Game Developer",
+        "3dArtistArtDirector": "3D Artist & Art Director"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -644,7 +664,10 @@
         "gallooopDescription": "A game developed as a Game Jam project.",
         "durihDescriptionSelim": "Worked as Game Developer.",
         "durihDescriptionEmir": "Worked as Level Designer.",
-        "lunscaleDescriptionFurkan": "Worked as Unity Game Developer."
+        "lunscaleDescriptionFurkan": "Worked as Unity Game Developer.",
+        "gloveffectDescriptionErdem": "Worked as 3D artist and art director. Gained valuable experience in creating and managing a project's visual language from start to finish.",
+        "theBirdieDescriptionErdem": "Worked as art director. Took charge of the visual management of our game published on Play Store.",
+        "lunscaleDescriptionErdem": "Worked as project manager, 3D artist, and art director."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -771,7 +794,15 @@
         "soundAudioSystems": "Sound and Audio system construction",
         "unityEditorTools": "Unity Editor coding tools created for team members",
         "inventorySystem": "Inventory System",
-        "gameJam": "Game Jam"
+        "gameJam": "Game Jam",
+        "3dModeling": "3D Modeling",
+        "hardSurfaceModeling": "Hard Surface Modeling",
+        "sciFiModeling": "Sci-fi Modeling",
+        "textureDesign": "Texture Design",
+        "artDirection": "Art Direction",
+        "visualLanguageCreation": "Visual Language Creation",
+        "visualManagement": "Visual Management",
+        "projectManagement": "Project Management"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -786,7 +817,25 @@
         "environmentDesign": "Environment Design",
         "karakterTasarimi": "Character Design",
         "konseptTasarimi": "Concept Design",
-        "2dCizim": "2D Drawing"
+        "2dCizim": "2D Drawing",
+        "unity": "Unity",
+        "github": "GitHub",
+        "trello": "Trello",
+        "figma": "Figma",
+        "scriptableObjects": "Scriptable Objects",
+        "npcSystems": "NPC Systems",
+        "dialogueSystems": "Dialogue Systems",
+        "inventorySystems": "Inventory Systems",
+        "tilemapSystems": "Tilemap Systems",
+        "aiSystems": "AI Systems",
+        "audioSystems": "Audio Systems",
+        "unityEditorTools": "Unity Editor Tools",
+        "3dModeling": "3D Modeling",
+        "hardSurfaceModeling": "Hard Surface Modeling",
+        "sciFiModeling": "Sci-fi Modeling",
+        "textureDesign": "Texture Design",
+        "artDirection": "Art Direction",
+        "visualLanguageCreation": "Visual Language Creation"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -1028,14 +1077,20 @@
         "emirFaculty": "Fakultät für Kommunikation",
         "ataCemDegree": "Animation und Zeichentrickfilm",
         "ataCemUniversity": "Istanbul Aydin Universität",
-        "ataCemFaculty": "Fakultät der Schönen Künste"
+        "ataCemFaculty": "Fakultät der Schönen Künste",
+        "erdemDegree": "Visuelle Kommunikationsdesign (VCD)",
+        "erdemUniversity": "Istanbul Bilgi Universität",
+        "erdemFaculty": "Fakultät für Kommunikation"
       },
       "positions": {
         "unityGameDeveloper": "Unity Spielentwickler",
         "freelance": "Freiberuflich",
         "levelDesigner": "Level-Designer",
         "2dDesigner": "2D-Designer",
-        "unityDeveloperGameDesigner": "Unity Entwickler & Spieledesigner"
+        "unityDeveloperGameDesigner": "Unity Entwickler & Spieledesigner",
+        "coFounderGameDeveloper": "Mitbegründer und Spieleentwickler",
+        "gameDeveloper": "Spieleentwickler",
+        "3dArtistArtDirector": "3D Künstler & Art Director"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -1083,7 +1138,10 @@
         "gallooopDescription": "Ein als Game Jam-Projekt entwickeltes Spiel.",
         "durihDescriptionSelim": "Als Spieleentwickler gearbeitet.",
         "durihDescriptionEmir": "Als Level-Designer gearbeitet.",
-        "lunscaleDescriptionFurkan": "Als Unity Spieleentwickler gearbeitet."
+        "lunscaleDescriptionFurkan": "Als Unity Spieleentwickler gearbeitet.",
+        "gloveffectDescriptionErdem": "Als 3D-Künstler und Art Director gearbeitet. Wertvolle Erfahrungen in der Erstellung und Verwaltung der visuellen Sprache eines Projekts von Anfang bis Ende gesammelt.",
+        "theBirdieDescriptionErdem": "Als Art Director gearbeitet. Übernahm die visuelle Verwaltung unseres im Play Store veröffentlichten Spiels.",
+        "lunscaleDescriptionErdem": "Als Projektmanager, 3D-Künstler und Art Director gearbeitet."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1204,7 +1262,15 @@
         "soundAudioSystems": "Sound- und Audio-Systemkonstruktion",
         "unityEditorTools": "Unity Editor-Codierungstools für Teammitglieder erstellt",
         "inventorySystem": "Inventarsystem",
-        "gameJam": "Game Jam"
+        "gameJam": "Game Jam",
+        "3dModeling": "3D-Modellierung",
+        "hardSurfaceModeling": "Hard Surface Modellierung",
+        "sciFiModeling": "Sci-Fi Modellierung",
+        "textureDesign": "Texturgestaltung",
+        "artDirection": "Art Direction",
+        "visualLanguageCreation": "Visuelle Spracherstellung",
+        "visualManagement": "Visuelles Management",
+        "projectManagement": "Projektmanagement"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1219,7 +1285,25 @@
         "environmentDesign": "Umgebungsdesign",
         "karakterTasarimi": "Charakterdesign",
         "konseptTasarimi": "Konzeptdesign",
-        "2dCizim": "2D-Zeichnung"
+        "2dCizim": "2D-Zeichnung",
+        "unity": "Unity",
+        "github": "GitHub",
+        "trello": "Trello",
+        "figma": "Figma",
+        "scriptableObjects": "Scriptable Objects",
+        "npcSystems": "NPC-Systeme",
+        "dialogueSystems": "Dialogsysteme",
+        "inventorySystems": "Inventarsysteme",
+        "tilemapSystems": "Tilemap-Systeme",
+        "aiSystems": "KI-Systeme",
+        "audioSystems": "Audio-Systeme",
+        "unityEditorTools": "Unity Editor Tools",
+        "3dModeling": "3D-Modellierung",
+        "hardSurfaceModeling": "Hard Surface Modellierung",
+        "sciFiModeling": "Sci-Fi Modellierung",
+        "textureDesign": "Texturgestaltung",
+        "artDirection": "Art Direction",
+        "visualLanguageCreation": "Visuelle Spracherstellung"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -1461,14 +1545,20 @@
         "emirFaculty": "Faculté de Communication",
         "ataCemDegree": "Animation et Dessin Animé",
         "ataCemUniversity": "Université Istanbul Aydin",
-        "ataCemFaculty": "Faculté des Beaux-Arts"
+        "ataCemFaculty": "Faculté des Beaux-Arts",
+        "erdemDegree": "Design de Communication Visuelle (VCD)",
+        "erdemUniversity": "Université Istanbul Bilgi",
+        "erdemFaculty": "Faculté de Communication"
       },
       "positions": {
         "unityGameDeveloper": "Développeur de Jeux Unity",
         "freelance": "Freelance",
         "levelDesigner": "Concepteur de Niveaux",
         "2dDesigner": "Designer 2D",
-        "unityDeveloperGameDesigner": "Développeur Unity & Concepteur de Jeux"
+        "unityDeveloperGameDesigner": "Développeur Unity & Concepteur de Jeux",
+        "coFounderGameDeveloper": "Co-fondateur et Développeur de Jeux",
+        "gameDeveloper": "Développeur de Jeux",
+        "3dArtistArtDirector": "Artiste 3D & Directeur Artistique"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -1516,7 +1606,10 @@
         "gallooopDescription": "Un jeu développé comme projet Game Jam.",
         "durihDescriptionSelim": "Travail en tant que Développeur de Jeux.",
         "durihDescriptionEmir": "Travail en tant que Concepteur de Niveaux.",
-        "lunscaleDescriptionFurkan": "Travail en tant que Développeur de Jeux Unity."
+        "lunscaleDescriptionFurkan": "Travail en tant que Développeur de Jeux Unity.",
+        "gloveffectDescriptionErdem": "Travail en tant qu'artiste 3D et directeur artistique. Acquérir une expérience précieuse dans la création et la gestion du langage visuel d'un projet du début à la fin.",
+        "theBirdieDescriptionErdem": "Travail en tant que directeur artistique. Pris en charge de la gestion visuelle de notre jeu publié sur Play Store.",
+        "lunscaleDescriptionErdem": "Travail en tant que chef de projet, artiste 3D et directeur artistique."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -1637,7 +1730,15 @@
         "soundAudioSystems": "Construction de systèmes sonores et audio",
         "unityEditorTools": "Outils de codage Unity Editor créés pour les membres de l'équipe",
         "inventorySystem": "Système d'inventaire",
-        "gameJam": "Game Jam"
+        "gameJam": "Game Jam",
+        "3dModeling": "Modélisation 3D",
+        "hardSurfaceModeling": "Modélisation Hard Surface",
+        "sciFiModeling": "Modélisation Sci-Fi",
+        "textureDesign": "Conception de Textures",
+        "artDirection": "Direction Artistique",
+        "visualLanguageCreation": "Création de Langage Visuel",
+        "visualManagement": "Gestion Visuelle",
+        "projectManagement": "Gestion de Projet"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -1652,7 +1753,25 @@
         "environmentDesign": "Conception d'Environnement",
         "karakterTasarimi": "Design de Personnages",
         "konseptTasarimi": "Design Conceptuel",
-        "2dCizim": "Dessin 2D"
+        "2dCizim": "Dessin 2D",
+        "unity": "Unity",
+        "github": "GitHub",
+        "trello": "Trello",
+        "figma": "Figma",
+        "scriptableObjects": "Scriptable Objects",
+        "npcSystems": "Systèmes NPC",
+        "dialogueSystems": "Systèmes de dialogue",
+        "inventorySystems": "Systèmes d'inventaire",
+        "tilemapSystems": "Systèmes Tilemap",
+        "aiSystems": "Systèmes IA",
+        "audioSystems": "Systèmes Audio",
+        "unityEditorTools": "Outils Unity Editor",
+        "3dModeling": "Modélisation 3D",
+        "hardSurfaceModeling": "Modélisation Hard Surface",
+        "sciFiModeling": "Modélisation Sci-Fi",
+        "textureDesign": "Conception de Textures",
+        "artDirection": "Direction Artistique",
+        "visualLanguageCreation": "Création de Langage Visuel"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -1894,14 +2013,20 @@
         "emirFaculty": "Facultad de Comunicación",
         "ataCemDegree": "Animación y Dibujos Animados",
         "ataCemUniversity": "Universidad Istanbul Aydin",
-        "ataCemFaculty": "Facultad de Bellas Artes"
+        "ataCemFaculty": "Facultad de Bellas Artes",
+        "erdemDegree": "Diseño de Comunicación Visual (VCD)",
+        "erdemUniversity": "Universidad Istanbul Bilgi",
+        "erdemFaculty": "Facultad de Comunicación"
       },
       "positions": {
         "unityGameDeveloper": "Desarrollador de Juegos Unity",
         "freelance": "Freelance",
         "levelDesigner": "Diseñador de Niveles",
         "2dDesigner": "Diseñador 2D",
-        "unityDeveloperGameDesigner": "Desarrollador Unity & Diseñador de Juegos"
+        "unityDeveloperGameDesigner": "Desarrollador Unity & Diseñador de Juegos",
+        "coFounderGameDeveloper": "Co-fundador y Desarrollador de Juegos",
+        "gameDeveloper": "Desarrollador de Juegos",
+        "3dArtistArtDirector": "Artista 3D & Director Artístico"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -1949,7 +2074,10 @@
         "gallooopDescription": "Un juego desarrollado como proyecto Game Jam.",
         "durihDescriptionSelim": "Trabajé como Desarrollador de Juegos.",
         "durihDescriptionEmir": "Trabajé como Diseñador de Niveles.",
-        "lunscaleDescriptionFurkan": "Trabajé como Desarrollador de Juegos Unity."
+        "lunscaleDescriptionFurkan": "Trabajé como Desarrollador de Juegos Unity.",
+        "gloveffectDescriptionErdem": "Trabajé como artista 3D y director artístico. Adquirí valiosa experiencia en la creación y gestión del lenguaje visual de un proyecto de principio a fin.",
+        "theBirdieDescriptionErdem": "Trabajé como director artístico. Me encargué de la gestión visual de nuestro juego publicado en Play Store.",
+        "lunscaleDescriptionErdem": "Trabajé como gerente de proyecto, artista 3D y director artístico."
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2070,7 +2198,15 @@
         "soundAudioSystems": "Construcción de sistemas de sonido y audio",
         "unityEditorTools": "Herramientas de codificación Unity Editor creadas para miembros del equipo",
         "inventorySystem": "Sistema de inventario",
-        "gameJam": "Game Jam"
+        "gameJam": "Game Jam",
+        "3dModeling": "Modelado 3D",
+        "hardSurfaceModeling": "Modelado Hard Surface",
+        "sciFiModeling": "Modelado Sci-Fi",
+        "textureDesign": "Diseño de Texturas",
+        "artDirection": "Dirección Artística",
+        "visualLanguageCreation": "Creación de Lenguaje Visual",
+        "visualManagement": "Gestión Visual",
+        "projectManagement": "Gestión de Proyectos"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2085,7 +2221,25 @@
         "environmentDesign": "Diseño de Entornos",
         "karakterTasarimi": "Diseño de Personajes",
         "konseptTasarimi": "Diseño Conceptual",
-        "2dCizim": "Dibujo 2D"
+        "2dCizim": "Dibujo 2D",
+        "unity": "Unity",
+        "github": "GitHub",
+        "trello": "Trello",
+        "figma": "Figma",
+        "scriptableObjects": "Scriptable Objects",
+        "npcSystems": "Sistemas NPC",
+        "dialogueSystems": "Sistemas de Diálogo",
+        "inventorySystems": "Sistemas de Inventario",
+        "tilemapSystems": "Sistemas Tilemap",
+        "aiSystems": "Sistemas IA",
+        "audioSystems": "Sistemas de Audio",
+        "unityEditorTools": "Herramientas Unity Editor",
+        "3dModeling": "Modelado 3D",
+        "hardSurfaceModeling": "Modelado Hard Surface",
+        "sciFiModeling": "Modelado Sci-Fi",
+        "textureDesign": "Diseño de Texturas",
+        "artDirection": "Dirección Artística",
+        "visualLanguageCreation": "Creación de Lenguaje Visual"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -2328,14 +2482,20 @@
         "emirFaculty": "コミュニケーション学部",
         "ataCemDegree": "アニメーションとアニメ",
         "ataCemUniversity": "イスタンブール・アイドゥン大学",
-        "ataCemFaculty": "美術学部"
+        "ataCemFaculty": "美術学部",
+        "erdemDegree": "視覚コミュニケーションデザイン（VCD）",
+        "erdemUniversity": "イスタンブール・ビルギ大学",
+        "erdemFaculty": "コミュニケーション学部"
       },
       "positions": {
         "unityGameDeveloper": "Unityゲーム開発者",
         "freelance": "フリーランス",
         "levelDesigner": "レベルデザイナー",
         "2dDesigner": "2Dデザイナー",
-        "unityDeveloperGameDesigner": "Unity開発者＆ゲームデザイナー"
+        "unityDeveloperGameDesigner": "Unity開発者＆ゲームデザイナー",
+        "coFounderGameDeveloper": "共同創設者兼ゲーム開発者",
+        "gameDeveloper": "ゲーム開発者",
+        "3dArtistArtDirector": "3Dアーティスト＆アートディレクター"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -2383,7 +2543,10 @@
         "gallooopDescription": "Game Jamプロジェクトとして開発されたゲーム。",
         "durihDescriptionSelim": "ゲーム開発者として働きました。",
         "durihDescriptionEmir": "レベルデザイナーとして働きました。",
-        "lunscaleDescriptionFurkan": "Unityゲーム開発者として働きました。"
+        "lunscaleDescriptionFurkan": "Unityゲーム開発者として働きました。",
+        "gloveffectDescriptionErdem": "3Dアーティストとアートディレクターとして働きました。プロジェクトの視覚言語を最初から最後まで作成および管理する貴重な経験を積みました。",
+        "theBirdieDescriptionErdem": "アートディレクターとして働きました。Play Storeで公開されたゲームの視覚管理を担当しました。",
+        "lunscaleDescriptionErdem": "プロジェクトマネージャー、3Dアーティスト、アートディレクターとして働きました。"
       },
       "periods": {
         "2019-2024": "2019-2024",
@@ -2504,7 +2667,15 @@
         "soundAudioSystems": "サウンドとオーディオシステムの構築",
         "unityEditorTools": "チームメンバー向けに作成されたUnity Editorコーディングツール",
         "inventorySystem": "インベントリシステム",
-        "gameJam": "Game Jam"
+        "gameJam": "Game Jam",
+        "3dModeling": "3Dモデリング",
+        "hardSurfaceModeling": "ハードサーフェスモデリング",
+        "sciFiModeling": "SFモデリング",
+        "textureDesign": "テクスチャデザイン",
+        "artDirection": "アートディレクション",
+        "visualLanguageCreation": "視覚言語の作成",
+        "visualManagement": "視覚管理",
+        "projectManagement": "プロジェクト管理"
       },
       "skillItems": {
         "unityEngine": "Unity Engine",
@@ -2519,7 +2690,25 @@
         "environmentDesign": "環境デザイン",
         "karakterTasarimi": "キャラクターデザイン",
         "konseptTasarimi": "コンセプトデザイン",
-        "2dCizim": "2Dドローイング"
+        "2dCizim": "2Dドローイング",
+        "unity": "Unity",
+        "github": "GitHub",
+        "trello": "Trello",
+        "figma": "Figma",
+        "scriptableObjects": "Scriptable Objects",
+        "npcSystems": "NPCシステム",
+        "dialogueSystems": "ダイアログシステム",
+        "inventorySystems": "インベントリシステム",
+        "tilemapSystems": "タイルマップシステム",
+        "aiSystems": "AIシステム",
+        "audioSystems": "オーディオシステム",
+        "unityEditorTools": "Unityエディターツール",
+        "3dModeling": "3Dモデリング",
+        "hardSurfaceModeling": "ハードサーフェスモデリング",
+        "sciFiModeling": "SFモデリング",
+        "textureDesign": "テクスチャデザイン",
+        "artDirection": "アートディレクション",
+        "visualLanguageCreation": "視覚言語の作成"
       },
       "links": {
         "googlePlayStore": "Google Play Store",
@@ -2761,14 +2950,20 @@
         "emirFaculty": "传播学院",
         "ataCemDegree": "动画与卡通",
         "ataCemUniversity": "伊斯坦布尔阿登大学",
-        "ataCemFaculty": "美术学院"
+        "ataCemFaculty": "美术学院",
+        "erdemDegree": "视觉传达设计（VCD）",
+        "erdemUniversity": "伊斯坦布尔比尔吉大学",
+        "erdemFaculty": "传播学院"
       },
       "positions": {
         "unityGameDeveloper": "Unity游戏开发者",
         "freelance": "自由职业者",
         "levelDesigner": "关卡设计师",
         "2dDesigner": "2D设计师",
-        "unityDeveloperGameDesigner": "Unity开发者和游戏设计师"
+        "unityDeveloperGameDesigner": "Unity开发者和游戏设计师",
+        "coFounderGameDeveloper": "联合创始人和游戏开发者",
+        "gameDeveloper": "游戏开发者",
+        "3dArtistArtDirector": "3D艺术家和艺术总监"
       },
       "companies": {
         "bolfGames": "BOLF Games",
@@ -2816,7 +3011,10 @@
         "gallooopDescription": "作为Game Jam项目开发的游戏。",
         "durihDescriptionSelim": "作为游戏开发者工作。",
         "durihDescriptionEmir": "作为关卡设计师工作。",
-        "lunscaleDescriptionFurkan": "作为Unity游戏开发者工作。"
+        "lunscaleDescriptionFurkan": "作为Unity游戏开发者工作。",
+        "gloveffectDescriptionErdem": "作为3D艺术家和艺术总监工作。在从头到尾创建和管理项目的视觉语言方面获得了宝贵的经验。",
+        "theBirdieDescriptionErdem": "作为艺术总监工作。负责我们在Play Store上发布的游戏的视觉管理。",
+        "lunscaleDescriptionErdem": "作为项目经理、3D艺术家和艺术总监工作。"
       },
       "periods": {
         "2019-2024": "2019-2024",
