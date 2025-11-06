@@ -357,7 +357,9 @@ export default function ExperienceSection({ experiences, accentColor }: Experien
                   <h4 className="text-xl font-semibold text-bolf-white mb-2">
                     {translateProjectName(project.name)}
                   </h4>
-                  <p className="text-bolf-gray/80 mb-2">{translateDescription(project.description, project.name)}</p>
+                  {project.description && project.description.trim() && (
+                    <p className="text-bolf-gray/80 mb-2">{translateDescription(project.description, project.name)}</p>
+                  )}
                   
                   {project.features && project.features.length > 0 && (
                     <ul className="list-disc list-inside space-y-1 text-bolf-gray/70 ml-4">
